@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         intertight: ["Inter Tight", "sans-serif"],
-        Grotesque: ["Uxum Grotesque", "sans-serif"],
+        grotesque: ["Uxum Grotesque", "sans-serif"],
       },
       colors: {
         primaryblue: "#344DAB",
