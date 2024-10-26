@@ -189,7 +189,7 @@ const Resume = () => {
               Contributed to the design of an in-house product{" "}
               <AnchorTag
                 text={"(workstedi.com)"}
-                link={""}
+                link={"https://www.workstedi.com/"}
                 classname={"text-primaryblue underline"}
               />{" "}
               currently in its beta launch stage.
