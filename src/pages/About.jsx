@@ -307,8 +307,8 @@ const About = () => {
                     In his first <b>8</b> months at eProcess, Isaac drove the
                     adoption of Figma (a design tool) thereby reducing design
                     and development time by <b>50%</b>, and also saving the
-                    company over
-                    <b>$2,000</b> annually on the choice of design tool.
+                    company over <b>$2,000</b> annually on the choice of design
+                    tool.
                   </p>
                 </AnimatedContainer>
                 <AnimatedContainer>
