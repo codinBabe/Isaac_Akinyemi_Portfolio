@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Button from "./Button";
 import { CloseIcon, MenuIcon } from "../utils/icons/NavIcons";
@@ -11,9 +11,13 @@ const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    setIsModalOpen(false);
+  }, [location.pathname]);
+
   return (
     <header className="relative container mx-auto">
-      <nav className="bg-greywhite100 border rounded-t-[20px] pb-6 px-5">
+      <nav className="bg-greywhite100 border rounded-t-[20px] w-full pb-2 px-4 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50">
         {isModalOpen && (
           <motion.div
             initial={{ y: 100 }}
