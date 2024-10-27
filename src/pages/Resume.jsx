@@ -114,7 +114,7 @@ const Resume = () => {
           </AnimatedContainer>
         </div>
         <AnimatedContainer>
-          <p className="text-base -mt-5">
+          <p className="text-base -mt-3">
             Pathfound{" "}
             <AnchorTag
               text={"(pathfound.io)"}
@@ -170,7 +170,7 @@ const Resume = () => {
           </AnimatedContainer>
         </div>
         <AnimatedContainer>
-          <p className="text-base -mt-5">
+          <p className="text-base -mt-3">
             N&S Tech seeks to provide solutions to high-impact problems with
             technology; putting together highly talented teams quickly, to work
             as part of a remote, high-functioning, distributed team.
@@ -203,7 +203,7 @@ const Resume = () => {
             text={"Other projects"}
             classname={"font-grotesque text-2xl"}
           />
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mt-2">
             <AnimatedSubTitle
               text={"GPA portal"}
               classname={"font-medium font-intertight text-lg"}
@@ -221,7 +221,7 @@ const Resume = () => {
           </AnimatedContainer>
         </div>
         <div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between -mt-2">
             <AnimatedSubTitle
               text={"Coza bus coordination app"}
               classname={"font-medium font-intertight text-lg"}
@@ -258,7 +258,7 @@ const Resume = () => {
 
         <AnimatedSubTitle
           text={"Design skills"}
-          classname={"font-medium font-intertight text-lg"}
+          classname={"font-medium font-intertight text-lg -mt-2"}
         />
 
         <AnimatedContainer>

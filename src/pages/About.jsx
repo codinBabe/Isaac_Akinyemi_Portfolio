@@ -4,6 +4,7 @@ import AnimatedTitle, { AnimatedSubTitle } from "../utils/AnimatedTitle";
 import AnchorTag from "../components/AnchorTag";
 import { AboutImages } from "../utils/ImagesImport";
 import GoBack from "../utils/GoBack";
+import SectionLayout from "../layouts/SectionLayout";
 
 const About = () => {
   const [openSections, setOpenSections] = useState({
@@ -25,10 +26,10 @@ const About = () => {
 
   return (
     <>
-      <section className="p-2 border-b border-b-tintblue1">
+      <SectionLayout className="border-b border-b-tintblue1">
         <GoBack />
-      </section>
-      <section className="p-2 border-b border-b-tintblue1">
+      </SectionLayout>
+      <SectionLayout className="border-b border-b-tintblue1">
         <h1 className="text-2xl font-grotesque my-6">Who is Isaac AKINYEMI?</h1>
         <div>
           <AnimatedTitle
@@ -146,8 +147,8 @@ const About = () => {
             </>
           )}
         </div>
-      </section>
-      <section className="p-2 border-b border-b-tintblue1">
+      </SectionLayout>
+      <SectionLayout className="border-b border-b-tintblue1">
         <div className="mt-6">
           <AnimatedTitle
             text={"Isaac’s personality"}
@@ -257,8 +258,8 @@ const About = () => {
             </>
           )}
         </div>
-      </section>
-      <section className="p-2 border-b border-b-tintblue1">
+      </SectionLayout>
+      <SectionLayout className="border-b border-b-tintblue1">
         <div>
           <AnimatedTitle
             text={"Who is Isaac"}
@@ -290,16 +291,15 @@ const About = () => {
                 <AnimatedContainer>
                   <p className="text-base">
                     Isaac currently works with{" "}
-                    <b>eProcess International S.A.</b>
-                    as a business analyst and product designer. eProcess is the
-                    FinTech company providing software and application support
-                    services within and outside the Ecobank Group landscape
-                    since 2016. ETI (Ecobank Transnational Incorporation), the
-                    parent company of the Ecobank Group is the leading
-                    independent pan-African banking group providing financial
-                    services and solutions in more than <b>33</b> countries,
-                    serving about <b>28 </b>million customers in consumer,
-                    commercial, and corporate banking.
+                    <b>eProcess International S.A.</b> as a business analyst and
+                    product designer. eProcess is the FinTech company providing
+                    software and application support services within and outside
+                    the Ecobank Group landscape since 2016. ETI (Ecobank
+                    Transnational Incorporation), the parent company of the
+                    Ecobank Group is the leading independent pan-African banking
+                    group providing financial services and solutions in more
+                    than <b>33</b> countries, serving about <b>28 </b>million
+                    customers in consumer, commercial, and corporate banking.
                   </p>
                 </AnimatedContainer>
                 <AnimatedContainer>
@@ -345,8 +345,8 @@ const About = () => {
             </>
           )}
         </div>
-      </section>
-      <section className="p-2 border-b border-b-tintblue1">
+      </SectionLayout>
+      <SectionLayout className="border-b border-b-tintblue1">
         <>
           <div>
             <AnimatedTitle
@@ -440,8 +440,8 @@ const About = () => {
             )}
           </div>
         </>
-      </section>
-      <section className="p-2 border-b border-b-tintblue1">
+      </SectionLayout>
+      <SectionLayout className="border-b border-b-tintblue1">
         <div>
           <AnimatedTitle
             text={"Feedback and reviews"}
@@ -631,8 +631,8 @@ const About = () => {
             </>
           )}
         </div>
-      </section>
-      <section className="p-2 border-b border-b-tintblue1">
+      </SectionLayout>
+      <SectionLayout>
         <div>
           <AnimatedTitle
             text={"Miscellaneous"}
@@ -681,7 +681,7 @@ const About = () => {
             </>
           )}
         </div>
-      </section>
+      </SectionLayout>
     </>
   );
 };

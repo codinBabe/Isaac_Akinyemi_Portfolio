@@ -10,17 +10,17 @@ const Contact = ({ isOpen, setIsOpen }) => {
   };
 
   const modal = {
-    hidden: { y: "-100vh", opacity: 0 },
+    hidden: { opacity: 0, y: "-100vh" },
     visible: {
-      y: 0,
       opacity: 1,
+      y: 0,
       transition: { delay: 0.5 },
     },
   };
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center">
+        <div className="fixed top-0 bottom-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center">
           <motion.div
             variants={backdrop}
             initial="hidden"
