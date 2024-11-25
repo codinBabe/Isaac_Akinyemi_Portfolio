@@ -3,9 +3,10 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import MainLayout from "./layouts/MainLayout";
 import WorksLayout from "./layouts/WorkLayout";
-import CaseStudy from "./pages/Work/Casestudy";
-import Website from "./pages/Work/Website";
-import Explorations from "./pages/Work/Exploration";
+import CaseStudy from "./pages/works/Casestudy";
+import Website from "./pages/works/Website";
+import Explorations from "./pages/works/Exploration";
+import ComradeProject from "./pages/works/dedicated/ComradeProject";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route index element={<Navigate to="/works" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/comrade-project" element={<ComradeProject />} />
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Route>
         <Route path="/works/*" element={<WorksLayout />}>

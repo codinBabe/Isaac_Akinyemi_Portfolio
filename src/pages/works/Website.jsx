@@ -6,7 +6,7 @@ function Website() {
   return (
     <>
       <WorkLink
-        to={"/works/website/toyin's-portfolio"}
+        to={"/toyin's-portfolio"}
         src={WorkImages.toyinoredein}
         title={"REAL PROJECT - Website design"}
         description={"Toyin OREDEIN Portfolio Design"}
@@ -15,7 +15,7 @@ function Website() {
         tag3={"UI Design"}
       />
       <WorkLink
-        to={"/works/website/deso-realtor"}
+        to={"/deso-realtor"}
         src={WorkImages.hymn}
         title={"REAL PROJECT - Website design"}
         description={"Deso Realtor Website"}
@@ -24,7 +24,7 @@ function Website() {
         tag3={"UI Design"}
       />
       <WorkLink
-        to={"/works/website/building-band"}
+        to={"/building-band"}
         src={WorkImages.buildingband}
         title={"REAL PROJECT - Website design"}
         description={"Building Band"}

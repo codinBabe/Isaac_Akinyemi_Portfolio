@@ -11,7 +11,15 @@ const Resume = () => {
         <GoBack />
       </SectionLayout>
       <SectionLayout>
-        <button className="font-medium text-lg underline my-5">
+        <button
+          className="font-medium text-lg underline my-5"
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1x9eMKmJzq1pTgbUSQqW_SNlc_PV0Sa2Z/view?usp=sharing",
+              "_blank"
+            )
+          }
+        >
           Download PDF Resume
         </button>
         <div>

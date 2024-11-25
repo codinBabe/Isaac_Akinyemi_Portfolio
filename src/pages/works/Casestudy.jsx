@@ -5,7 +5,7 @@ const Casestudy = () => {
   return (
     <div>
       <WorkLink
-        to={"/works/casestudy/comrade-project"}
+        to={"/comrade-project"}
         src={WorkImages.comrademobilethumbnail}
         title={"REAL PROJECT - Website design"}
         description={"Coming together for a better Nigeria"}
@@ -14,7 +14,7 @@ const Casestudy = () => {
         tag3={"UI Design"}
       />
       <WorkLink
-        to={"/works/casestudy/hymns-project"}
+        to={"/hymns-project"}
         src={WorkImages.hymn}
         title={"PERSONAL PROJECT - Mobile app design"}
         description={
@@ -25,7 +25,7 @@ const Casestudy = () => {
         tag3={"UI Design"}
       />
       <WorkLink
-        to={"/works/ecobank-projects"}
+        to={"/ecobank-projects"}
         src={WorkImages.projectcoalition}
         title={"REAL PROJECTS - Mobile Apps and Web Apps"}
         description={"Project Coalition at Ecobank Transnational Incorportated"}
