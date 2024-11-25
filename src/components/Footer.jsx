@@ -35,7 +35,7 @@ const Footer = () => {
               <AnchorTag
                 classname={"underline text-base font-intertight"}
                 text={"linkedin.com/isaac-akinyemi"}
-                link={"https://www.linkedin.com/isaac-akinyemi"}
+                link={"https://www.linkedin.com/in/isaac-akinyemi"}
               />
               <AnchorTag
                 classname={"underline text-base font-intertight"}

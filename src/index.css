@@ -29,3 +29,11 @@ ul.info-list li:first-child::before {
 ul.info-list li:last-child::before {
   height: 85%;
 }
+
+.swiper-pagination-bullet {
+  @apply bg-greyblack400 w-2 h-[6px] rounded-full transition-all duration-300;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primaryblue w-6;
+}

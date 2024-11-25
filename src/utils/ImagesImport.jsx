@@ -47,6 +47,7 @@ import comrademobile11 from "../assets/comrade/mobile/comrademobile11.svg";
 import comrademobile12 from "../assets/comrade/mobile/comrademobile12.svg";
 import comrademobile13 from "../assets/comrade/mobile/comrademobile13.svg";
 import comrademobilethumbnail from "../assets/thumbnail/comrademobilethumbnail.svg";
+import comradecontent1 from "../assets/comrade/comradecontent-1.svg";
 import hymn from "../assets/thumbnail/hymn.svg";
 import projectcoalition from "../assets/thumbnail/projectcoalition.svg";
 import eventapp from "../assets/thumbnail/eventapp.svg";
@@ -99,8 +100,12 @@ export const ComradeMobileImages = {
   comrademobile1,
   comrademobile2,
   comrademobile3,
-  comrademobile4,
   comrademobile5,
+  comrademobile4,
+};
+
+export const ComradeContentImages = {
+  comradecontent1,
   comrademobile6,
   comrademobile7,
   comrademobile8,
