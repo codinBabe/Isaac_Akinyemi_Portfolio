@@ -6,29 +6,30 @@ import AnchorTag from "./AnchorTag";
 const Aside = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const divVariant = {
-    hidden: { opacity: 0, x: -50 },
+  const modalVariants = {
+    hidden: { y: "100vh", opacity: 0 },
     visible: {
+      y: 0,
       opacity: 1,
-      x: 0,
       transition: {
-        duration: 1.5,
-        ease: "easeOut",
+        duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
 
   return (
-    <aside>
-      {isModalOpen ? (
+    <>
+      {isModalOpen && (
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="bg-tintblue5 p-4"
+          variants={modalVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          className="fixed inset-0 w-full h-full bg-tintblue5 z-50 p-8"
         >
-          <div className="">
-            <div className="flex items-center justify-between">
+          <div>
+            <div className="flex items-center justify-between -ml-4">
               <div>
                 <h1 className="font-grotesque text-2xl">Isaac AKINYEMI</h1>
                 <p className="text-sm font-medium text-greyblack300">
@@ -37,8 +38,8 @@ const Aside = () => {
               </div>
               <img src={IsaacImg} alt="Isaac AKINYEMI" />
             </div>
-            <div className="mt-5 text-[15px]">
-              <ul>
+            <div className="mt-4 text-[15px] leading-[21px]">
+              <ul className="info-list list-disc">
                 <li>
                   Passionate about how users experience products, services,
                   processes, and systems.
@@ -63,25 +64,12 @@ const Aside = () => {
                   technology stakeholders.
                 </li>
                 <li>
-                  Designed an SME App that did more than NGN 1.25 billion
-                  transaction value within 4 months of launch, and currently
-                  doing more than NGN 10 billion monthly.
+                  Designed an SME App that did more than <b>NGN 1.25 billion</b>{" "}
+                  transaction value within <b>4 months</b> of launch, and
+                  currently doing more than <b>NGN 10 billion</b> monthly.
                 </li>
               </ul>
-              <ul>
-                <li>
-                  Advocating for self-awareness and interpersonal skills{" "}
-                  <AnchorTag
-                    classname={"text-primaryblue underline font-medium"}
-                    text={"here"}
-                    link={"https://dareytemy.substack.com/"}
-                  />
-                  .
-                </li>
-                <li>My friends say I value friendship.</li>
-                <li>Lover of music and Bollywood movies.</li>
-              </ul>
-              <div className="flex items-center gap-4 flex-wrap">
+              <div className="flex items-center gap-4 flex-wrap mt-4">
                 <AnchorTag
                   classname={"text-primaryblue underline font-medium"}
                   text={"Email"}
@@ -90,7 +78,7 @@ const Aside = () => {
                 <AnchorTag
                   classname={"text-primaryblue underline font-medium"}
                   text={"Linkedin"}
-                  link={"www.linkedin.com/in/isaac-akinyemi"}
+                  link={"https://www.linkedin.com/in/isaac-akinyemi"}
                 />
                 <AnchorTag
                   classname={"text-primaryblue underline font-medium"}
@@ -102,6 +90,7 @@ const Aside = () => {
                   text={"Medium"}
                   link={"https://dareytemy.medium.com/"}
                 />
+
                 <AnchorTag
                   classname={"text-primaryblue underline font-medium"}
                   text={"Substack"}
@@ -111,20 +100,16 @@ const Aside = () => {
             </div>
             <button
               onClick={() => setIsModalOpen(false)}
-              className="text-primaryblue text-sm font-semibold underline"
+              className="text-primaryblue text-base font-semibold underline mt-5"
             >
               See less
             </button>
           </div>
         </motion.div>
-      ) : (
-        <motion.div
-          variants={divVariant}
-          initial="hidden"
-          animate="visible"
-          className="p-4"
-        >
-          <div className="flex items-center justify-between">
+      )}
+      {!isModalOpen && (
+        <div className="bg-tintblue3 fixed left-0 top-0 z-10 w-full">
+          <div className="flex items-center justify-between p-4">
             <div>
               <h1 className="font-grotesque text-2xl">Isaac AKINYEMI</h1>
               <p className="text-sm font-medium text-greyblack300">
@@ -138,9 +123,9 @@ const Aside = () => {
               See more
             </button>
           </div>
-        </motion.div>
+        </div>
       )}
-    </aside>
+    </>
   );
 };
 

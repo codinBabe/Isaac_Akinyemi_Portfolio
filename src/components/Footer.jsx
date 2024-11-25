@@ -84,7 +84,7 @@ const Footer = () => {
             <AnchorTag
               classname={"font-semibold underline"}
               text={"Oluwatoyin"}
-              link={"https://twitter.com/techiebaker"}
+              link={"https://techiebaker.vercel.app/"}
             />{" "}
             (techie baker)
           </p>

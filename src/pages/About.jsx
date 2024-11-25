@@ -10,6 +10,10 @@ const About = () => {
   const [openSections, setOpenSections] = useState({
     journey: false,
     personality: false,
+    whoisisaac: false,
+    services: false,
+    feedback: false,
+    miscellaneous: false,
   });
 
   const toggleSection = (section) => {

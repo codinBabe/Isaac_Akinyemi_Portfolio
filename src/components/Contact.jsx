@@ -20,7 +20,7 @@ const Contact = ({ isOpen, setIsOpen }) => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed top-0 bottom-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-60 flex justify-center items-center">
           <motion.div
             variants={backdrop}
             initial="hidden"

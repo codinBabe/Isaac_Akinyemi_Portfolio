@@ -76,9 +76,8 @@ const Resume = () => {
               </li>
               <li>
                 Enabled admins to communicate ads and campaigns to over{" "}
-                <b>28</b>
-                million customers by designing the ads feature for the admin
-                portal of Ecobank Mobile 5.0.
+                <b>28</b> million customers by designing the ads feature for the
+                admin portal of Ecobank Mobile 5.0.
               </li>
               <li>
                 Improved and redesigned the entire experience of the agency
@@ -134,8 +133,7 @@ const Resume = () => {
             <li>
               Improved the student onboarding flow after <b>3+</b> rounds of
               iterations and feedback by reducing cognitive load and onboarding
-              time by
-              <b>70%</b>.
+              time by <b>70%</b>.
             </li>
             <li>
               Collaborated with the stakeholders and product manager to design

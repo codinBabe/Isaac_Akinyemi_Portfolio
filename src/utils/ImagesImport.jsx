@@ -33,6 +33,29 @@ import aboutimg30 from "../assets/about/about_img30.png";
 import aboutimg31 from "../assets/about/about_img31.svg";
 import aboutimg32 from "../assets/about/about_img32.svg";
 import aboutimg33 from "../assets/about/about_img33.svg";
+import comrademobile1 from "../assets/comrade/mobile/comrademobile1.svg";
+import comrademobile2 from "../assets/comrade/mobile/comrademobile2.svg";
+import comrademobile3 from "../assets/comrade/mobile/comrademobile3.svg";
+import comrademobile4 from "../assets/comrade/mobile/comrademobile4.svg";
+import comrademobile5 from "../assets/comrade/mobile/comrademobile5.svg";
+import comrademobile6 from "../assets/comrade/mobile/comrademobile6.svg";
+import comrademobile7 from "../assets/comrade/mobile/comrademobile7.svg";
+import comrademobile8 from "../assets/comrade/mobile/comrademobile8.svg";
+import comrademobile9 from "../assets/comrade/mobile/comrademobile9.svg";
+import comrademobile10 from "../assets/comrade/mobile/comrademobile10.svg";
+import comrademobile11 from "../assets/comrade/mobile/comrademobile11.svg";
+import comrademobile12 from "../assets/comrade/mobile/comrademobile12.svg";
+import comrademobile13 from "../assets/comrade/mobile/comrademobile13.svg";
+import comrademobilethumbnail from "../assets/thumbnail/comrademobilethumbnail.svg";
+import hymn from "../assets/thumbnail/hymn.svg";
+import projectcoalition from "../assets/thumbnail/projectcoalition.svg";
+import eventapp from "../assets/thumbnail/eventapp.svg";
+import deso from "../assets/thumbnail/deso.svg";
+import buildingband from "../assets/thumbnail/buildingband.svg";
+import toyinoredein from "../assets/thumbnail/toyinoredein.svg";
+import picmconsult from "../assets/thumbnail/picmconsult.svg";
+import ybdigitals from "../assets/thumbnail/ybdigitals.svg";
+import bymastics from "../assets/thumbnail/bymastics.svg";
 
 export const AboutImages = [
   aboutimg1,
@@ -71,3 +94,32 @@ export const AboutImages = [
   aboutimg32,
   aboutimg33,
 ];
+
+export const ComradeMobileImages = {
+  comrademobile1,
+  comrademobile2,
+  comrademobile3,
+  comrademobile4,
+  comrademobile5,
+  comrademobile6,
+  comrademobile7,
+  comrademobile8,
+  comrademobile9,
+  comrademobile10,
+  comrademobile11,
+  comrademobile12,
+  comrademobile13,
+};
+
+export const WorkImages = {
+  comrademobilethumbnail,
+  hymn,
+  projectcoalition,
+  eventapp,
+  deso,
+  buildingband,
+  toyinoredein,
+  picmconsult,
+  ybdigitals,
+  bymastics,
+};

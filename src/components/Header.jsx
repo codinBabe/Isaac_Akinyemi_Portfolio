@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Button from "./Button";
 import { CloseIcon, MenuIcon } from "../utils/icons/NavIcons";
@@ -11,9 +11,26 @@ const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    setIsModalOpen(false);
-  }, [location.pathname]);
+  const pathParts = location.pathname.split("/").filter(Boolean);
+  let pageTitle = "";
+
+  // Check if the current path starts with "works"
+  if (pathParts[0] === "works") {
+    // If there are more than two parts in the path, we are in a detailed project page
+    if (pathParts.length > 2) {
+      // Convert the project title part to Title Case
+      pageTitle = pathParts[2]
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+    } else {
+      // Otherwise, set the page title to "Work"
+      pageTitle = "Work";
+    }
+  } else {
+    // For other paths, fallback to default behavior
+    pageTitle = pathParts[0]?.replace(/-/g, " ") || "Home";
+  }
 
   return (
     <header className="relative container mx-auto">
@@ -56,7 +73,7 @@ const Header = () => {
             <>
               {location.pathname && (
                 <p className="capitalize bg-tintblue3 py-1 px-2 text-primaryblue font-medium">
-                  {location.pathname.split("/")}
+                  {pageTitle}
                 </p>
               )}
               <button

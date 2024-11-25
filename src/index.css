@@ -14,3 +14,18 @@ body {
 .list-alpha {
   list-style-type: lower-alpha;
 }
+ul.info-list li {
+  position: relative;
+  padding: 5px;
+  list-style-image: url("./assets/icons/bullet.svg");
+}
+ul.info-list li::before {
+  content: "";
+  @apply absolute top-0 left-[-10px] w-[1px] h-full bg-greyblack600 -z-10;
+}
+ul.info-list li:first-child::before {
+  top: 25%;
+}
+ul.info-list li:last-child::before {
+  height: 85%;
+}
