@@ -8,6 +8,7 @@ import Website from "./pages/works/Website";
 import Explorations from "./pages/works/Exploration";
 import ComradeProject from "./pages/works/dedicated/ComradeProject";
 import HymnsApp from "./pages/works/dedicated/HymnsApp";
+import EcobankProject from "./pages/works/dedicated/EcobankProject";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/resume" element={<Resume />} />
           <Route path="/comrade-project" element={<ComradeProject />} />
           <Route path="/hymns-project" element={<HymnsApp />} />
+          <Route path="/ecobank-projects" element={<EcobankProject />} />
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Route>
         <Route path="/works/*" element={<WorksLayout />}>
