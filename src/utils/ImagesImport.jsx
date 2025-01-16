@@ -127,6 +127,23 @@ import mockup7 from "../assets/hymns/mockup-7.svg";
 import mockup8 from "../assets/hymns/mockup-8.svg";
 import accessibility from "../assets/hymns/accessibility-1.svg";
 import colorcontrast from "../assets/hymns/color-contrast.svg";
+import thumbnail1 from "../assets/tickevent/thumbnail1.svg";
+import pea from "../assets/tickevent/pea.svg";
+import userJourney from "../assets/tickevent/user-journey.svg";
+import sequenceDiagram from "../assets/tickevent/sequence-diagram.svg";
+import competitiveAudit from "../assets/tickevent/competitive-audit.svg";
+import tickSketch1 from "../assets/tickevent/tick-sketch-1.svg";
+import tickSketch2 from "../assets/tickevent/tick-sketch-2.svg";
+import tickSketch3 from "../assets/tickevent/tick-sketch-3.svg";
+import tickSketch4 from "../assets/tickevent/tick-sketch-4.svg";
+import tickSketch5 from "../assets/tickevent/tick-sketch-5.svg";
+import tickSketch6 from "../assets/tickevent/tick-sketch-6.svg";
+import tickSketch7 from "../assets/tickevent/tick-sketch-7.svg";
+import tickOnboarding from "../assets/tickevent/tick-onboarding.svg";
+import tickOnboarding1 from "../assets/tickevent/tick-onboarding-1.svg";
+import tickHome from "../assets/tickevent/tick-home.svg";
+import tickEvent from "../assets/tickevent/tick-event.svg";
+import tickEvent1 from "../assets/tickevent/tick-event-1.svg";
 
 export const AboutImages = [
   aboutimg1,
@@ -269,4 +286,24 @@ export const HymnsImages = {
   mockup8,
   accessibility,
   colorcontrast,
+};
+
+export const TicketEventImages = {
+  thumbnail1,
+  pea,
+  userJourney,
+  sequenceDiagram,
+  competitiveAudit,
+  tickSketch1,
+  tickSketch2,
+  tickSketch3,
+  tickSketch4,
+  tickSketch5,
+  tickSketch6,
+  tickSketch7,
+  tickOnboarding,
+  tickOnboarding1,
+  tickHome,
+  tickEvent,
+  tickEvent1,
 };

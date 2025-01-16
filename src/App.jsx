@@ -9,6 +9,10 @@ import Explorations from "./pages/works/Exploration";
 import ComradeProject from "./pages/works/dedicated/ComradeProject";
 import HymnsApp from "./pages/works/dedicated/HymnsApp";
 import EcobankProject from "./pages/works/dedicated/EcobankProject";
+import TickEvent from "./pages/works/dedicated/TickEvent";
+import ToyinPortfolio from "./pages/works/dedicated/ToyinPortfolio";
+import DesoRealtor from "./pages/works/dedicated/DesoRealtor";
+import BuildingBand from "./pages/works/dedicated/BuildingBand";
 
 const App = () => {
   return (
@@ -21,6 +25,11 @@ const App = () => {
           <Route path="/comrade-project" element={<ComradeProject />} />
           <Route path="/hymns-project" element={<HymnsApp />} />
           <Route path="/ecobank-projects" element={<EcobankProject />} />
+          <Route path="/tickvent-project" element={<TickEvent />} />
+          <Route path="/toyin's-portfolio" element={<ToyinPortfolio />} />
+          <Route path="/deso-realtor" element={<DesoRealtor />} />
+          <Route path="/building-band" element={<BuildingBand />} />
+
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Route>
         <Route path="/works/*" element={<WorksLayout />}>

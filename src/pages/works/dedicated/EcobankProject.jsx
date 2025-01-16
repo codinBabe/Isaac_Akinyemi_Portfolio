@@ -140,7 +140,7 @@ const EcobankProject = () => {
               <p>Business analysis and UX design</p>
             </div>
             <div>
-              <h3 className="font-grotesque text-2xl mb-1">My Process</h3>
+              <h3 className="font-grotesque text-xl mb-1">My Process</h3>
               <div className="flex flex-wrap gap-3">
                 <p>Requirement gathering</p>
                 <p>----</p>
@@ -216,7 +216,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-secyellowgreen p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>
                   Availability of third-party identity verification services.
                 </li>
@@ -225,7 +225,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-seccoralpink p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>Easy onboarding.</li>
                 <li>Light app size.</li>
                 <li>Intuitive onboarding and identity verification.</li>
@@ -234,7 +234,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-secpalepurple p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Viability</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>Availability of various payment methods.</li>
                 <li>Availability of up to 6 delivery modes.</li>
                 <li>Generation of account statement.</li>
@@ -267,7 +267,7 @@ const EcobankProject = () => {
               <h3 className="font-grotesque text-xl mb-1">
                 Other things I did
               </h3>
-              <ol className="list-decimal list-inside mt-2 pl-1">
+              <ol className="list-decimal list-outside mt-2 pl-5">
                 <li>
                   Documentation of functional requirements for the Admin Portal.
                 </li>
@@ -399,7 +399,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-secyellowgreen p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>
                   Availability of staff members to onboard and train agents.
                 </li>
@@ -408,7 +408,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-seccoralpink p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>Easy onboarding.</li>
                 <li>Light app size.</li>
                 <li>Account and device management.</li>
@@ -417,7 +417,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-secpalepurple p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Viability</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>Frequent training and engagement for Agents..</li>
                 <li>
                   Includes features like account opening, token redemption, and
@@ -493,7 +493,7 @@ const EcobankProject = () => {
               <p>Business analysis and UX design</p>
             </div>
             <div>
-              <h3 className="font-grotesque text-2xl mb-1">My Process</h3>
+              <h3 className="font-grotesque text-xl mb-1">My Process</h3>
               <div className="flex flex-wrap gap-3">
                 <p>Requirement gathering</p>
                 <p>----</p>
@@ -573,7 +573,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-secyellowgreen p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>
                   Availability of third-party identity verification services.
                 </li>
@@ -584,7 +584,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-seccoralpink p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>Easy onboarding.</li>
                 <li>Light app size.</li>
                 <li>Intuitive onboarding and identity verification.</li>
@@ -593,7 +593,7 @@ const EcobankProject = () => {
             </div>
             <div className="bg-secpalepurple p-6 text-base">
               <h3 className="font-grotesque text-xl mb-1">Viability</h3>
-              <ol className="list-decimal list-inside mt-2">
+              <ol className="list-decimal list-outside pl-5 mt-2">
                 <li>
                   Availability of more than <b>5</b> payment channels.
                 </li>
@@ -631,7 +631,7 @@ const EcobankProject = () => {
               <h3 className="font-grotesque text-xl mb-1">
                 Other things I did
               </h3>
-              <ol className="list-decimal list-inside mt-2 pl-1">
+              <ol className="list-decimal list-outside mt-2 pl-5">
                 <li>
                   Design and documentation of functional requirements for the
                   Admin Portal.
@@ -696,7 +696,7 @@ const EcobankProject = () => {
               <p>Research and documentation</p>
             </div>
             <div>
-              <h3 className="font-grotesque text-2xl mb-1">My Process</h3>
+              <h3 className="font-grotesque text-xl mb-1">My Process</h3>
               <div className="flex flex-wrap gap-3">
                 <p>Observation</p>
                 <p>----</p>
