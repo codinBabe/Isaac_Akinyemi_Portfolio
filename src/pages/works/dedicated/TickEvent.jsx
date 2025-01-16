@@ -2,7 +2,7 @@ import AnchorTag from "../../../components/AnchorTag";
 import SectionLayout from "../../../layouts/SectionLayout";
 import GoBack from "../../../utils/GoBack";
 import { StarIcon } from "../../../utils/icons/NavIcons";
-import { TicketEventImages } from "../../../utils/ImagesImport";
+import { TickVentImages } from "../../../utils/ImagesImport";
 
 const TickEvent = () => {
   return (
@@ -30,7 +30,7 @@ const TickEvent = () => {
             </p>
           </div>
           <div className="mt-10">
-            <img src={TicketEventImages.thumbnail1} alt="Hymns App" />
+            <img src={TickVentImages.thumbnail1} alt="Hymns App" />
           </div>
         </div>
         <div className="mt-10 font-intertight">
@@ -216,7 +216,7 @@ const TickEvent = () => {
                 </ol>
               </div>
               <div className="-my-6">
-                <img src={TicketEventImages.pea} alt="pea image" />
+                <img src={TickVentImages.pea} alt="pea image" />
               </div>
               <div className="bg-tintblue4 p-4">
                 <p className="font-grotesque mb-2">🧐 Pea does</p>
@@ -339,7 +339,7 @@ const TickEvent = () => {
           <div className="mb-8">
             <h2 className="font-grotesque text-2xl mb-4">User journey map</h2>
             <div className="mb-2">
-              <img src={TicketEventImages.userJourney} alt="user-journey" />
+              <img src={TickVentImages.userJourney} alt="user-journey" />
             </div>
             <AnchorTag
               text={"Competitive audit"}
@@ -358,7 +358,7 @@ const TickEvent = () => {
             <h2 className="font-grotesque text-2xl mb-4">Competitive audit</h2>
             <div>
               <img
-                src={TicketEventImages.competitiveAudit}
+                src={TickVentImages.competitiveAudit}
                 alt="competitive audit"
               />
             </div>
@@ -387,7 +387,7 @@ const TickEvent = () => {
             </p>
             <div className="my-4">
               <img
-                src={TicketEventImages.sequenceDiagram}
+                src={TickVentImages.sequenceDiagram}
                 alt="sequence-diagram"
               />
             </div>
@@ -405,25 +405,25 @@ const TickEvent = () => {
 
             <div className="bg-tintblue4 px-5 py-8 grid grid-cols-2 gap-4 rounded-[32px]">
               <div>
-                <img src={TicketEventImages.tickSketch2} alt="sketch1" />
+                <img src={TickVentImages.tickSketch2} alt="sketch1" />
               </div>
               <div>
-                <img src={TicketEventImages.tickSketch1} alt="sketch2" />
+                <img src={TickVentImages.tickSketch1} alt="sketch2" />
               </div>
               <div>
-                <img src={TicketEventImages.tickSketch5} alt="sketch3" />
+                <img src={TickVentImages.tickSketch5} alt="sketch3" />
               </div>
               <div>
-                <img src={TicketEventImages.tickSketch6} alt="sketch4" />
+                <img src={TickVentImages.tickSketch6} alt="sketch4" />
               </div>
               <div>
-                <img src={TicketEventImages.tickSketch4} alt="sketch5" />
+                <img src={TickVentImages.tickSketch4} alt="sketch5" />
               </div>
               <div>
-                <img src={TicketEventImages.tickSketch3} alt="sketch6" />
+                <img src={TickVentImages.tickSketch3} alt="sketch6" />
               </div>
               <div>
-                <img src={TicketEventImages.tickSketch7} alt="sketch7" />
+                <img src={TickVentImages.tickSketch7} alt="sketch7" />
               </div>
             </div>
           </div>
@@ -434,19 +434,13 @@ const TickEvent = () => {
               <div>
                 <p className="text-sm font-medium mb-4">ONBOARDING</p>
                 <div>
-                  <img
-                    src={TicketEventImages.tickOnboarding}
-                    alt="onboarding"
-                  />
+                  <img src={TickVentImages.tickOnboarding} alt="onboarding" />
                 </div>
               </div>
               <div>
                 <p className="text-sm font-medium mb-4">ONBOARDING</p>
                 <div>
-                  <img
-                    src={TicketEventImages.tickOnboarding1}
-                    alt="onboarding1"
-                  />
+                  <img src={TickVentImages.tickOnboarding1} alt="onboarding1" />
                 </div>
               </div>
             </div>

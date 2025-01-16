@@ -288,7 +288,7 @@ export const HymnsImages = {
   colorcontrast,
 };
 
-export const TicketEventImages = {
+export const TickVentImages = {
   thumbnail1,
   pea,
   userJourney,
