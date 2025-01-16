@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import WorkLink from "../../components/WorkLink";
 import { WorkImages } from "../../utils/ImagesImport";
 import VideoModal from "../../components/VideoModal";
 
