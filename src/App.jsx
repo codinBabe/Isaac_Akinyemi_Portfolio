@@ -3,10 +3,11 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import MainLayout from "./layouts/MainLayout";
 import WorksLayout from "./layouts/WorkLayout";
-import CaseStudy from "./pages/works/Casestudy";
-import Website from "./pages/works/Website";
+import Casestudy from "./pages/Works/Casestudy";
+import Website from "./pages/Works/Website";
 import Explorations from "./pages/works/Exploration";
 import ComradeProject from "./pages/works/dedicated/ComradeProject";
+import HymnsApp from "./pages/works/dedicated/HymnsApp";
 
 const App = () => {
   return (
@@ -17,11 +18,12 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/comrade-project" element={<ComradeProject />} />
+          <Route path="/hymns-project" element={<HymnsApp />} />
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Route>
         <Route path="/works/*" element={<WorksLayout />}>
           <Route index element={<Navigate to="casestudy" replace />} />
-          <Route path="casestudy" element={<CaseStudy />} />
+          <Route path="casestudy" element={<Casestudy />} />
           <Route path="website" element={<Website />} />
           <Route path="exploration" element={<Explorations />} />
         </Route>

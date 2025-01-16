@@ -3,7 +3,7 @@ import WorkLink from "../../components/WorkLink";
 
 const Casestudy = () => {
   return (
-    <div>
+    <>
       <WorkLink
         to={"/comrade-project"}
         src={WorkImages.comrademobilethumbnail}
@@ -34,7 +34,7 @@ const Casestudy = () => {
         tag3={"UI Design"}
       />
       <WorkLink
-        to={"/works/casestudy/tickvent-project"}
+        to={"/tickvent-project"}
         src={WorkImages.eventapp}
         title={"PERSONAL PROJECT - Mobile app design"}
         description={
@@ -44,7 +44,7 @@ const Casestudy = () => {
         tag2={"UX Design"}
         tag3={"UI Design"}
       />
-    </div>
+    </>
   );
 };
 

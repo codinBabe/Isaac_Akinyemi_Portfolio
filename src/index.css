@@ -37,3 +37,15 @@ ul.info-list li:last-child::before {
 .swiper-pagination-bullet-active {
   @apply bg-primaryblue w-6;
 }
+
+.custom-dashed {
+  border-top: 0.5px dashed #344dab;
+  border-image: repeating-linear-gradient(
+      to right,
+      #344dab 0,
+      #344dab 10px,
+      transparent 10px,
+      transparent 20px
+    )
+    2;
+}

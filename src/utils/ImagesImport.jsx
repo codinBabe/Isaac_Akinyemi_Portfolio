@@ -48,6 +48,40 @@ import comrademobile12 from "../assets/comrade/mobile/comrademobile12.svg";
 import comrademobile13 from "../assets/comrade/mobile/comrademobile13.svg";
 import comrademobilethumbnail from "../assets/thumbnail/comrademobilethumbnail.svg";
 import comradecontent1 from "../assets/comrade/comradecontent-1.svg";
+import comradecontent2 from "../assets/comrade/comradecontent-2.svg";
+import comradecontent3 from "../assets/comrade/comradecontent-3.svg";
+import comradeuserresearch1 from "../assets/comrade/comrade-user-research-1.svg";
+import comradeuserresearch2 from "../assets/comrade/comrade-user-research-2.svg";
+import comradeuserresearch3 from "../assets/comrade/comrade-user-research-3.svg";
+import comradeuserresearch4 from "../assets/comrade/comrade-user-research-4.svg";
+import comradeuserresearch5 from "../assets/comrade/comrade-user-research-5.svg";
+import comradeuserresearch6 from "../assets/comrade/comrade-user-research-6.svg";
+import comradeuserresearch7 from "../assets/comrade/comrade-user-research-7.svg";
+import comradesurveyreport1 from "../assets/comrade/comrade-survey-report-1.svg";
+import comradesurveyreport2 from "../assets/comrade/comrade-survey-report-2.svg";
+import comradebrandindentity1 from "../assets/comrade/brand-identity-1.svg";
+import comradebrandindentity2 from "../assets/comrade/brand-identity-2.svg";
+import comradebrandindentity3 from "../assets/comrade/brand-identity-3.svg";
+import comradetypography1 from "../assets/comrade/typography-1.svg";
+import comradetypography2 from "../assets/comrade/typography-2.svg";
+import comradecolor1 from "../assets/comrade/color-1.svg";
+import comradecolor2 from "../assets/comrade/color-2.svg";
+import prioritisation1 from "../assets/comrade/prioritisation-1.svg";
+import prioritisation2 from "../assets/comrade/prioritisation-2.svg";
+import prioritisation3 from "../assets/comrade/prioritisation-3.svg";
+import prioritisation4 from "../assets/comrade/prioritisation-4.svg";
+import prioritisation5 from "../assets/comrade/prioritisation-5.svg";
+import prioritisation6 from "../assets/comrade/prioritisation-6.svg";
+import easydesignsteps from "../assets/comrade/easy-design-steps.svg";
+import homepage1 from "../assets/comrade/homepage-1.svg";
+import homepage2 from "../assets/comrade/homepage-2.svg";
+import homepage3 from "../assets/comrade/homepage-3.svg";
+import homepage4 from "../assets/comrade/homepage-4.svg";
+import homepage5 from "../assets/comrade/homepage-5.svg";
+import homepage6 from "../assets/comrade/homepage-6.svg";
+import homepage7 from "../assets/comrade/homepage-7.svg";
+import launch from "../assets/comrade/launch.svg";
+import volunteer from "../assets/comrade/volunteer.svg";
 import hymn from "../assets/thumbnail/hymn.svg";
 import projectcoalition from "../assets/thumbnail/projectcoalition.svg";
 import eventapp from "../assets/thumbnail/eventapp.svg";
@@ -57,6 +91,42 @@ import toyinoredein from "../assets/thumbnail/toyinoredein.svg";
 import picmconsult from "../assets/thumbnail/picmconsult.svg";
 import ybdigitals from "../assets/thumbnail/ybdigitals.svg";
 import bymastics from "../assets/thumbnail/bymastics.svg";
+import hymns1 from "../assets/hymns/thumbnail1.svg";
+import prosper from "../assets/hymns/prosper-img.svg";
+import wireframe1 from "../assets/hymns/wireframe-1.svg";
+import wireframe2 from "../assets/hymns/wireframe-2.svg";
+import wireframe3 from "../assets/hymns/wireframe-3.svg";
+import wireframe4 from "../assets/hymns/wireframe-4.svg";
+import wireframe5 from "../assets/hymns/wireframe-5.svg";
+import wireframe6 from "../assets/hymns/wireframe-6.svg";
+import home from "../assets/hymns/home.svg";
+import splash from "../assets/hymns/splash.svg";
+import welcome from "../assets/hymns/welcome.svg";
+import settings from "../assets/hymns/settings.svg";
+import hymns from "../assets/hymns/hymns.svg";
+import hymnssong from "../assets/hymns/hymns-song.svg";
+import designIteration1 from "../assets/hymns/design-iteration-1.svg";
+import designIteration2 from "../assets/hymns/design-iteration-2.svg";
+import designIteration3 from "../assets/hymns/design-iteration-3.svg";
+import designIteration4 from "../assets/hymns/design-iteration-4.svg";
+import designIteration5 from "../assets/hymns/design-iteration-5.svg";
+import designIteration6 from "../assets/hymns/design-iteration-6.svg";
+import visual from "../assets/hymns/visual-1.svg";
+import typo from "../assets/hymns/typo-1.svg";
+import appbar from "../assets/hymns/appbar.svg";
+import button from "../assets/hymns/button.svg";
+import navbar from "../assets/hymns/navbar.svg";
+import pushnotification from "../assets/hymns/push-notification.svg";
+import mockup1 from "../assets/hymns/mockup-1.svg";
+import mockup2 from "../assets/hymns/mockup-2.svg";
+import mockup3 from "../assets/hymns/mockup-3.svg";
+import mockup4 from "../assets/hymns/mockup-4.svg";
+import mockup5 from "../assets/hymns/mockup-5.svg";
+import mockup6 from "../assets/hymns/mockup-6.svg";
+import mockup7 from "../assets/hymns/mockup-7.svg";
+import mockup8 from "../assets/hymns/mockup-8.svg";
+import accessibility from "../assets/hymns/accessibility-1.svg";
+import colorcontrast from "../assets/hymns/color-contrast.svg";
 
 export const AboutImages = [
   aboutimg1,
@@ -106,6 +176,40 @@ export const ComradeMobileImages = {
 
 export const ComradeContentImages = {
   comradecontent1,
+  comradecontent2,
+  comradecontent3,
+  comradeuserresearch1,
+  comradeuserresearch2,
+  comradeuserresearch3,
+  comradeuserresearch4,
+  comradeuserresearch5,
+  comradeuserresearch6,
+  comradeuserresearch7,
+  comradesurveyreport1,
+  comradesurveyreport2,
+  comradebrandindentity1,
+  comradebrandindentity2,
+  comradebrandindentity3,
+  comradetypography1,
+  comradetypography2,
+  comradecolor1,
+  comradecolor2,
+  prioritisation1,
+  prioritisation2,
+  prioritisation3,
+  prioritisation4,
+  prioritisation5,
+  prioritisation6,
+  easydesignsteps,
+  homepage1,
+  homepage2,
+  homepage3,
+  homepage4,
+  homepage5,
+  homepage6,
+  homepage7,
+  launch,
+  volunteer,
   comrademobile6,
   comrademobile7,
   comrademobile8,
@@ -127,4 +231,42 @@ export const WorkImages = {
   picmconsult,
   ybdigitals,
   bymastics,
+};
+export const HymnsImages = {
+  hymns1,
+  prosper,
+  home,
+  splash,
+  welcome,
+  settings,
+  hymns,
+  hymnssong,
+  wireframe1,
+  wireframe2,
+  wireframe3,
+  wireframe4,
+  wireframe5,
+  wireframe6,
+  designIteration1,
+  designIteration2,
+  designIteration3,
+  designIteration4,
+  designIteration5,
+  designIteration6,
+  visual,
+  typo,
+  appbar,
+  button,
+  navbar,
+  pushnotification,
+  mockup1,
+  mockup2,
+  mockup3,
+  mockup4,
+  mockup5,
+  mockup6,
+  mockup7,
+  mockup8,
+  accessibility,
+  colorcontrast,
 };
