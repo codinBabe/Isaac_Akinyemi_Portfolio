@@ -127,7 +127,7 @@ import mockup7 from "../assets/hymns/mockup-7.svg";
 import mockup8 from "../assets/hymns/mockup-8.svg";
 import accessibility from "../assets/hymns/accessibility-1.svg";
 import colorcontrast from "../assets/hymns/color-contrast.svg";
-import thumbnail1 from "../assets/tickevent/thumbnail1.svg";
+import thumbnail1 from "../assets/tickevent/Thumbnail1.svg";
 import pea from "../assets/tickevent/pea.svg";
 import userJourney from "../assets/tickevent/user-journey.svg";
 import sequenceDiagram from "../assets/tickevent/sequence-diagram.svg";
