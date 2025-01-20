@@ -1,4 +1,9 @@
 import AnchorTag from "../../../components/AnchorTag";
+import {
+  RelatedProjects,
+  tickventProjects,
+} from "../../../components/RelatedProject";
+import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
 import GoBack from "../../../utils/GoBack";
 import { StarIcon } from "../../../utils/icons/NavIcons";
@@ -427,10 +432,10 @@ const TickEvent = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="mb-8">
             <h2 className="font-grotesque text-2xl mb-4">Digital wireframes</h2>
 
-            <div className="bg-tintblue4 px-6 py-8 grid md:grid-cols-2 gap-6 rounded-[32px]">
+            <div className="bg-tintblue4 px-6 py-8 grid md:grid-cols-2 gap-7 rounded-[32px]">
               <div>
                 <p className="text-sm font-medium mb-4">ONBOARDING</p>
                 <div>
@@ -443,9 +448,354 @@ const TickEvent = () => {
                   <img src={TickVentImages.tickOnboarding1} alt="onboarding1" />
                 </div>
               </div>
+              <div>
+                <p className="text-sm font-medium mb-4">HOME SCREEN</p>
+                <div>
+                  <img src={TickVentImages.tickHome} alt="onboarding1" />
+                </div>
+                <div className="mt-4">
+                  <p>==&gt; Most relevant events personalised for users.</p>
+                  <p>==&gt; Recommended events.</p>
+                  <p>==&gt; Upcoming events.</p>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-medium mb-4">EVENT PAGE</p>
+                <div>
+                  <img src={TickVentImages.tickEvent} alt="onboarding1" />
+                </div>
+                <p className="mt-4">==&gt; Event details.</p>
+              </div>
+              <div>
+                <p className="text-sm font-medium mb-4">EVENT PAGE</p>
+                <div>
+                  <img src={TickVentImages.tickEvent1} alt="onboarding1" />
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-medium mb-4">EVENT BOOKING</p>
+                <div>
+                  <img src={TickVentImages.eventBooking} alt="onboarding1" />
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-medium mb-4">TICKET PAGE</p>
+                <div>
+                  <img src={TickVentImages.ticketPage} alt="onboarding1" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </SectionLayout>
+      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
+        <div className="flex flex-col gap-8 font-intertight text-lg mt-4">
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">
+              Testing early concepts
+            </h2>
+            <p>
+              Unmoderated usability test was used to evaluate the early concept
+              and key flows of the mobile app. The test was done with <b>4</b>{" "}
+              participants. Links to the prototype, the{" "}
+              <AnchorTag
+                text={"prompts"}
+                link={
+                  "https://docs.google.com/document/d/1NdiVnjZ_bQovUxqU1H30ylvTdC013Jq7whOSEM97s8Y/edit?tab=t.0"
+                }
+                classname={"underline text-primaryblue text-base font-bold"}
+              />
+              , and a Google form for feedback and system usability scale (SUS)
+              were shared.
+            </p>
+            <AnchorTag
+              text={"Usability study plan"}
+              link={
+                "https://docs.google.com/document/d/1sSybQ2cW9myy7jl-BYH1f5cFBZJWzBUj/edit"
+              }
+              classname={"underline text-primaryblue text-base font-bold"}
+            />
+          </div>
+
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">
+              Unmoderated usability result
+            </h2>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-start gap-2">
+                <p>✔</p>
+                <p>Users want to see paid and free events around them.</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <p>💥</p>
+                <p>Users want to see categories of events.</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <p>💥</p>
+                <p>
+                  Users want to assign email addresses to different ticket
+                  grades.
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <p>✔</p>
+                <p>Users want more customization for the payment process.</p>
+              </div>
+            </div>
+            <p className="mt-2">
+              Some iterations made were based on the “additional
+              feedback/comment” of the questionnaire.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-grotesque text-2xl mb-4">Design iteration</h2>
+            <div className="flex flex-col gap-6">
+              <div className="bg-tintblue4 p-4">
+                <h3 className="font-grotesque">Before usability test</h3>
+                <ol className="list-decimal list-outside pl-6 mt-2 text-base">
+                  <li>No categorisation section on the solution.</li>
+                  <li>In-app payment method.</li>
+                </ol>
+              </div>
+              <div className="bg-tintblue4 p-4">
+                <h3 className="font-grotesque">After usability test</h3>
+                <ol className="list-decimal list-outside pl-6 mt-2 text-base">
+                  <li>Categorisation of events.</li>
+                  <li>3rd party payment integration added.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <p className="text-sm">DESIGN ITERATION</p>
+            <div className="flex flex-col gap-6">
+              <div>
+                <h2 className="font-grotesque text-2xl mb-4">Before #1</h2>
+                <div className="my-2">
+                  <img
+                    src={TickVentImages.desginIteration1}
+                    alt="design iteration 1"
+                  />
+                </div>
+                <p>==&gt; Capitalised text field label.</p>
+              </div>
+              <div>
+                <h2 className="font-grotesque text-2xl mb-4">After #1</h2>
+                <div className="my-2">
+                  <img
+                    src={TickVentImages.desginIteration2}
+                    alt="design iteration 2"
+                  />
+                </div>
+                <p>
+                  ==&gt; Lower caps text field label for improved legibility.
+                </p>
+              </div>
+              <div>
+                <h2 className="font-grotesque text-2xl mb-4">Before #2 </h2>
+                <div className="my-2">
+                  <img
+                    src={TickVentImages.desginIteration3}
+                    alt="design iteration 3"
+                  />
+                </div>
+                <p>==&gt; No categorisation of events.</p>
+              </div>
+              <div>
+                <h2 className="font-grotesque text-2xl mb-4">After #2 </h2>
+                <div className="my-2">
+                  <img
+                    src={TickVentImages.desginIteration4}
+                    alt="design iteration 4"
+                  />
+                </div>
+                <p>==&gt; Categorisation of events for easy access.</p>
+              </div>
+              <div>
+                <h2 className="font-grotesque text-2xl mb-4">Before #3 </h2>
+                <div className="my-2">
+                  <img
+                    src={TickVentImages.desginIteration5}
+                    alt="design iteration 5"
+                  />
+                </div>
+                <p>==&gt; In-app payment method.</p>
+              </div>
+              <div>
+                <h2 className="font-grotesque text-2xl mb-4">After #3 </h2>
+                <div className="my-2">
+                  <img
+                    src={TickVentImages.desginIteration6}
+                    alt="design iteration 6"
+                  />
+                </div>
+                <p>
+                  ==&gt; Integration with a known payment gateway to build
+                  trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SectionLayout>
+      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
+        <div className="flex flex-col gap-8 mt-8 font-intertight text-lg">
+          <div>
+            <h2 className="font-grotesque text-2xl mb-4">Key mockups</h2>
+            <div className="flex flex-col gap-6">
+              <div>
+                <h3 className="text-base font-medium">ONBOARDING 1</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup1} alt="key mockup 1" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">ONBOARDING 2</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup2} alt="key mockup 2" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">ONBOARDING 3</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup3} alt="key mockup 3" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">HOME SCREEN</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup4} alt="key mockup 4" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">AM EVENT CATEGORY</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup5} alt="key mockup 5" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">EXPLORE EVENT</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup6} alt="key mockup 6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">NO SEARCH RESULT</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup7} alt="key mockup 7" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">YOUR TICKET</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup8} alt="key mockup 8" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">EVENT BOOKING</h3>
+                <div className="my-2">
+                  <img src={TickVentImages.keymockup9} alt="key mockup 9" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <h2 className="font-grotesque text-2xl mb-4">
+              Accessibility and inclusiveness
+            </h2>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-start gap-2">
+                <p>✔</p>
+                <p>
+                  Use of iOS standards for text sizes, button height, and
+                  layout.
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <p>✔</p>
+                <p>
+                  Labelling of the navigation bar to help recognition rather
+                  than recall.
+                </p>
+              </div>
+              <div>
+                <img
+                  src={TickVentImages.accessibilityimg}
+                  alt="accessibility"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </SectionLayout>
+      <SectionLayout className={"font-intertight text-lg"}>
+        <div className="mt-8 flex flex-col gap-8">
+          <div className="bg-tintblue4 p-4 rounded-[4px]">
+            <div className="flex items-center justify-between">
+              <h2 className="font-grotesque text-2xl">
+                Business considerations (Paid events)
+              </h2>
+              <p>
+                <StarIcon />
+              </p>
+            </div>
+            <ol className="list-decimal list-outside mt-2 pl-6">
+              <li>
+                <b>In case of a refund</b>: Customers will contact the
+                organisers of the events.
+              </li>
+              <li>
+                <b>Profit sharing</b>: For every ticket sold using the app, the
+                product owner gets 3%.
+              </li>
+              <li>
+                <b>Payment gateway</b>: The payment gateway used will be that of
+                the event organiser, hence the cost is covered by the event
+                organisers.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">More impact</h2>
+            <p>
+              The Tickvent Mobile App solved the pain points of users having
+              difficulties keeping up with events around them and solved the
+              problems of booking and payment.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">Learnings</h2>
+            <p>
+              While designing the Tickvent Mobile App, I learned that the
+              initial ideas for solving problems are not the final ones.
+              Usability studies and peer feedback influenced each iteration of
+              the App’s designs.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">Next steps</h2>
+            <ol className="list-decimal list-outside mt-2 pl-6">
+              <li>
+                Conduct another round of usability studies to validate whether
+                the pain points users experienced have been effectively
+                addressed.
+              </li>
+              <li>
+                Conduct more user research to determine any new areas of need.
+              </li>
+              <li>
+                Have an optimised and secured in-app payment gateway to properly
+                manage payments and profit-making.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <TheEnd />
+        <RelatedProjects projects={tickventProjects} />
       </SectionLayout>
     </>
   );

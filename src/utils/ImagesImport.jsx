@@ -144,6 +144,24 @@ import tickOnboarding1 from "../assets/tickevent/tick-onboarding-1.svg";
 import tickHome from "../assets/tickevent/tick-home.svg";
 import tickEvent from "../assets/tickevent/tick-event.svg";
 import tickEvent1 from "../assets/tickevent/tick-event-1.svg";
+import eventBooking from "../assets/tickevent/event-booking.svg";
+import ticketPage from "../assets/tickevent/ticket-page.svg";
+import desginIteration1 from "../assets/tickevent/design-iteration1.svg";
+import desginIteration2 from "../assets/tickevent/design-iteration2.svg";
+import desginIteration3 from "../assets/tickevent/design-iteration3.svg";
+import desginIteration4 from "../assets/tickevent/design-iteration4.svg";
+import desginIteration5 from "../assets/tickevent/design-iteration5.svg";
+import desginIteration6 from "../assets/tickevent/design-iteration6.svg";
+import keymockup1 from "../assets/tickevent/key-mockup1.svg";
+import keymockup2 from "../assets/tickevent/key-mockup2.svg";
+import keymockup3 from "../assets/tickevent/key-mockup3.svg";
+import keymockup4 from "../assets/tickevent/key-mockup4.svg";
+import keymockup5 from "../assets/tickevent/key-mockup5.svg";
+import keymockup6 from "../assets/tickevent/key-mockup6.svg";
+import keymockup7 from "../assets/tickevent/key-mockup7.svg";
+import keymockup8 from "../assets/tickevent/key-mockup8.svg";
+import keymockup9 from "../assets/tickevent/key-mockup9.svg";
+import accessibilityimg from "../assets/tickevent/accessibility-img.svg";
 
 export const AboutImages = [
   aboutimg1,
@@ -306,4 +324,22 @@ export const TickVentImages = {
   tickHome,
   tickEvent,
   tickEvent1,
+  eventBooking,
+  ticketPage,
+  desginIteration1,
+  desginIteration2,
+  desginIteration3,
+  desginIteration4,
+  desginIteration5,
+  desginIteration6,
+  keymockup1,
+  keymockup2,
+  keymockup3,
+  keymockup4,
+  keymockup5,
+  keymockup6,
+  keymockup7,
+  keymockup8,
+  keymockup9,
+  accessibilityimg,
 };
