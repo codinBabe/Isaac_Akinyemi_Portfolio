@@ -16,7 +16,7 @@ function Website() {
       />
       <WorkLink
         to={"/deso-realtor"}
-        src={WorkImages.hymn}
+        src={WorkImages.deso}
         title={"REAL PROJECT - Website design"}
         description={"Deso Realtor Website"}
         tag1={"User Research"}

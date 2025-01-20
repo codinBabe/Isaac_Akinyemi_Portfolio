@@ -162,6 +162,27 @@ import keymockup7 from "../assets/tickevent/key-mockup7.svg";
 import keymockup8 from "../assets/tickevent/key-mockup8.svg";
 import keymockup9 from "../assets/tickevent/key-mockup9.svg";
 import accessibilityimg from "../assets/tickevent/accessibility-img.svg";
+import toyinThumbnail from "../assets/toyin/toyin-thumbnail.svg";
+import iterationHero1 from "../assets/toyin/iteration-hero1.svg";
+import iterationHero2 from "../assets/toyin/iteration-hero2.svg";
+import iterationHero3 from "../assets/toyin/iteration-hero3.svg";
+import iterationHero4 from "../assets/toyin/iteration-hero4.svg";
+import home1 from "../assets/toyin/homepage1.svg";
+import home2 from "../assets/toyin/homepage2.svg";
+import mobileHome1 from "../assets/toyin/mobile-home1.svg";
+import mobileHome2 from "../assets/toyin/mobile-home2.svg";
+import works from "../assets/toyin/work.svg";
+import mobileWork from "../assets/toyin/mobile-work.svg";
+import about1 from "../assets/toyin/About1.svg";
+import about2 from "../assets/toyin/About2.svg";
+import mobileAbout1 from "../assets/toyin/mobile-about1.svg";
+import mobileAbout2 from "../assets/toyin/mobile-about2.svg";
+import resume from "../assets/toyin/resume.svg";
+import mobileResume from "../assets/toyin/mobile-resume.svg";
+import others1 from "../assets/toyin/others1.svg";
+import others2 from "../assets/toyin/others2.svg";
+import others3 from "../assets/toyin/others3.svg";
+import others4 from "../assets/toyin/others4.svg";
 
 export const AboutImages = [
   aboutimg1,
@@ -342,4 +363,28 @@ export const TickVentImages = {
   keymockup8,
   keymockup9,
   accessibilityimg,
+};
+
+export const ToyinImages = {
+  toyinThumbnail,
+  iterationHero1,
+  iterationHero2,
+  iterationHero3,
+  iterationHero4,
+  home1,
+  home2,
+  mobileHome1,
+  mobileHome2,
+  works,
+  mobileWork,
+  about1,
+  about2,
+  mobileAbout1,
+  mobileAbout2,
+  resume,
+  mobileResume,
+  others1,
+  others2,
+  others3,
+  others4,
 };

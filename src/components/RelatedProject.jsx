@@ -156,3 +156,24 @@ export const tickventProjects = [
     tag3: "UI Design",
   },
 ];
+
+export const toyinProjects = [
+  {
+    to: "/deso-realtor",
+    src: WorkImages.deso,
+    title: "REAL PROJECT - Website design",
+    description: "Deso Realtor Website",
+    tag1: "User Research",
+    tag2: "UX Design",
+    tag3: "UI Design",
+  },
+  {
+    to: "/building-band",
+    src: WorkImages.buildingband,
+    title: "REAL PROJECT - Website design",
+    description: "Building Band",
+    tag1: "User Research",
+    tag2: "UX Design",
+    tag3: "UI Design",
+  },
+];

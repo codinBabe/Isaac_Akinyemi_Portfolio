@@ -742,7 +742,7 @@ const TickEvent = () => {
                 <StarIcon />
               </p>
             </div>
-            <ol className="list-decimal list-outside mt-2 pl-6">
+            <ol className="list-decimal list-outside mt-4 pl-6">
               <li>
                 <b>In case of a refund</b>: Customers will contact the
                 organisers of the events.
