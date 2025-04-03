@@ -1,5 +1,19 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { lazy } from "react";
+// import About from "./pages/About";
+// import Resume from "./pages/Resume";
+// import MainLayout from "./layouts/MainLayout";
+// import WorksLayout from "./layouts/WorkLayout";
+// import Casestudy from "./pages/works/Casestudy";
+// import Website from "./pages/works/Website";
+// import Explorations from "./pages/works/Exploration";
+// import ComradeProject from "./pages/works/dedicated/ComradeProject";
+// import HymnsApp from "./pages/works/dedicated/HymnsApp";
+// import EcobankProject from "./pages/works/dedicated/EcobankProject";
+// import TickEvent from "./pages/works/dedicated/TickEvent";
+// import ToyinPortfolio from "./pages/works/dedicated/ToyinPortfolio";
+// import DesoRealtor from "./pages/works/dedicated/DesoRealtor";
+// import BuildingBand from "./pages/works/dedicated/BuildingBand";
 
 const About = lazy(() => import("./pages/About"));
 const Resume = lazy(() => import("./pages/Resume"));
