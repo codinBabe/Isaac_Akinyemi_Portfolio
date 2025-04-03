@@ -5,29 +5,37 @@ import { motion, AnimatePresence } from "framer-motion";
 import Header from "../components/Header";
 import WorkFooter from "../components/WorkFooter";
 
-const WorkLayout = () => {
+const WorkLayoutLarge = () => {
   const location = useLocation();
   return (
     <>
       <Header />
-      <Aside />
-      <WorkNav />
-      <AnimatePresence mode="wait">
-        <motion.main
-          className="flex-grow container mx-auto mt-[135px] p-5"
-          key={location.pathname}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: "easeInOut" }}
-        >
-          <p className="text-sm">Click on any card to read the case study</p>
-          <Outlet />
-        </motion.main>
-      </AnimatePresence>
+      <div className="lg:flex">
+        <aside className="lg:w-1/4">
+          <Aside />
+        </aside>
+        <div className="lg:w-3/4">
+          <WorkNav />
+          <AnimatePresence mode="wait">
+            <motion.main
+              className="container mx-auto mt-[135px] p-5"
+              key={location.pathname}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ ease: "easeInOut" }}
+            >
+              <p className="text-sm">
+                Click on any card to read the case study
+              </p>
+              <Outlet />
+            </motion.main>
+          </AnimatePresence>
+        </div>
+      </div>
       <WorkFooter />
     </>
   );
 };
 
-export default WorkLayout;
+export default WorkLayoutLarge;

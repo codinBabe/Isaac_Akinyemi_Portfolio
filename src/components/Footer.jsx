@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="container mx-auto p-4">
+    <footer className="w-full lg:w-3/5 mx-auto p-4">
       <div className="border-t-2 border-t-tintblue1 mb-14">
         <div className="mt-10">
           <AnimatedSubTitle
@@ -26,7 +26,7 @@ const Footer = () => {
             classname={"font-grotesque text-[22px] leading-[24.2px]"}
           />
           <AnimatedContainer>
-            <div className="flex flex-col gap-2 -mt-3">
+            <div className="flex flex-col lg:flex-row gap-4 -mt-3">
               <AnchorTag
                 classname={"underline text-base font-intertight"}
                 text={"dareytemy@gmail.com"}

@@ -3,7 +3,7 @@ import WorkLink from "../../components/WorkLink";
 
 const Casestudy = () => {
   return (
-    <>
+    <div className="flex flex-wrap">
       <WorkLink
         to={"/comrade-project"}
         src={WorkImages.comrademobilethumbnail}
@@ -44,7 +44,7 @@ const Casestudy = () => {
         tag2={"UX Design"}
         tag3={"UI Design"}
       />
-    </>
+    </div>
   );
 };
 

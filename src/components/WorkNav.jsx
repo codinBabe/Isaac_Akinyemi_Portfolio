@@ -3,7 +3,7 @@ import { TickIcon } from "../utils/icons/TickIcon";
 
 const WorkNav = () => {
   return (
-    <nav className="text-sm text-greyblack300 flex items-center p-5 fixed left-0 top-20 z-20 w-full mx-auto bg-tintblue5">
+    <nav className="text-sm text-greyblack300 flex items-center lg:justify-center p-5 fixed left-0 top-20 z-20 w-full mx-auto">
       <NavLink
         className={({ isActive }) =>
           `border border-greyblack400 p-2 rounded-tl-full rounded-bl-full flex items-center gap-2 whitespace-nowrap ${

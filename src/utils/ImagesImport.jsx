@@ -183,6 +183,23 @@ import others1 from "../assets/toyin/others1.svg";
 import others2 from "../assets/toyin/others2.svg";
 import others3 from "../assets/toyin/others3.svg";
 import others4 from "../assets/toyin/others4.svg";
+import homeDesktop1 from "../assets/deso-realtor/home-desktop-1.svg";
+import homeDesktop2 from "../assets/deso-realtor/home-desktop-2.svg";
+import homeDesktop3 from "../assets/deso-realtor/home-desktop-3.svg";
+import homeDesktop4 from "../assets/deso-realtor/home-desktop-4.svg";
+import homeMobile1 from "../assets/deso-realtor/home-mobile-1.svg";
+import homeMobile2 from "../assets/deso-realtor/home-mobile-2.svg";
+import homeMobile3 from "../assets/deso-realtor/home-mobile-3.svg";
+import propertyDesktop from "../assets/deso-realtor/property-desktop.svg";
+import propertyMobile from "../assets/deso-realtor/property-mobile.svg";
+import rentMobile from "../assets/deso-realtor/rent-mobile.svg";
+import rentDesktop from "../assets/deso-realtor/rent-desktop.svg";
+import searchMobile from "../assets/deso-realtor/search-mobile.svg";
+import searchDesktop from "../assets/deso-realtor/search-desktop.svg";
+import buildingHomeDesktop1 from "../assets/building-band/home-desktop1.svg";
+import buildingHomeDesktop2 from "../assets/building-band/home-desktop-2.svg";
+import buildingHomeMobile1 from "../assets/building-band/home-mobile-1.svg";
+import buildingHomeMobile2 from "../assets/building-band/home-mobile-2.svg";
 
 export const AboutImages = [
   aboutimg1,
@@ -387,4 +404,27 @@ export const ToyinImages = {
   others2,
   others3,
   others4,
+};
+
+export const desoImages = {
+  homeDesktop1,
+  homeDesktop2,
+  homeDesktop3,
+  homeDesktop4,
+  homeMobile1,
+  homeMobile2,
+  homeMobile3,
+  propertyDesktop,
+  propertyMobile,
+  rentMobile,
+  rentDesktop,
+  searchMobile,
+  searchDesktop,
+};
+
+export const BuildingBandImages = {
+  buildingHomeDesktop1,
+  buildingHomeDesktop2,
+  buildingHomeMobile1,
+  buildingHomeMobile2,
 };

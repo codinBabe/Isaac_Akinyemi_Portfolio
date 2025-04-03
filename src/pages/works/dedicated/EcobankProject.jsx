@@ -14,9 +14,9 @@ const EcobankProject = () => {
         <GoBack />
       </SectionLayout>
       <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <div className="mt-6">
+        <div className="mt-6 flex flex-col">
           <p className="text-sm">REAL PROJECTs - Mobile Apps and Web Apps</p>
-          <h2 className="font-grotesque text-[32px] leading-[36.8px]">
+          <h2 className="font-grotesque text-[32px] leading-[36.8px] lg:text-5xl">
             Project Coalition at Ecobank Transnational Incorporated
           </h2>
           <div className="flex flex-wrap items-start gap-2 text-sm mt-2 mb-6">
@@ -30,10 +30,9 @@ const EcobankProject = () => {
               UI Design
             </p>
           </div>
-          <div className="mt-10">
-            <img src={WorkImages.projectcoalition} alt="Hymns App" />
-          </div>
+          <img src={WorkImages.projectcoalition} alt="Hymns App" />
         </div>
+
         <div className="mt-10 font-intertight">
           <p className="text-2xl">
             My role at Ecobank International Incorporated cuts across{" "}
@@ -56,39 +55,42 @@ const EcobankProject = () => {
             <span className="bg-secyellowgreen">solution delivery</span>.
           </p>
         </div>
-        <div className="mt-10 font-intertight text-lg">
-          <h2 className="font-grotesque text-2xl">Technical skills I use</h2>
-          <ol className="list-decimal list-inside mt-2 pl-2">
-            <li>Requirement elicitation.</li>
-            <li>Requirement analysis.</li>
-            <li>Stakeholders workshop.</li>
-            <li>Desk research.</li>
-            <li>Stakeholders management.</li>
-            <li>Documentation.</li>
-            <li>Industry knowledge.</li>
-            <li>Domain knowledge.</li>
-          </ol>
+
+        <div className="flex flex-col lg:flex-row justify-between mt-8 font-intertight text-lg">
+          <div>
+            <h2 className="font-grotesque text-2xl">Technical skills I use</h2>
+            <ol className="list-decimal list-inside mt-2 pl-2">
+              <li>Requirement elicitation.</li>
+              <li>Requirement analysis.</li>
+              <li>Stakeholders workshop.</li>
+              <li>Desk research.</li>
+              <li>Stakeholders management.</li>
+              <li>Documentation.</li>
+              <li>Industry knowledge.</li>
+              <li>Domain knowledge.</li>
+            </ol>
+          </div>
+          <div>
+            <h2 className="font-grotesque text-2xl">
+              Interpersonal skills I use
+            </h2>
+            <ol className="list-decimal list-inside mt-2 pl-2">
+              <li>Facilitation</li>
+              <li>Collaboration.</li>
+              <li>Communication.</li>
+              <li>Team work.</li>
+              <li>Creative problem solving.</li>
+              <li>Keen observation.</li>
+              <li>Proactiveness.</li>
+              <li>Emotional/Social intelligence.</li>
+              <li>Conversational skill.</li>
+              <li>Self-motivation.</li>
+            </ol>
+          </div>
         </div>
-        <div className="mt-8 font-intertight text-lg">
-          <h2 className="font-grotesque text-2xl">
-            Interpersonal skills I use
-          </h2>
-          <ol className="list-decimal list-inside mt-2 pl-2">
-            <li>Facilitation</li>
-            <li>Collaboration.</li>
-            <li>Communication.</li>
-            <li>Team work.</li>
-            <li>Creative problem solving.</li>
-            <li>Keen observation.</li>
-            <li>Proactiveness.</li>
-            <li>Emotional/Social intelligence.</li>
-            <li>Conversational skill.</li>
-            <li>Self-motivation.</li>
-          </ol>
-          <p className="mt-4 mb-8">
-            <b>Caveat:</b> Images were withheld because of NDA purposes.
-          </p>
-        </div>
+        <p className="mt-4 mb-8">
+          <b>Caveat:</b> Images were withheld because of NDA purposes.
+        </p>
       </SectionLayout>
       <SectionLayout className={"border-b-2 border-b-tintblue1"}>
         <div className="mt-6 font-intertight text-lg">
@@ -214,32 +216,34 @@ const EcobankProject = () => {
                 Africa and Europe.
               </p>
             </div>
-            <div className="bg-secyellowgreen p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>
-                  Availability of third-party identity verification services.
-                </li>
-                <li>Licence to operate in African and European countries.</li>
-              </ol>
-            </div>
-            <div className="bg-seccoralpink p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>Easy onboarding.</li>
-                <li>Light app size.</li>
-                <li>Intuitive onboarding and identity verification.</li>
-                <li>Smooth KYC verification.</li>
-              </ol>
-            </div>
-            <div className="bg-secpalepurple p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Viability</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>Availability of various payment methods.</li>
-                <li>Availability of up to 6 delivery modes.</li>
-                <li>Generation of account statement.</li>
-                <li>Scheduling payments.</li>
-              </ol>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div className="bg-secyellowgreen p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>
+                    Availability of third-party identity verification services.
+                  </li>
+                  <li>Licence to operate in African and European countries.</li>
+                </ol>
+              </div>
+              <div className="bg-seccoralpink p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>Easy onboarding.</li>
+                  <li>Light app size.</li>
+                  <li>Intuitive onboarding and identity verification.</li>
+                  <li>Smooth KYC verification.</li>
+                </ol>
+              </div>
+              <div className="bg-secpalepurple p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Viability</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>Availability of various payment methods.</li>
+                  <li>Availability of up to 6 delivery modes.</li>
+                  <li>Generation of account statement.</li>
+                  <li>Scheduling payments.</li>
+                </ol>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">
@@ -397,37 +401,40 @@ const EcobankProject = () => {
                 customers using the <b>open account</b> feature.
               </p>
             </div>
-            <div className="bg-secyellowgreen p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>
-                  Availability of staff members to onboard and train agents.
-                </li>
-                <li>Licence to operate in over 33 African countries.</li>
-              </ol>
-            </div>
-            <div className="bg-seccoralpink p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>Easy onboarding.</li>
-                <li>Light app size.</li>
-                <li>Account and device management.</li>
-                <li>Integration with card readers.</li>
-              </ol>
-            </div>
-            <div className="bg-secpalepurple p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Viability</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>Frequent training and engagement for Agents..</li>
-                <li>
-                  Includes features like account opening, token redemption, and
-                  international cash inflow.
-                </li>
-                <li>Remittance transaction feature.</li>
-                <li>
-                  Agents have commission accounts and get paid for transactions.
-                </li>
-              </ol>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div className="bg-secyellowgreen p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>
+                    Availability of staff members to onboard and train agents.
+                  </li>
+                  <li>Licence to operate in over 33 African countries.</li>
+                </ol>
+              </div>
+              <div className="bg-seccoralpink p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>Easy onboarding.</li>
+                  <li>Light app size.</li>
+                  <li>Account and device management.</li>
+                  <li>Integration with card readers.</li>
+                </ol>
+              </div>
+              <div className="bg-secpalepurple p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Viability</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>Frequent training and engagement for Agents..</li>
+                  <li>
+                    Includes features like account opening, token redemption,
+                    and international cash inflow.
+                  </li>
+                  <li>Remittance transaction feature.</li>
+                  <li>
+                    Agents have commission accounts and get paid for
+                    transactions.
+                  </li>
+                </ol>
+              </div>
             </div>
             <div className="mb-8">
               <h3 className="font-grotesque text-xl mb-1">
@@ -571,40 +578,42 @@ const EcobankProject = () => {
                 customers in Nigeria.
               </p>
             </div>
-            <div className="bg-secyellowgreen p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>
-                  Availability of third-party identity verification services.
-                </li>
-                <li>
-                  Licence to operate in over <b>33</b> African countries.
-                </li>
-              </ol>
-            </div>
-            <div className="bg-seccoralpink p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>Easy onboarding.</li>
-                <li>Light app size.</li>
-                <li>Intuitive onboarding and identity verification.</li>
-                <li>Smooth document verification.</li>
-              </ol>
-            </div>
-            <div className="bg-secpalepurple p-6 text-base">
-              <h3 className="font-grotesque text-xl mb-1">Viability</h3>
-              <ol className="list-decimal list-outside pl-5 mt-2">
-                <li>
-                  Availability of more than <b>5</b> payment channels.
-                </li>
-                <li>
-                  Availability of more than <b>5</b> collection channels.
-                </li>
-                <li>
-                  Business tools like storefront and loans for better business
-                  performance.
-                </li>
-              </ol>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div className="bg-secyellowgreen p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Feasibilty</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>
+                    Availability of third-party identity verification services.
+                  </li>
+                  <li>
+                    Licence to operate in over <b>33</b> African countries.
+                  </li>
+                </ol>
+              </div>
+              <div className="bg-seccoralpink p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Desirability</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>Easy onboarding.</li>
+                  <li>Light app size.</li>
+                  <li>Intuitive onboarding and identity verification.</li>
+                  <li>Smooth document verification.</li>
+                </ol>
+              </div>
+              <div className="bg-secpalepurple p-6 text-base">
+                <h3 className="font-grotesque text-xl mb-1">Viability</h3>
+                <ol className="list-decimal list-outside pl-5 mt-2">
+                  <li>
+                    Availability of more than <b>5</b> payment channels.
+                  </li>
+                  <li>
+                    Availability of more than <b>5</b> collection channels.
+                  </li>
+                  <li>
+                    Business tools like storefront and loans for better business
+                    performance.
+                  </li>
+                </ol>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">

@@ -40,7 +40,8 @@ const ToyinPortfolio = () => {
           <div>
             <h2 className="font-grotesque text-2xl mb-2">Project goal</h2>
             <p>
-              In my quest to give back to the community, I decided to help 4
+              In my quest to give back to the community, I decided to help{" "}
+              <b>4</b>
               developers with the design of their portfolios.
             </p>
           </div>

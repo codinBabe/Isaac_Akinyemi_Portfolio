@@ -8,7 +8,7 @@ const WorkLink = ({ to, src, title, description, tag1, tag2, tag3 }) => {
       </div>
       <div className="block mt-3">
         <p className="text-sm cursor-pointer">{title}</p>
-        <h2 className="font-grotesque text-2xl cursor-pointer">
+        <h2 className="font-grotesque text-2xl cursor-pointer break-words">
           {description}
         </h2>
 

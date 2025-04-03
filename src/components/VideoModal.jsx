@@ -1,7 +1,14 @@
 import React from "react";
 import { CloseIcon } from "../utils/icons/NavIcons";
 
-const VideoModal = ({ isOpen, onClose, videoSrc, title }) => {
+const VideoModal = ({
+  isOpen,
+  onClose,
+  videoSrc,
+  title,
+  loading,
+  setLoading,
+}) => {
   if (!isOpen) return null;
 
   return (
@@ -14,12 +21,22 @@ const VideoModal = ({ isOpen, onClose, videoSrc, title }) => {
           </button>
         </div>
         <div className="w-80 h-52 rounded-xl overflow-hidden">
-          <iframe
-            src={videoSrc}
-            title={title}
-            className="w-full h-full"
-            allow="autoplay; fullscreen"
-          />
+          {loading ? (
+            <div className="w-full h-full flex items-center justify-center">
+              <div
+                className="w-10 h-10 border-2 border-tintblue1 rounded-full
+              border-tintblue1-1 animate-spin"
+              ></div>
+            </div>
+          ) : (
+            <iframe
+              src={videoSrc}
+              title={title}
+              className="w-full h-full"
+              allow="autoplay; fullscreen"
+              onLoad={() => setLoading(false)}
+            />
+          )}
         </div>
       </div>
     </div>

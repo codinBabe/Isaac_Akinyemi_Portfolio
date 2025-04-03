@@ -24,11 +24,16 @@ function Exploration() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState("");
   const [currentTitle, setCurrentTitle] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleOpenModal = (videoSrc, videoTitle) => {
+    setLoading(true);
     setCurrentVideo(videoSrc);
     setCurrentTitle(videoTitle);
     setModalOpen(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   };
 
   const handleCloseModal = () => {
@@ -49,11 +54,14 @@ function Exploration() {
           </div>
         ))}
       </div>
+      {/* while modal is loading */}
       <VideoModal
+        loading={loading}
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         videoSrc={currentVideo}
         title={currentTitle}
+        setLoading={setLoading}
       />
     </>
   );

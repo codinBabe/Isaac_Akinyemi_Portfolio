@@ -17,7 +17,7 @@ export const RelatedProjects = ({ projects }) => {
           See all works
         </Link>
       </div>
-      <div className="-mb-4">
+      <div className="-mb-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <WorkLink
             key={index}
@@ -172,6 +172,48 @@ export const toyinProjects = [
     src: WorkImages.buildingband,
     title: "REAL PROJECT - Website design",
     description: "Building Band",
+    tag1: "User Research",
+    tag2: "UX Design",
+    tag3: "UI Design",
+  },
+];
+
+export const desoProjects = [
+  {
+    to: "/building-band",
+    src: WorkImages.buildingband,
+    title: "REAL PROJECT - Website design",
+    description: "Building Band",
+    tag1: "User Research",
+    tag2: "UX Design",
+    tag3: "UI Design",
+  },
+  {
+    to: "/toyin's-portfolio",
+    src: WorkImages.toyinoredein,
+    title: "REAL PROJECT - Website design",
+    description: "Toyin OREDEIN Portfolio Design",
+    tag1: "User Research",
+    tag2: "UX Design",
+    tag3: "UI Design",
+  },
+];
+
+export const buildingProjects = [
+  {
+    to: "/deso-realtor",
+    src: WorkImages.deso,
+    title: "REAL PROJECT - Website design",
+    description: "Deso Realtor Website",
+    tag1: "User Research",
+    tag2: "UX Design",
+    tag3: "UI Design",
+  },
+  {
+    to: "/toyin's-portfolio",
+    src: WorkImages.toyinoredein,
+    title: "REAL PROJECT - Website design",
+    description: "Toyin OREDEIN Portfolio Design",
     tag1: "User Research",
     tag2: "UX Design",
     tag3: "UI Design",
