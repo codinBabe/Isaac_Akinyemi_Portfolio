@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="relative container mx-auto">
-      <nav className="bg-greywhite100 border rounded-t-[20px] w-full pb-2 px-4 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50">
+      <nav className="lg:hidden bg-greywhite100 border rounded-t-[20px] w-full pb-2 px-4 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50">
         {isModalOpen && (
           <motion.div
             initial={{ y: 100 }}
@@ -29,13 +29,26 @@ const Header = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="flex flex-col justify-center gap-10 p-4 mt-2 border-b-[0.5px] border-greyblack500"
           >
-            <NavLink to="/works" location={location}>
+            <NavLink
+              to="/works"
+              location={location}
+              onClick={() => setIsModalOpen(false)}
+            >
               Works
             </NavLink>
-            <NavLink to="/about" location={location}>
+            <NavLink
+              to="/about"
+              location={location}
+              onClick={() => setIsModalOpen(false)}
+            >
               About
             </NavLink>
-            <NavLink to="/resume" location={location} classname={"mb-2"}>
+            <NavLink
+              to="/resume"
+              location={location}
+              classname={"mb-2"}
+              onClick={() => setIsModalOpen(false)}
+            >
               Resume
             </NavLink>
           </motion.div>

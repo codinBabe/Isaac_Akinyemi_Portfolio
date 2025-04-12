@@ -12,7 +12,7 @@ const VideoModal = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center">
       <div className="bg-greywhite100 rounded-2xl p-5 max-w-lg w-full">
         <div className="flex justify-between items-center mb-4 border-b-[0.5px] border-greyblack600">
           <h2 className="text-lg font-grotesque mb-2">{title}</h2>

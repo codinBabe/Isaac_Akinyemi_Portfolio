@@ -44,7 +44,7 @@ function Exploration() {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-8 mt-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-2">
         {explorationProjects.map((project, index) => (
           <div
             key={index}
@@ -54,7 +54,6 @@ function Exploration() {
           </div>
         ))}
       </div>
-      {/* while modal is loading */}
       <VideoModal
         loading={loading}
         isOpen={isModalOpen}

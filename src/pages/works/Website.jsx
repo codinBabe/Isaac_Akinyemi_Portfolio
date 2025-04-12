@@ -4,7 +4,7 @@ import { WorkImages } from "../../utils/ImagesImport";
 
 function Website() {
   return (
-    <>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
       <WorkLink
         to={"/toyin's-portfolio"}
         src={WorkImages.toyinoredein}
@@ -32,7 +32,7 @@ function Website() {
         tag2={"UX Design"}
         tag3={"UI Design"}
       />
-    </>
+    </div>
   );
 }
 

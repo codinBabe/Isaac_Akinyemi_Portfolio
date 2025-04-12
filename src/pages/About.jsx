@@ -4,7 +4,6 @@ import AnimatedTitle, { AnimatedSubTitle } from "../utils/AnimatedTitle";
 import AnchorTag from "../components/AnchorTag";
 import { AboutImages } from "../utils/ImagesImport";
 import GoBack from "../utils/GoBack";
-import SectionLayout from "../layouts/SectionLayout";
 
 const About = () => {
   const [openSections, setOpenSections] = useState({
@@ -30,11 +29,17 @@ const About = () => {
 
   return (
     <>
-      <SectionLayout className="border-b border-b-tintblue1">
+      <section
+        className="border-b border-b-tintblue1 lg:hidden 
+                    fixed top-0 left-0 w-full z-20 
+                     p-3 bg-tintblue5"
+      >
         <GoBack />
-      </SectionLayout>
-      <SectionLayout className="border-b border-b-tintblue1">
-        <h1 className="text-2xl font-grotesque my-6">Who is Isaac AKINYEMI?</h1>
+      </section>
+      <section className="pt-14 lg:pt-10 border-b border-b-tintblue1">
+        <h1 className="text-2xl lg:text-3xl font-grotesque">
+          Who is Isaac AKINYEMI?
+        </h1>
         <div>
           <AnimatedTitle
             isopen={openSections.journey}
@@ -151,8 +156,8 @@ const About = () => {
             </>
           )}
         </div>
-      </SectionLayout>
-      <SectionLayout className="border-b border-b-tintblue1">
+      </section>
+      <section className="border-b border-b-tintblue1">
         <div className="mt-6">
           <AnimatedTitle
             text={"Isaac’s personality"}
@@ -262,8 +267,8 @@ const About = () => {
             </>
           )}
         </div>
-      </SectionLayout>
-      <SectionLayout className="border-b border-b-tintblue1">
+      </section>
+      <section className="border-b border-b-tintblue1">
         <div>
           <AnimatedTitle
             text={"Who is Isaac"}
@@ -349,8 +354,8 @@ const About = () => {
             </>
           )}
         </div>
-      </SectionLayout>
-      <SectionLayout className="border-b border-b-tintblue1">
+      </section>
+      <section className="border-b border-b-tintblue1">
         <>
           <div>
             <AnimatedTitle
@@ -444,8 +449,8 @@ const About = () => {
             )}
           </div>
         </>
-      </SectionLayout>
-      <SectionLayout className="border-b border-b-tintblue1">
+      </section>
+      <section className="border-b border-b-tintblue1">
         <div>
           <AnimatedTitle
             text={"Feedback and reviews"}
@@ -635,8 +640,8 @@ const About = () => {
             </>
           )}
         </div>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedTitle
             text={"Miscellaneous"}
@@ -685,7 +690,7 @@ const About = () => {
             </>
           )}
         </div>
-      </SectionLayout>
+      </section>
     </>
   );
 };

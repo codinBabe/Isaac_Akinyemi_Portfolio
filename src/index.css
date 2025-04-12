@@ -8,6 +8,7 @@
     url("/fonts/UxumGrotesque-Medium.otf") format("opentype");
   font-weight: 500;
 }
+
 body {
   @apply bg-tintblue5 md:bg-greywhite100 font-inter font-normal text-base text-greyblack100 leading-tight antialiased scroll-smooth;
 }

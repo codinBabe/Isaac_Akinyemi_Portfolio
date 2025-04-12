@@ -2,9 +2,17 @@ import { motion } from "framer-motion";
 import AnchorTag from "./AnchorTag";
 import { AnimatedSubTitle } from "../utils/AnimatedTitle";
 import AnimatedContainer from "../utils/AnimatedContainer";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+
+  const hideFooter =
+    location.pathname === "/about" || location.pathname === "/resume";
+
+  const midWidth =
+    location.pathname !== "/about" && location.pathname !== "/resume";
+
   const footerVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: {
@@ -18,9 +26,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full lg:w-3/5 mx-auto p-4">
-      <div className="border-t-2 border-t-tintblue1 mb-14">
-        <div className="mt-10">
+    <footer
+      className={`w-full mx-auto p-5 ${
+        midWidth ? "lg:w-3/5" : "lg:px-12"
+      } -mt-12`}
+    >
+      <div className="border-t-2 border-t-tintblue1 mb-12 lg:mb-2">
+        <div className="mt-8">
           <AnimatedSubTitle
             text={"Contact Isaac"}
             classname={"font-grotesque text-[22px] leading-[24.2px]"}
@@ -68,7 +80,9 @@ const Footer = () => {
           </AnimatedContainer>
         </div>
         <motion.div
-          className="flex items-center justify-center gap-4"
+          className={`flex items-center gap-4 ${
+            hideFooter ? "hidden" : "block"
+          }`}
           variants={footerVariants}
           initial="hidden"
           animate="visible"

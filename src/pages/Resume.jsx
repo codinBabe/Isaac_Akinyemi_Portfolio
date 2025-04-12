@@ -1,5 +1,4 @@
 import AnchorTag from "../components/AnchorTag";
-import SectionLayout from "../layouts/SectionLayout";
 import AnimatedContainer from "../utils/AnimatedContainer";
 import { AnimatedSubTitle } from "../utils/AnimatedTitle";
 import GoBack from "../utils/GoBack";
@@ -7,10 +6,14 @@ import GoBack from "../utils/GoBack";
 const Resume = () => {
   return (
     <>
-      <SectionLayout className={"border-b border-b-tintblue1"}>
+      <section
+        className="border-b border-b-tintblue1 lg:hidden 
+                    fixed top-0 left-0 w-full z-20 
+                     p-3 bg-tintblue5"
+      >
         <GoBack />
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section className="pt-8 lg:pt-6">
         <button
           className="font-medium text-lg underline my-5"
           onClick={() =>
@@ -39,8 +42,8 @@ const Resume = () => {
             </p>
           </AnimatedContainer>
         </div>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedSubTitle
             text={"Work Experience"}
@@ -106,8 +109,8 @@ const Resume = () => {
             </p>
           </AnimatedContainer>
         </div>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedSubTitle
             text={"Product Designer"}
@@ -153,8 +156,8 @@ const Resume = () => {
             </li>
           </ul>
         </AnimatedContainer>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedSubTitle
             text={"UX Designer"}
@@ -202,8 +205,8 @@ const Resume = () => {
             </li>
           </ul>
         </AnimatedContainer>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedSubTitle
             text={"Other projects"}
@@ -242,8 +245,8 @@ const Resume = () => {
             </p>
           </AnimatedContainer>
         </div>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedSubTitle
             text={"Skills"}
@@ -274,8 +277,8 @@ const Resume = () => {
             Usability Study, Prototyping, and Heuristics Evaluation.
           </p>
         </AnimatedContainer>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedSubTitle
             text={"Education"}
@@ -292,8 +295,8 @@ const Resume = () => {
             <p className="text-sm mb-2">Dec 2015 - Sep 2021</p>
           </AnimatedContainer>
         </div>
-      </SectionLayout>
-      <SectionLayout>
+      </section>
+      <section>
         <div>
           <AnimatedSubTitle
             text={"Certification"}
@@ -310,7 +313,7 @@ const Resume = () => {
             <p className="text-sm mb-2">Oct 2021 - Aug 2022</p>
           </AnimatedContainer>
         </div>
-      </SectionLayout>
+      </section>
     </>
   );
 };

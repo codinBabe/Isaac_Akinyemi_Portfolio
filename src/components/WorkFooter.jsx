@@ -14,7 +14,7 @@ const WorkFooter = () => {
     },
   };
   return (
-    <footer className="mb-16 -mt-4">
+    <footer className="mb-16 -mt-10">
       <motion.div
         className="flex items-center justify-center gap-4 p-5"
         variants={footerVariants}
