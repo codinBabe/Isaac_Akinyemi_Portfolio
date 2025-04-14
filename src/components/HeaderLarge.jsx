@@ -7,16 +7,19 @@ import Contact from "./Contact";
 const HeaderLarge = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const location = useLocation();
+  const isWorksPage = location.pathname.startsWith("/works");
 
   return (
     <header className="relative container mx-auto">
-      <nav className="hidden lg:block bg-tintblue5 w-full fixed top-0 left-2/3 transform -translate-x-1/3 z-10">
+      <nav className="hidden lg:block bg-tintblue5 w-full fixed top-0 z-10 px-5">
         <div className="px-5 mt-7 border-b-[0.5px] border-greyblack600">
           <motion.div
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="flex items-center space-x-96"
+            className={`flex items-center space-x-96 ${
+              isWorksPage ? "mb-14" : "mb-0"
+            }`}
           >
             <div className="flex items-center space-x-20">
               <Link

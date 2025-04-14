@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Aside from "../components/Aside";
 import WorkFooter from "../components/WorkFooter";

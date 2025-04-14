@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+import { Image } from "../utils/ImagesImport";
 
 const ImageSlider = ({ images, text }) => {
   return (
@@ -21,7 +22,7 @@ const ImageSlider = ({ images, text }) => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img
+            <Image
               src={image}
               alt={`Slide ${index + 1}`}
               className="w-full h-auto object-cover"

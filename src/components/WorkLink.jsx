@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { Image } from "../utils/ImagesImport";
 
 const WorkLink = ({ to, src, title, description, tag1, tag2, tag3 }) => {
   return (
     <Link to={to}>
       <div className="mt-2">
-        <img src={src} alt="Thumbnail" className="cursor-pointer" />
+        <Image src={src} alt="Thumbnail" className="cursor-pointer" />
       </div>
       <div className="block mt-3">
         <p className="text-sm cursor-pointer">{title}</p>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { WorkImages } from "../../utils/ImagesImport";
+import { Image, WorkImages } from "../../utils/ImagesImport";
 import VideoModal from "../../components/VideoModal";
 
 function Exploration() {
@@ -50,7 +50,7 @@ function Exploration() {
             key={index}
             onClick={() => handleOpenModal(project.link, project.title)}
           >
-            <img src={project.image} alt={project.title} />
+            <Image src={project.image} alt={project.title} />
           </div>
         ))}
       </div>

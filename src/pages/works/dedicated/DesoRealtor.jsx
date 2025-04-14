@@ -5,7 +5,7 @@ import {
 import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
 import GoBack from "../../../utils/GoBack";
-import { desoImages } from "../../../utils/ImagesImport";
+import { desoImages, Image } from "../../../utils/ImagesImport";
 
 const DesoRealtor = () => {
   return (
@@ -15,7 +15,7 @@ const DesoRealtor = () => {
       </SectionLayout>
       <SectionLayout>
         <p className="text-sm mt-6">REAL PROJECT - Website design</p>
-        <h2 className="font-grotesque text-3xl">
+        <h2 className="font-grotesque text-3xl lg:text-5xl">
           <span className="text-secrealtor">Deso Realtor</span> Website
         </h2>
         <div className="flex flex-wrap items-start gap-2 text-sm mt-2 mb-6">
@@ -33,7 +33,7 @@ const DesoRealtor = () => {
           Add a video of the live website here
         </div>
 
-        <div className="mt-10 flex flex-col gap-8">
+        <div className="mt-10 flex flex-col gap-8 lg:gap-12">
           <div>
             <h2 className="font-grotesque text-2xl mb-2">Project goal</h2>
             Redesign of the Deso Realtor’s website, giving it stronger visuals
@@ -42,7 +42,7 @@ const DesoRealtor = () => {
 
           <div>
             <h2 className="font-grotesque text-2xl mb-2">My design process</h2>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center lg:justify-between gap-4">
               <div className="flex items-start gap-2">
                 <b>#1</b>
                 <p>Understand</p>
@@ -102,15 +102,15 @@ const DesoRealtor = () => {
             <h2 className="font-grotesque text-2xl mb-2">Homepage</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
               <div className="flex flex-col gap-5">
-                <img src={desoImages.homeDesktop1} alt="hero" />
-                <img src={desoImages.homeDesktop2} alt="hero" />
-                <img src={desoImages.homeDesktop3} alt="hero" />
-                <img src={desoImages.homeDesktop4} alt="hero" />
+                <Image src={desoImages.homeDesktop1} alt="hero" />
+                <Image src={desoImages.homeDesktop2} alt="hero" />
+                <Image src={desoImages.homeDesktop3} alt="hero" />
+                <Image src={desoImages.homeDesktop4} alt="hero" />
               </div>
               <div className="flex items-center flex-wrap gap-5 mt-6">
-                <img src={desoImages.homeMobile3} alt="hero" />
-                <img src={desoImages.homeMobile2} alt="hero" />
-                <img src={desoImages.homeMobile1} alt="hero" />
+                <Image src={desoImages.homeMobile3} alt="hero" />
+                <Image src={desoImages.homeMobile2} alt="hero" />
+                <Image src={desoImages.homeMobile1} alt="hero" />
               </div>
             </div>
           </div>
@@ -118,8 +118,8 @@ const DesoRealtor = () => {
             <h2 className="font-grotesque text-2xl mb-2">Rent</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
               <div className="flex flex-col gap-5">
-                <img src={desoImages.rentDesktop} alt="hero" />
-                <img src={desoImages.rentMobile} alt="hero" />
+                <Image src={desoImages.rentDesktop} alt="hero" />
+                <Image src={desoImages.rentMobile} alt="hero" />
               </div>
             </div>
           </div>
@@ -128,8 +128,8 @@ const DesoRealtor = () => {
             <h2 className="font-grotesque text-2xl mb-2">Search Result</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
               <div className="flex flex-col gap-5">
-                <img src={desoImages.searchDesktop} alt="hero" />
-                <img src={desoImages.searchMobile} alt="hero" />
+                <Image src={desoImages.searchDesktop} alt="hero" />
+                <Image src={desoImages.searchMobile} alt="hero" />
               </div>
             </div>
           </div>
@@ -138,15 +138,15 @@ const DesoRealtor = () => {
             <h2 className="font-grotesque text-2xl mb-2">A property page</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
               <div className="flex flex-col gap-5">
-                <img src={desoImages.propertyDesktop} alt="hero" />
-                <img src={desoImages.propertyMobile} alt="hero" />
+                <Image src={desoImages.propertyDesktop} alt="hero" />
+                <Image src={desoImages.propertyMobile} alt="hero" />
               </div>
             </div>
           </div>
         </div>
+        <TheEnd />
+        <RelatedProjects projects={desoProjects} />
       </SectionLayout>
-      <TheEnd />
-      <RelatedProjects projects={desoProjects} />
     </>
   );
 };

@@ -17,7 +17,7 @@ export const RelatedProjects = ({ projects }) => {
           See all works
         </Link>
       </div>
-      <div className="-mb-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="mb-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <WorkLink
             key={index}

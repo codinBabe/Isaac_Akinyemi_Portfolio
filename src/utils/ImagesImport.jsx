@@ -428,3 +428,7 @@ export const BuildingBandImages = {
   buildingHomeMobile1,
   buildingHomeMobile2,
 };
+
+export const Image = ({ src, alt, ...props }) => (
+  <img loading="lazy" decoding="async" alt={alt} src={src} {...props} />
+);
