@@ -56,7 +56,7 @@ const EcobankProject = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between mt-8 font-intertight text-lg">
+        <div className="flex flex-col lg:flex-row lg:space-x-60 mt-8 font-intertight text-lg">
           <div>
             <h2 className="font-grotesque text-2xl">Technical skills I use</h2>
             <ol className="list-decimal list-inside mt-2 pl-2">
@@ -95,7 +95,7 @@ const EcobankProject = () => {
       <SectionLayout className={"border-b-2 border-b-tintblue1"}>
         <div className="mt-6 font-intertight text-lg">
           <div>
-            <h2 className="font-grotesque text-2xl mb-3">
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-3">
               Project #1 - Designing a cross-border payment application across
               50 African and European Countries
             </h2>
@@ -129,17 +129,19 @@ const EcobankProject = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Team members</h3>
-              <p>
-                <b> 2 </b> project managers, <b>2</b> business analysts,{" "}
-                <b>1</b> UX designer, <b>2</b> mobile developers, <b>2</b>{" "}
-                backend engineers, <b>2</b> quality assurance engineers.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">What I did</h3>
-              <p>Business analysis and UX design</p>
+            <div className="lg:flex items-start lg:space-x-20">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Team members</h3>
+                <p className="lg:w-80">
+                  <b> 2 </b> project managers, <b>2</b> business analysts,{" "}
+                  <b>1</b> UX designer, <b>2</b> mobile developers, <b>2</b>{" "}
+                  backend engineers, <b>2</b> quality assurance engineers.
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">What I did</h3>
+                <p>Business analysis and UX design</p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">My Process</h3>
@@ -193,18 +195,20 @@ const EcobankProject = () => {
                 outside Africa.
               </p>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Cost and ROI</h3>
-              <p>
-                Saved the cost incurred from connecting to the third-party
-                application.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">
-                Risk and mitigation
-              </h3>
-              <p>N/A</p>
+            <div className="lg:flex items-start lg:space-x-20">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Cost and ROI</h3>
+                <p className="lg:w-80">
+                  Saved the cost incurred from connecting to the third-party
+                  application.
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">
+                  Risk and mitigation
+                </h3>
+                <p>N/A</p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">
@@ -292,7 +296,7 @@ const EcobankProject = () => {
       <SectionLayout className={"border-b-2 border-b-tintblue1"}>
         <div className="mt-6 font-intertight text-lg">
           <div>
-            <h2 className="font-grotesque text-2xl mb-3">
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-3">
               Project #2 - Bringing financial services to customers in rural
               communities across Africa
             </h2>
@@ -324,17 +328,19 @@ const EcobankProject = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Team members</h3>
-              <p>
-                <b> 1 </b> project managers, <b>1</b> business analysts,{" "}
-                <b>2</b> UX designer, <b>2</b> mobile developers, <b>4</b>{" "}
-                backend engineers, <b>2</b> quality assurance engineers.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">What I did</h3>
-              <p>UX design - Entire app redesign.</p>
+            <div className="lg:flex items-start lg:space-x-20">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Team members</h3>
+                <p className="lg:w-80">
+                  <b> 1 </b> project managers, <b>1</b> business analysts,{" "}
+                  <b>2</b> UX designer, <b>2</b> mobile developers, <b>4</b>{" "}
+                  backend engineers, <b>2</b> quality assurance engineers.
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">What I did</h3>
+                <p>UX design - Entire app redesign.</p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-2xl mb-1">My Process</h3>
@@ -373,21 +379,23 @@ const EcobankProject = () => {
                 customers is necessary to achieve this goal.
               </p>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Strategy</h3>
-              <p>
-                Launch and test in Nigeria and Ghana before scaling to other
-                affiliates (countries).
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">
-                Risk and mitigation
-              </h3>
-              <p>
-                Registration of Agents and ensuring their credibility and
-                reliability.
-              </p>
+            <div className="lg:flex items-start lg:space-x-20">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Strategy</h3>
+                <p className="lg:w-80">
+                  Launch and test in Nigeria and Ghana before scaling to other
+                  affiliates (countries).
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">
+                  Risk and mitigation
+                </h3>
+                <p>
+                  Registration of Agents and ensuring their credibility and
+                  reliability.
+                </p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">
@@ -455,7 +463,7 @@ const EcobankProject = () => {
       <SectionLayout className={"border-b-2 border-b-tintblue1"}>
         <div className="mt-6 font-intertight text-lg">
           <div>
-            <h2 className="font-grotesque text-2xl mb-3">
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-3">
               Project #3 - Providing a one-stop domestic payment (inflow and
               outflow) for SMEs across Africa
             </h2>
@@ -487,17 +495,19 @@ const EcobankProject = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Team members</h3>
-              <p>
-                <b> 2 </b> project managers, <b>2</b> business analysts,{" "}
-                <b>2</b> UX designer, <b>3</b> mobile developers, <b>4</b>{" "}
-                backend engineers, <b>2</b> quality assurance engineers.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">What I did</h3>
-              <p>Business analysis and UX design</p>
+            <div className="lg:flex items-start lg:space-x-20">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Team members</h3>
+                <p className="lg:w-80">
+                  <b> 2 </b> project managers, <b>2</b> business analysts,{" "}
+                  <b>2</b> UX designer, <b>3</b> mobile developers, <b>4</b>{" "}
+                  backend engineers, <b>2</b> quality assurance engineers.
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">What I did</h3>
+                <p>Business analysis and UX design</p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">My Process</h3>
@@ -541,22 +551,24 @@ const EcobankProject = () => {
                 of businesses and <b>84%</b> of employment.
               </p>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Strategy</h3>
-              <p>
-                Launch and test in Nigeria before scaling to other affiliates
-                (countries).
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">
-                Risk and mitigation
-              </h3>
-              <p>
-                Validating the identity and business documents of customers to
-                reduce anti-money laundering and sanctions from regulatory
-                bodies.
-              </p>
+            <div className="lg:flex items-start lg:space-x-20">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Strategy</h3>
+                <p className="lg:w-80">
+                  Launch and test in Nigeria before scaling to other affiliates
+                  (countries).
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">
+                  Risk and mitigation
+                </h3>
+                <p>
+                  Validating the identity and business documents of customers to
+                  reduce anti-money laundering and sanctions from regulatory
+                  bodies.
+                </p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">
@@ -663,7 +675,7 @@ const EcobankProject = () => {
       <SectionLayout>
         <div className="mt-6 font-intertight text-lg">
           <div>
-            <h2 className="font-grotesque text-2xl mb-3">
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-3">
               Project #4 - Improving eProcess project execution and Reducing the
               internal team expense cost by over $1000
             </h2>
@@ -694,15 +706,17 @@ const EcobankProject = () => {
                 </ol>
               </div>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Team members</h3>
-              <p>
-                <b>2</b> designers
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">What I did</h3>
-              <p>Research and documentation</p>
+            <div className="lg:flex items-start justify-between">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Team members</h3>
+                <p>
+                  <b>2</b> designers
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">What I did</h3>
+                <p>Research and documentation</p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">My Process</h3>
@@ -749,17 +763,19 @@ const EcobankProject = () => {
                 Spending over <b>$3,830</b> on two Adobe Creative Cloud licence.
               </p>
             </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">Cost and ROI</h3>
-              <p>
-                Saved over <b>$2,000</b> annually.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-grotesque text-xl mb-1">
-                Risk and mitigation
-              </h3>
-              <p>N/A</p>
+            <div className="lg:flex items-start justify-between">
+              <div>
+                <h3 className="font-grotesque text-xl mb-1">Cost and ROI</h3>
+                <p>
+                  Saved over <b>$2,000</b> annually.
+                </p>
+              </div>
+              <div className="mt-6 lg:mt-0">
+                <h3 className="font-grotesque text-xl mb-1">
+                  Risk and mitigation
+                </h3>
+                <p>N/A</p>
+              </div>
             </div>
             <div>
               <h3 className="font-grotesque text-xl mb-1">

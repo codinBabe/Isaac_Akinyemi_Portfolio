@@ -30,15 +30,14 @@ const BuildingBand = () => {
             UI Design
           </p>
         </div>
-        <div className="w-full h-56 bg-[#D4D4D4] border rounded-lg mb-6 flex items-center justify-center">
-          Add a video of the live website here
-          {/* it a google drive video link
+        <div className="w-full h-[480px] bg-[#D4D4D4] border rounded-lg mb-6 p-2">
           <iframe
-            src="https://drive.google.com/file/d/1Xx3JX7zqf2Z4m5g6C9F8t0d3G1k5xQ4Y/preview"
-            title="Building Band Video"
-            className="w-full h-full"
-            allow="autoplay; fullscreen"
-          /> */}
+            src="https://drive.google.com/file/d/1yCX_gKRiqbgd5krdPUb-KOG2HVqTC7ZA/preview"
+            width="100%"
+            height="100%"
+            allow="autoplay"
+            className="rounded-lg"
+          ></iframe>
         </div>
 
         <div className="mt-10 flex flex-col gap-8 lg:gap-12">

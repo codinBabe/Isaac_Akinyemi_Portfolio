@@ -2,7 +2,7 @@ import { useState } from "react";
 import AnimatedContainer from "../utils/AnimatedContainer";
 import AnimatedTitle, { AnimatedSubTitle } from "../utils/AnimatedTitle";
 import AnchorTag from "../components/AnchorTag";
-import { AboutImages } from "../utils/ImagesImport";
+import { AboutImages, Image } from "../utils/ImagesImport";
 import GoBack from "../utils/GoBack";
 
 const About = () => {
@@ -65,7 +65,7 @@ const About = () => {
                 </p>
               </AnimatedContainer>
               <AnimatedContainer>
-                <img
+                <Image
                   src={AboutImages.slice(0, 1)}
                   alt="Jean da La Fonaine Quote Img"
                 />
@@ -116,11 +116,13 @@ const About = () => {
                   text={"EARLY DESIGNS"}
                   classname={"font-intertight font-medium text-lg"}
                 />
-                {imageData.map((data, index) => (
-                  <AnimatedContainer key={index}>
-                    <img key={index} src={data.src} alt={data.alt} />
-                  </AnimatedContainer>
-                ))}
+                <div className="flex flex-col lg:flex-row items-center flex-wrap gap-2 -mt-4">
+                  {imageData.map((data, index) => (
+                    <AnimatedContainer key={index}>
+                      <Image key={index} src={data.src} alt={data.alt} />
+                    </AnimatedContainer>
+                  ))}
+                </div>
               </div>
 
               <AnimatedContainer>
@@ -204,10 +206,13 @@ const About = () => {
                 </AnimatedContainer>
               </div>
               <AnimatedContainer>
-                <img src={AboutImages.slice(9, 10)} alt="Isaac Akinyemi pic1" />
+                <Image
+                  src={AboutImages.slice(9, 10)}
+                  alt="Isaac Akinyemi pic1"
+                />
               </AnimatedContainer>
               <AnimatedContainer>
-                <img
+                <Image
                   src={AboutImages.slice(10, 11)}
                   alt="Isaac Akinyemi pic2"
                 />
@@ -339,13 +344,13 @@ const About = () => {
                   </p>
                 </AnimatedContainer>
                 <AnimatedContainer>
-                  <img
+                  <Image
                     src={AboutImages.slice(11, 12)}
                     alt="Isaac Akinyemi pic3"
                   />
                 </AnimatedContainer>
                 <AnimatedContainer>
-                  <img
+                  <Image
                     src={AboutImages.slice(12, 13)}
                     alt="Isaac Akinyemi pic4"
                   />

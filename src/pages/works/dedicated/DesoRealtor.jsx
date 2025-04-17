@@ -29,8 +29,14 @@ const DesoRealtor = () => {
             UI Design
           </p>
         </div>
-        <div className="w-full h-56 bg-[#D4D4D4] border rounded-lg mb-6 flex items-center justify-center">
-          Add a video of the live website here
+        <div className="w-full h-[480px] bg-[#D4D4D4] border rounded-lg mb-6 p-2">
+          <iframe
+            src="https://drive.google.com/file/d/1j7GtpSVtGQ1YoIOGebG1xSk1RHRVIyLa/preview"
+            width="100%"
+            height="100%"
+            allow="autoplay"
+            className="rounded-lg"
+          ></iframe>
         </div>
 
         <div className="mt-10 flex flex-col gap-8 lg:gap-12">
@@ -101,25 +107,85 @@ const DesoRealtor = () => {
           <div>
             <h2 className="font-grotesque text-2xl mb-2">Homepage</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-              <div className="flex flex-col gap-5">
-                <Image src={desoImages.homeDesktop1} alt="hero" />
-                <Image src={desoImages.homeDesktop2} alt="hero" />
-                <Image src={desoImages.homeDesktop3} alt="hero" />
-                <Image src={desoImages.homeDesktop4} alt="hero" />
+              <div className="lg:hidden">
+                <div className="flex flex-col gap-5">
+                  <Image src={desoImages.homeDesktop1} alt="hero" />
+                  <Image src={desoImages.homeDesktop2} alt="hero" />
+                  <Image src={desoImages.homeDesktop3} alt="hero" />
+                  <Image src={desoImages.homeDesktop4} alt="hero" />
+                </div>
+                <div className="flex items-center flex-wrap gap-5 mt-6">
+                  <Image src={desoImages.homeMobile3} alt="hero" />
+                  <Image src={desoImages.homeMobile2} alt="hero" />
+                  <Image src={desoImages.homeMobile1} alt="hero" />
+                </div>
               </div>
-              <div className="flex items-center flex-wrap gap-5 mt-6">
-                <Image src={desoImages.homeMobile3} alt="hero" />
-                <Image src={desoImages.homeMobile2} alt="hero" />
-                <Image src={desoImages.homeMobile1} alt="hero" />
+              <div className="hidden lg:flex flex-col">
+                <div className="flex items-start gap-x-5">
+                  <Image
+                    src={desoImages.homeDesktop1}
+                    alt="hero"
+                    className="w-4/5"
+                  />
+                  <Image
+                    src={desoImages.homeMobile3}
+                    alt="hero"
+                    className="w-1/5"
+                  />
+                </div>
+                <div className="flex items-start gap-x-5">
+                  <div className="w-4/5 flex flex-col gap-y-4 -mt-96">
+                    <Image
+                      src={desoImages.homeDesktop2}
+                      alt="hero"
+                      className="w-full"
+                    />
+                    <Image
+                      src={desoImages.homeDesktop3}
+                      alt="hero"
+                      className="w-full"
+                    />
+                  </div>
+                  <Image
+                    src={desoImages.homeMobile2}
+                    alt="hero"
+                    className="w-1/5"
+                  />
+                </div>
+
+                <div className="flex items-start gap-x-5">
+                  <Image
+                    src={desoImages.homeDesktop4}
+                    alt="hero"
+                    className="w-4/5"
+                  />
+                  <Image
+                    src={desoImages.homeMobile1}
+                    alt="hero"
+                    className="w-1/5 -mt-44"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div>
             <h2 className="font-grotesque text-2xl mb-2">Rent</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 lg:hidden">
                 <Image src={desoImages.rentDesktop} alt="hero" />
                 <Image src={desoImages.rentMobile} alt="hero" />
+              </div>
+              <div className="hidden lg:flex items-start gap-5">
+                <Image
+                  src={desoImages.rentDesktop}
+                  alt="hero"
+                  className="w-4/5"
+                />
+                <Image
+                  src={desoImages.rentMobile}
+                  alt="hero"
+                  className="w-1/5"
+                />
               </div>
             </div>
           </div>
@@ -127,9 +193,22 @@ const DesoRealtor = () => {
           <div>
             <h2 className="font-grotesque text-2xl mb-2">Search Result</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 lg:hidden">
                 <Image src={desoImages.searchDesktop} alt="hero" />
                 <Image src={desoImages.searchMobile} alt="hero" />
+              </div>
+
+              <div className="hidden lg:flex items-start gap-5">
+                <Image
+                  src={desoImages.searchDesktop}
+                  alt="hero"
+                  className="w-4/5"
+                />
+                <Image
+                  src={desoImages.searchMobile}
+                  alt="hero"
+                  className="w-1/5"
+                />
               </div>
             </div>
           </div>
@@ -137,9 +216,22 @@ const DesoRealtor = () => {
           <div>
             <h2 className="font-grotesque text-2xl mb-2">A property page</h2>
             <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 lg:hidden">
                 <Image src={desoImages.propertyDesktop} alt="hero" />
                 <Image src={desoImages.propertyMobile} alt="hero" />
+              </div>
+
+              <div className="hidden lg:flex items-start gap-5">
+                <Image
+                  src={desoImages.propertyDesktop}
+                  alt="hero"
+                  className="w-4/5"
+                />
+                <Image
+                  src={desoImages.propertyMobile}
+                  alt="hero"
+                  className="w-1/5"
+                />
               </div>
             </div>
           </div>

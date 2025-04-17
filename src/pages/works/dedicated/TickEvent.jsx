@@ -7,7 +7,7 @@ import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
 import GoBack from "../../../utils/GoBack";
 import { StarIcon } from "../../../utils/icons/NavIcons";
-import { TickVentImages } from "../../../utils/ImagesImport";
+import { Image, TickVentImages } from "../../../utils/ImagesImport";
 
 const TickEvent = () => {
   return (
@@ -16,112 +16,126 @@ const TickEvent = () => {
         <GoBack />
       </SectionLayout>
       <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <div className="mt-6">
-          <p className="text-sm">PERSONAL PROJECT - Mobile app design</p>
-          <h2 className="font-grotesque text-[32px] leading-[36.8px]">
-            <span className="text-sectickevent">Accessing</span> and{" "}
-            <span className="text-sectickevent">booking</span> events: Tech,
-            concerts, movies, and music
-          </h2>
-          <div className="flex flex-wrap items-start gap-2 text-sm mt-2 mb-6">
-            <p className="bg-tintblue2 rounded-full py-[2px] px-2 whitespace-nowrap">
-              User Research
-            </p>
-            <p className="bg-tintblue2 rounded-full py-[2px] px-2 whitespace-nowrap">
-              UX Design
-            </p>
-            <p className="bg-tintblue2 rounded-full py-[2px] px-2 whitespace-nowrap">
-              UI Design
+        <div className="flex flex-col gap-8 font-intertight text-lg">
+          <div className="flex flex-col gap-4 lg:gap-6">
+            <div className="space-y-3">
+              <div>
+                <p className="text-sm">PERSONAL PROJECT - Mobile app design</p>
+                <h2 className="font-grotesque text-[32px] leading-[36.8px] lg:text-5xl">
+                  <span className="text-sectickevent">Accessing</span> and{" "}
+                  <span className="text-sectickevent">booking</span> events:
+                  Tech, concerts, movies, and music
+                </h2>
+              </div>
+              <div className="flex flex-wrap items-start gap-2 text-sm">
+                <p className="bg-tintblue2 rounded-full py-[2px] px-2 whitespace-nowrap">
+                  User Research
+                </p>
+                <p className="bg-tintblue2 rounded-full py-[2px] px-2 whitespace-nowrap">
+                  UX Design
+                </p>
+                <p className="bg-tintblue2 rounded-full py-[2px] px-2 whitespace-nowrap">
+                  UI Design
+                </p>
+              </div>
+            </div>
+            <Image src={TickVentImages.thumbnail1} alt="Hymns App" />
+          </div>
+
+          <div>
+            <p>
+              Alex, a pharmacology student at the medical college (University of
+              Lagos) loves Johnny Drille (an artiste) and always wants to attend
+              his live concerts. A few years back, Johnny Drille pulled up
+              unannounced and gave students a feel of what his concerts looked
+              like by performing live. Alex promised himself not to miss Johnny
+              Drille’s upcoming concert, only for him to think it was the day
+              after the concert's stipulated date, so he missed it. Here you
+              have it, a frustrated Alex.
             </p>
           </div>
-          <div className="mt-10">
-            <img src={TickVentImages.thumbnail1} alt="Hymns App" />
+
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">Problem statement</h2>
+            <p>
+              Students and tech talents are busy with academics and work they
+              therefore rarely keep tabs on events around them, concerts of
+              their favourite artistes, and recent movies.
+            </p>
           </div>
-        </div>
-        <div className="mt-10 font-intertight">
-          <p className="text-lg">
-            Alex, a pharmacology student at the medical college (University of
-            Lagos) loves Johnny Drille (an artiste) and always wants to attend
-            his live concerts. A few years back, Johnny Drille pulled up
-            unannounced and gave students a feel of what his concerts looked
-            like by performing live. Alex promised himself not to miss Johnny
-            Drille’s upcoming concert, only for him to think it was the day
-            after the concert's stipulated date, so he missed it. Here you have
-            it, a frustrated Alex.
-          </p>
-        </div>
-        <div className="mt-6 font-intertight text-lg">
-          <h2 className="font-grotesque text-2xl mb-2">Problem statement</h2>
-          <p>
-            Students and tech talents are busy with academics and work they
-            therefore rarely keep tabs on events around them, concerts of their
-            favourite artistes, and recent movies.
-          </p>
-        </div>
-        <div className="mt-6 font-intertight text-lg">
-          <h2 className="font-grotesque text-2xl mb-2">
-            The process - My role
-          </h2>
-          <p>
-            As a solo product designer on the project, I approached the problem
-            using the <b>design thinking problem-solving</b> technique. I
-            started with user research and analysis of the research findings to
-            draw insights before ideating solutions via competitive audit and
-            testing the early concepts with the end users.
-          </p>
-        </div>
-        <div className="mt-6 font-intertight text-lg">
-          <h2 className="font-grotesque text-2xl mb-2">Project goals</h2>
-          <ol className="list-decimal list-inside mt-2 pl-1">
-            <li>Increase the discoverability of events for tech talents.</li>
-            <li>
-              Reduce the process of getting tickets for paid and free events for
-              tech talents.
-            </li>
-            <li>Improve the social life of tech talents.</li>
-          </ol>
-        </div>
-        <div className="bg-tintblue4 px-6 py-3 rounded-[4px] mt-6 font-intertight text-lg">
-          <div className="flex items-start justify-between">
-            <h2 className="font-grotesque text-2xl mb-2">Business goals</h2>
-            <button>
-              <StarIcon />
-            </button>
+
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">
+              The process - My role
+            </h2>
+            <p>
+              As a solo product designer on the project, I approached the
+              problem using the <b>design thinking problem-solving</b>{" "}
+              technique. I started with user research and analysis of the
+              research findings to draw insights before ideating solutions via
+              competitive audit and testing the early concepts with the end
+              users.
+            </p>
           </div>
-          <ol className="list-decimal list-outside mt-2 pl-6">
-            <li>
-              Customers should be able to access events within <b>2 minutes</b>{" "}
-              of launching the app.
-            </li>
-            <li>
-              Events displayed in customers' feeds should be tailored to their
-              location.
-            </li>
-            <li>Customers should be able to book ticket(s) for others.</li>
-          </ol>
-        </div>
-        <div className="mt-6 font-intertight text-lg">
-          <h2 className="font-grotesque text-2xl mb-2">The product</h2>
-          <p>
-            Tickvent is coined from the words <b>“ticket”</b> and{" "}
-            <b>“events”</b> and is a product that brings together paid and free
-            events in one place. Events like musical concerts, conferences,
-            movies, music, and tech meet-ups are curated here. It allows the
-            booking of more than one ticket, the selection of ticket grades if
-            they are available, and also assigning email addresses to the
-            tickets.
-          </p>
-        </div>
-        <div className="mt-6 font-intertight text-lg mb-8">
-          <h2 className="font-grotesque text-2xl mb-2">Impact and outcomes</h2>
-          <ol className="list-decimal list-inside mt-2 pl-1">
-            <li>Easy access to diverse events in users’ locations.</li>
-            <li>
-              Reduction in the time and effort needed to book and manage
-              tickets.
-            </li>
-            <li>Seamless interface and effective navigation.</li>
-          </ol>
+
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">Project goals</h2>
+            <ol className="list-decimal list-inside mt-2 pl-1">
+              <li>Increase the discoverability of events for tech talents.</li>
+              <li>
+                Reduce the process of getting tickets for paid and free events
+                for tech talents.
+              </li>
+              <li>Improve the social life of tech talents.</li>
+            </ol>
+          </div>
+
+          <div className="bg-tintblue4 px-6 py-3 rounded-[4px] mt-6 font-intertight text-lg">
+            <div className="flex items-start justify-between">
+              <h2 className="font-grotesque text-2xl mb-2">Business goals</h2>
+              <button>
+                <StarIcon />
+              </button>
+            </div>
+            <ol className="list-decimal list-outside mt-2 pl-6">
+              <li>
+                Customers should be able to access events within{" "}
+                <b>2 minutes</b> of launching the app.
+              </li>
+              <li>
+                Events displayed in customers' feeds should be tailored to their
+                location.
+              </li>
+              <li>Customers should be able to book ticket(s) for others.</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2 className="font-grotesque text-2xl mb-2">The product</h2>
+            <p>
+              Tickvent is coined from the words <b>“ticket”</b> and{" "}
+              <b>“events”</b> and is a product that brings together paid and
+              free events in one place. Events like musical concerts,
+              conferences, movies, music, and tech meet-ups are curated here. It
+              allows the booking of more than one ticket, the selection of
+              ticket grades if they are available, and also assigning email
+              addresses to the tickets.
+            </p>
+          </div>
+
+          <div className="mb-8">
+            <h2 className="font-grotesque text-2xl mb-2">
+              Impact and outcomes
+            </h2>
+            <ol className="list-decimal list-inside mt-2 pl-1">
+              <li>Easy access to diverse events in users’ locations.</li>
+              <li>
+                Reduction in the time and effort needed to book and manage
+                tickets.
+              </li>
+              <li>Seamless interface and effective navigation.</li>
+            </ol>
+          </div>
         </div>
       </SectionLayout>
       <SectionLayout className={"border-b-2 border-b-tintblue1"}>
@@ -159,7 +173,7 @@ const TickEvent = () => {
             />
           </div>
           <div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 lg:gap-10">
               <div className="w-40 h-40 flex flex-col items-center justify-center bg-tintblue2 rounded-full">
                 <b className="text-[40px]">3</b>
                 <p>Participants</p>
@@ -179,7 +193,7 @@ const TickEvent = () => {
               An empathy map and user personas were used to synthesise the
               results from the research.
             </p>
-            <div className="flex flex-col gap-6 mt-4">
+            <div className="flex flex-col lg:flex-row gap-6 mt-4">
               <div className="relative bg-tintblue4 p-4">
                 <p>
                   Students and working-class youths miss a lot of events because
@@ -202,7 +216,7 @@ const TickEvent = () => {
           </div>
           <div>
             <h2 className="font-grotesque text-2xl">Empathy map</h2>
-            <div className="flex flex-col items-center gap-6">
+            <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-tintblue4 p-4 mt-6">
                 <p className="font-grotesque mb-2">😎 Pea says</p>
                 <ol className="list-decimal list-outside pl-6">
@@ -220,8 +234,8 @@ const TickEvent = () => {
                   <li>Reduced booking time is more preferred.</li>
                 </ol>
               </div>
-              <div className="-my-6">
-                <img src={TickVentImages.pea} alt="pea image" />
+              <div className="flex justify-center items-center -my-6 lg:absolute lg:top-[45%] lg:left-[45%]">
+                <Image src={TickVentImages.pea} alt="pea image" />
               </div>
               <div className="bg-tintblue4 p-4">
                 <p className="font-grotesque mb-2">🧐 Pea does</p>
@@ -262,33 +276,35 @@ const TickEvent = () => {
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="font-bold text-base">GOAL(S)</h3>
-                  <ol className="list-decimal list-outside pl-6 mt-1">
-                    <li>
-                      Early awareness about concerts, comedy shows, and award
-                      events around him.
-                    </li>
-                    <li>
-                      To easily book tickets online for concerts and shows.
-                    </li>
-                    <li>
-                      To manage academics and be informed about these events.
-                    </li>
-                  </ol>
-                </div>
-                <div>
-                  <h3 className="font-bold text-base uppercase">
-                    frustrations
-                  </h3>
-                  <ol className="list-decimal list-outside pl-6 mt-1">
-                    <li>Misses concerts due to late awareness.</li>
-                    <li>Academical work takes a large chunk of his time.</li>
-                    <li>
-                      Sometimes, the grade of ticket he wishes to purchase is
-                      sold out.
-                    </li>
-                  </ol>
+                <div className="lg:flex items-start justify-between">
+                  <div className="lg:w-96">
+                    <h3 className="font-bold text-base">GOAL(S)</h3>
+                    <ol className="list-decimal list-outside pl-6 mt-1">
+                      <li>
+                        Early awareness about concerts, comedy shows, and award
+                        events around him.
+                      </li>
+                      <li>
+                        To easily book tickets online for concerts and shows.
+                      </li>
+                      <li>
+                        To manage academics and be informed about these events.
+                      </li>
+                    </ol>
+                  </div>
+                  <div className="mt-6 lg:w-96">
+                    <h3 className="font-bold text-base uppercase">
+                      frustrations
+                    </h3>
+                    <ol className="list-decimal list-outside pl-6 mt-1">
+                      <li>Misses concerts due to late awareness.</li>
+                      <li>Academical work takes a large chunk of his time.</li>
+                      <li>
+                        Sometimes, the grade of ticket he wishes to purchase is
+                        sold out.
+                      </li>
+                    </ol>
+                  </div>
                 </div>
                 <p className="text-base">
                   “Just like information, music is powerful. Without music, the
@@ -315,24 +331,28 @@ const TickEvent = () => {
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="font-bold text-base">GOAL(S)</h3>
-                  <ol className="list-decimal list-outside pl-6 mt-1">
-                    <li>
-                      Access to get full details concerning musical concerts in
-                      Nigeria.
-                    </li>
-                    <li>Timely reminders of concerts for tickets purchased.</li>
-                  </ol>
-                </div>
-                <div>
-                  <h3 className="font-bold text-base uppercase">
-                    frustrations
-                  </h3>
-                  <ol className="list-decimal list-outside pl-6 mt-1">
-                    <li>No prior reminder of the event's date.</li>
-                    <li>The payment modes and options are not secured.</li>
-                  </ol>
+                <div className="lg:flex items-start justify-between">
+                  <div className="lg:w-96">
+                    <h3 className="font-bold text-base">GOAL(S)</h3>
+                    <ol className="list-decimal list-outside pl-6 mt-1">
+                      <li>
+                        Access to get full details concerning musical concerts
+                        in Nigeria.
+                      </li>
+                      <li>
+                        Timely reminders of concerts for tickets purchased.
+                      </li>
+                    </ol>
+                  </div>
+                  <div className="mt-6 lg:w-96">
+                    <h3 className="font-bold text-base uppercase">
+                      frustrations
+                    </h3>
+                    <ol className="list-decimal list-outside pl-6 mt-1">
+                      <li>No prior reminder of the event's date.</li>
+                      <li>The payment modes and options are not secured.</li>
+                    </ol>
+                  </div>
                 </div>
                 <p className="text-base">
                   “Just like information, music is powerful. Without music, the
@@ -341,11 +361,13 @@ const TickEvent = () => {
               </div>
             </div>
           </div>
-          <div className="mb-8">
+          <div className="mb-8 flex flex-col gap-2">
             <h2 className="font-grotesque text-2xl mb-4">User journey map</h2>
-            <div className="mb-2">
-              <img src={TickVentImages.userJourney} alt="user-journey" />
-            </div>
+            <Image
+              src={TickVentImages.userJourney}
+              alt="user-journey"
+              classname="w-full"
+            />
             <AnchorTag
               text={"Competitive audit"}
               link={
@@ -361,13 +383,14 @@ const TickEvent = () => {
           <div className="mt-6">
             <p className="text-sm">IDEATION</p>
             <h2 className="font-grotesque text-2xl mb-4">Competitive audit</h2>
-            <div>
-              <img
-                src={TickVentImages.competitiveAudit}
-                alt="competitive audit"
-              />
-            </div>
-            <div className="flex flex-col gap-2 mt-2">
+
+            <Image
+              src={TickVentImages.competitiveAudit}
+              alt="competitive audit"
+              className="w-full"
+            />
+
+            <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mt-2">
               <AnchorTag
                 text={"View competitive audit"}
                 link={
@@ -391,9 +414,10 @@ const TickEvent = () => {
               of a ticket for an event.
             </p>
             <div className="my-4">
-              <img
+              <Image
                 src={TickVentImages.sequenceDiagram}
                 alt="sequence-diagram"
+                className="w-full"
               />
             </div>
             <AnchorTag
@@ -408,81 +432,115 @@ const TickEvent = () => {
             <p className="text-sm">STARTING THE DESIGN</p>
             <h2 className="font-grotesque text-2xl mb-2">Sketches</h2>
 
-            <div className="bg-tintblue4 px-5 py-8 grid grid-cols-2 gap-4 rounded-[32px]">
-              <div>
-                <img src={TickVentImages.tickSketch2} alt="sketch1" />
-              </div>
-              <div>
-                <img src={TickVentImages.tickSketch1} alt="sketch2" />
-              </div>
-              <div>
-                <img src={TickVentImages.tickSketch5} alt="sketch3" />
-              </div>
-              <div>
-                <img src={TickVentImages.tickSketch6} alt="sketch4" />
-              </div>
-              <div>
-                <img src={TickVentImages.tickSketch4} alt="sketch5" />
-              </div>
-              <div>
-                <img src={TickVentImages.tickSketch3} alt="sketch6" />
-              </div>
-              <div>
-                <img src={TickVentImages.tickSketch7} alt="sketch7" />
-              </div>
+            <div className="bg-tintblue4 px-5 py-8 grid grid-cols-2 lg:grid-cols-3 gap-4 rounded-[32px]">
+              <Image
+                src={TickVentImages.tickSketch2}
+                alt="sketch1"
+                className="w-full"
+              />
+              <Image
+                src={TickVentImages.tickSketch1}
+                alt="sketch2"
+                className="w-full"
+              />
+              <Image
+                src={TickVentImages.tickSketch5}
+                alt="sketch3"
+                className="w-full"
+              />
+              <Image
+                src={TickVentImages.tickSketch6}
+                alt="sketch4"
+                className="w-full"
+              />
+              <Image
+                src={TickVentImages.tickSketch4}
+                alt="sketch5"
+                className="w-full"
+              />
+              <Image
+                src={TickVentImages.tickSketch3}
+                alt="sketch6"
+                className="w-full"
+              />
+              <Image
+                src={TickVentImages.tickSketch7}
+                alt="sketch7"
+                className="w-full"
+              />
             </div>
           </div>
           <div className="mb-8">
             <h2 className="font-grotesque text-2xl mb-4">Digital wireframes</h2>
 
-            <div className="bg-tintblue4 px-6 py-8 grid md:grid-cols-2 gap-7 rounded-[32px]">
+            <div className="bg-tintblue4 px-6 py-8 grid grid-cols-2 lg:grid-cols-3 gap-7 rounded-[32px]">
               <div>
                 <p className="text-sm font-medium mb-4">ONBOARDING</p>
-                <div>
-                  <img src={TickVentImages.tickOnboarding} alt="onboarding" />
-                </div>
+
+                <Image
+                  src={TickVentImages.tickOnboarding}
+                  alt="onboarding"
+                  className="w-full"
+                />
               </div>
               <div>
                 <p className="text-sm font-medium mb-4">ONBOARDING</p>
-                <div>
-                  <img src={TickVentImages.tickOnboarding1} alt="onboarding1" />
-                </div>
+
+                <Image
+                  src={TickVentImages.tickOnboarding1}
+                  alt="onboarding1"
+                  className="w-full"
+                />
               </div>
               <div>
                 <p className="text-sm font-medium mb-4">HOME SCREEN</p>
-                <div>
-                  <img src={TickVentImages.tickHome} alt="onboarding1" />
-                </div>
-                <div className="mt-4">
+
+                <Image
+                  src={TickVentImages.tickHome}
+                  alt="onboarding1"
+                  className="w-full"
+                />
+
+                <div className="mt-4 lg:hidden">
                   <p>==&gt; Most relevant events personalised for users.</p>
                   <p>==&gt; Recommended events.</p>
                   <p>==&gt; Upcoming events.</p>
                 </div>
               </div>
-              <div>
+              <div className="lg:hidden">
                 <p className="text-sm font-medium mb-4">EVENT PAGE</p>
-                <div>
-                  <img src={TickVentImages.tickEvent} alt="onboarding1" />
-                </div>
+                <Image
+                  className="w-full"
+                  src={TickVentImages.tickEvent}
+                  alt="onboarding1"
+                />
                 <p className="mt-4">==&gt; Event details.</p>
               </div>
               <div>
                 <p className="text-sm font-medium mb-4">EVENT PAGE</p>
-                <div>
-                  <img src={TickVentImages.tickEvent1} alt="onboarding1" />
-                </div>
+                <Image
+                  className="w-full"
+                  src={TickVentImages.tickEvent1}
+                  alt="onboarding1"
+                />
               </div>
               <div>
                 <p className="text-sm font-medium mb-4">EVENT BOOKING</p>
-                <div>
-                  <img src={TickVentImages.eventBooking} alt="onboarding1" />
-                </div>
+
+                <Image
+                  className="w-full"
+                  src={TickVentImages.eventBooking}
+                  alt="onboarding1"
+                />
               </div>
               <div>
                 <p className="text-sm font-medium mb-4">TICKET PAGE</p>
-                <div>
-                  <img src={TickVentImages.ticketPage} alt="onboarding1" />
-                </div>
+
+                <Image
+                  className="w-full"
+                  src={TickVentImages.ticketPage}
+                  alt="onboarding1"
+                />
               </div>
             </div>
           </div>
@@ -550,7 +608,7 @@ const TickEvent = () => {
 
           <div>
             <h2 className="font-grotesque text-2xl mb-4">Design iteration</h2>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col lg:flex-row items-start gap-6">
               <div className="bg-tintblue4 p-4">
                 <h3 className="font-grotesque">Before usability test</h3>
                 <ol className="list-decimal list-outside pl-6 mt-2 text-base">

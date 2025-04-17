@@ -12,9 +12,7 @@
 body {
   @apply bg-tintblue5 md:bg-greywhite100 font-inter font-normal text-base text-greyblack100 leading-tight antialiased scroll-smooth;
 }
-img {
-  @apply max-w-full h-auto;
-}
+
 .list-alpha {
   list-style-type: lower-alpha;
 }

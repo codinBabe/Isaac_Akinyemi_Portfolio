@@ -27,13 +27,9 @@ function Exploration() {
   const [loading, setLoading] = useState(false);
 
   const handleOpenModal = (videoSrc, videoTitle) => {
-    setLoading(true);
     setCurrentVideo(videoSrc);
     setCurrentTitle(videoTitle);
     setModalOpen(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
   };
 
   const handleCloseModal = () => {
@@ -60,7 +56,6 @@ function Exploration() {
         onClose={handleCloseModal}
         videoSrc={currentVideo}
         title={currentTitle}
-        setLoading={setLoading}
       />
     </>
   );

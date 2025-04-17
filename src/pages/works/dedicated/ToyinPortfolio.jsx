@@ -5,7 +5,7 @@ import {
 import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
 import GoBack from "../../../utils/GoBack";
-import { ToyinImages } from "../../../utils/ImagesImport";
+import { Image, ToyinImages } from "../../../utils/ImagesImport";
 
 const ToyinPortfolio = () => {
   return (
@@ -33,7 +33,7 @@ const ToyinPortfolio = () => {
               </p>
             </div>
 
-            <img src={ToyinImages.toyinThumbnail} alt="Hymns App" />
+            <Image src={ToyinImages.toyinThumbnail} alt="Hymns App" />
           </div>
 
           <div className="flex flex-col gap-8">
@@ -49,7 +49,7 @@ const ToyinPortfolio = () => {
               <h2 className="font-grotesque text-2xl mb-2">
                 My design process
               </h2>
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center lg:justify-between gap-4">
                 <div className="flex items-start gap-2">
                   <b>#1</b>
                   <p>Understand</p>
@@ -157,11 +157,27 @@ const ToyinPortfolio = () => {
                 Iterations on the hero screen
               </h2>
               <div className="mt-4">
-                <div className="flex flex-col lg:flex-row flex-wrap gap-5">
-                  <img src={ToyinImages.iterationHero1} alt="hero1" />
-                  <img src={ToyinImages.iterationHero3} alt="hero2" />
-                  <img src={ToyinImages.iterationHero2} alt="hero3" />
-                  <img src={ToyinImages.iterationHero4} alt="hero4" />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                  <Image
+                    src={ToyinImages.iterationHero1}
+                    alt="hero1"
+                    className="w-full"
+                  />
+                  <Image
+                    src={ToyinImages.iterationHero3}
+                    alt="hero2"
+                    className="w-full"
+                  />
+                  <Image
+                    src={ToyinImages.iterationHero2}
+                    alt="hero3"
+                    className="w-full"
+                  />
+                  <Image
+                    src={ToyinImages.iterationHero4}
+                    alt="hero4"
+                    className="w-full"
+                  />
                 </div>
               </div>
             </div>
@@ -169,12 +185,38 @@ const ToyinPortfolio = () => {
             <div>
               <h2 className="font-grotesque text-2xl mb-2">Homepage</h2>
               <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-                <div className="flex flex-col lg:flex-row flex-wrap gap-5">
-                  <img src={ToyinImages.home1} alt="hero" />
-                  <img src={ToyinImages.home2} alt="hero" />
+                <div className="flex flex-col lg:flex-row flex-wrap gap-5 lg:hidden">
+                  <Image src={ToyinImages.home1} alt="hero" />
+                  <Image src={ToyinImages.home2} alt="hero" />
                   <div className="flex items-start justify-between">
-                    <img src={ToyinImages.mobileHome1} alt="hero" />
-                    <img src={ToyinImages.mobileHome2} alt="hero" />
+                    <Image src={ToyinImages.mobileHome1} alt="hero" />
+                    <Image src={ToyinImages.mobileHome2} alt="hero" />
+                  </div>
+                </div>
+                <div className="hidden lg:flex flex-col gap-5">
+                  <div className="flex items-start gap-x-5">
+                    <Image
+                      src={ToyinImages.home1}
+                      alt="hero"
+                      className="w-4/5"
+                    />
+                    <Image
+                      src={ToyinImages.mobileHome1}
+                      alt="hero"
+                      className="w-1/5"
+                    />
+                  </div>
+                  <div className="flex items-start gap-x-5">
+                    <Image
+                      src={ToyinImages.home2}
+                      alt="hero"
+                      className="w-4/5"
+                    />
+                    <Image
+                      src={ToyinImages.mobileHome2}
+                      alt="hero"
+                      className="w-1/5"
+                    />
                   </div>
                 </div>
               </div>
@@ -183,9 +225,17 @@ const ToyinPortfolio = () => {
             <div>
               <h2 className="font-grotesque text-2xl mb-2">Works</h2>
               <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-                <div className="flex flex-col lg:flex-row flex-wrap gap-8">
-                  <img src={ToyinImages.works} alt="hero" />
-                  <img src={ToyinImages.mobileWork} alt="hero" />
+                <div className="flex flex-col flex-wrap gap-8 lg:hidden">
+                  <Image src={ToyinImages.works} alt="hero" />
+                  <Image src={ToyinImages.mobileWork} alt="hero" />
+                </div>
+                <div className="hidden lg:flex items-start gap-x-5">
+                  <Image src={ToyinImages.works} alt="hero" className="w-4/5" />
+                  <Image
+                    src={ToyinImages.mobileWork}
+                    alt="hero"
+                    className="w-1/5"
+                  />
                 </div>
               </div>
             </div>
@@ -193,12 +243,38 @@ const ToyinPortfolio = () => {
             <div>
               <h2 className="font-grotesque text-2xl mb-2">About</h2>
               <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-                <div className="flex flex-col gap-5">
-                  <img src={ToyinImages.about1} alt="hero" />
-                  <img src={ToyinImages.about2} alt="hero" />
+                <div className="flex flex-col gap-5 lg:hidden">
+                  <Image src={ToyinImages.about1} alt="hero" />
+                  <Image src={ToyinImages.about2} alt="hero" />
                   <div className="flex items-start justify-between">
-                    <img src={ToyinImages.mobileAbout1} alt="hero" />
-                    <img src={ToyinImages.mobileAbout2} alt="hero" />
+                    <Image src={ToyinImages.mobileAbout1} alt="hero" />
+                    <Image src={ToyinImages.mobileAbout2} alt="hero" />
+                  </div>
+                </div>
+                <div className="hidden lg:flex flex-col gap-5">
+                  <div className="flex items-start gap-x-5">
+                    <Image
+                      src={ToyinImages.about1}
+                      alt="hero"
+                      className="w-4/5"
+                    />
+                    <Image
+                      src={ToyinImages.mobileAbout1}
+                      alt="hero"
+                      className="w-1/5"
+                    />
+                  </div>
+                  <div className="flex items-start gap-x-5">
+                    <Image
+                      src={ToyinImages.about2}
+                      alt="hero"
+                      className="w-4/5"
+                    />
+                    <Image
+                      src={ToyinImages.mobileAbout2}
+                      alt="hero"
+                      className="w-1/5"
+                    />
                   </div>
                 </div>
               </div>
@@ -207,9 +283,22 @@ const ToyinPortfolio = () => {
             <div>
               <h2 className="font-grotesque text-2xl mb-2">Resume</h2>
               <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-                <div className="flex flex-col gap-8">
-                  <img src={ToyinImages.resume} alt="hero" />
-                  <img src={ToyinImages.mobileResume} alt="hero" />
+                <div className="flex flex-col gap-8 lg:hidden">
+                  <Image src={ToyinImages.resume} alt="hero" />
+                  <Image src={ToyinImages.mobileResume} alt="hero" />
+                </div>
+
+                <div className="hidden lg:flex items-start gap-x-5">
+                  <Image
+                    src={ToyinImages.resume}
+                    alt="hero"
+                    className="w-4/5"
+                  />
+                  <Image
+                    src={ToyinImages.mobileResume}
+                    alt="hero"
+                    className="w-1/5"
+                  />
                 </div>
               </div>
             </div>
@@ -217,11 +306,22 @@ const ToyinPortfolio = () => {
             <div>
               <h2 className="font-grotesque text-2xl mb-2">Other visuals</h2>
               <div className="bg-tintblue4 border-2 border-tintblue1 p-4 rounded-xl mt-4">
-                <div className="flex flex-col lg:flex-row flex-wrap gap-8">
-                  <img src={ToyinImages.others1} alt="hero" />
-                  <img src={ToyinImages.others2} alt="hero" />
-                  <img src={ToyinImages.others4} alt="hero" />
-                  <img src={ToyinImages.others3} alt="hero" />
+                <div className="flex flex-col flex-wrap gap-8 lg:hidden">
+                  <Image src={ToyinImages.others1} alt="hero" />
+                  <Image src={ToyinImages.others2} alt="hero" />
+                  <Image src={ToyinImages.others4} alt="hero" />
+                  <Image src={ToyinImages.others3} alt="hero" />
+                </div>
+
+                <div className="hidden lg:flex items-start justify-center gap-8">
+                  <Image src={ToyinImages.others1} alt="hero" />
+
+                  <Image src={ToyinImages.others2} alt="hero" />
+                  <div className="flex flex-col gap-y-5">
+                    <Image src={ToyinImages.others4} alt="hero" />
+
+                    <Image src={ToyinImages.others3} alt="hero" />
+                  </div>
                 </div>
               </div>
             </div>
