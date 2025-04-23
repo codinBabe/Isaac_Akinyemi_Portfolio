@@ -11,10 +11,7 @@ import { BuildingBandImages, Image } from "../../../utils/ImagesImport";
 const BuildingBand = () => {
   return (
     <>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <GoBack />
-      </SectionLayout>
-      <SectionLayout>
+      <SectionLayout className={"mt-16"}>
         <p className="text-sm mt-6">REAL PROJECT - Website design</p>
         <h2 className="font-grotesque text-3xl lg:text-5xl text-secbuilding">
           Building Band

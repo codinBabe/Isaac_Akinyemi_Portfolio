@@ -10,10 +10,7 @@ import { WorkImages } from "../../../utils/ImagesImport";
 const EcobankProject = () => {
   return (
     <>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <GoBack />
-      </SectionLayout>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
+      <SectionLayout className={"border-b-2 border-b-tintblue1 mt-16"}>
         <div className="mt-6 flex flex-col">
           <p className="text-sm">REAL PROJECTs - Mobile Apps and Web Apps</p>
           <h2 className="font-grotesque text-[32px] leading-[36.8px] lg:text-5xl">

@@ -1,8 +1,7 @@
 import AnchorTag from "../../../components/AnchorTag";
 import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
-import GoBack from "../../../utils/GoBack";
-import { HymnsImages } from "../../../utils/ImagesImport";
+import { HymnsImages, Image } from "../../../utils/ImagesImport";
 import {
   hymnsProjects,
   RelatedProjects,
@@ -11,10 +10,9 @@ import {
 const HymnsApp = () => {
   return (
     <>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <GoBack />
-      </SectionLayout>
-      <SectionLayout className={"font-intertight border-b-2 border-tintblue1"}>
+      <SectionLayout
+        className={"font-intertight border-b-2 border-tintblue1 mt-16"}
+      >
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <p className="text-sm mt-6">PERSONAL PROJECT - Mobile app design</p>
@@ -34,8 +32,7 @@ const HymnsApp = () => {
                 UI Design
               </p>
             </div>
-
-            <img src={HymnsImages.hymns1} alt="Hymns App" />
+            <Image src={HymnsImages.hymns1} alt="Hymns App" />
           </div>
 
           <div>
@@ -53,7 +50,7 @@ const HymnsApp = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-2xl font-grotesque mt-8">
+            <h3 className="text-2xl lg:text-3xl font-grotesque mt-8">
               The process - My role
             </h3>
             <p>
@@ -66,7 +63,7 @@ const HymnsApp = () => {
           </div>
           <div>
             <h4 className="text-sm mt-8">PROJECT GOALS</h4>
-            <h3 className="text-2xl font-grotesque mb-2">
+            <h3 className="text-2xl lg:text-3xl font-grotesque mb-2">
               Intended goals to achieve
             </h3>
             <ol className="list-decimal list-inside text-lg">
@@ -126,8 +123,7 @@ const HymnsApp = () => {
       >
         <div className="flex flex-col gap-8">
           <div>
-            {" "}
-            <h3 className="font-grotesque text-2xl">
+            <h3 className="font-grotesque text-2xl lg:text-3xl">
               Who is the solution for?
             </h3>
             <p className="text-lg mt-2">
@@ -163,7 +159,9 @@ const HymnsApp = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-2xl font-grotesque">The solution overview</h3>
+            <h3 className="text-2xl lg:text-3xl font-grotesque">
+              The solution overview
+            </h3>
             <p className="text-lg mt-2">
               A mobile app with features such as categorisation of hymnal songs,
               a search feature, audio accompaniments, save as favourite, and the
@@ -174,7 +172,7 @@ const HymnsApp = () => {
               readings, reflections, and prayers to guide one’s spiritual
               journey.
             </p>
-            <h3 className="text-2xl font-grotesque mt-8">Result</h3>
+            <h3 className="text-2xl lg:text-3xl font-grotesque mt-8">Result</h3>
             <p className="text-lg mt-2 mb-8">
               <b>75%</b> of the moderated usability study participants thought
               the app was live and wanted to install it on their mobile devices
@@ -186,7 +184,9 @@ const HymnsApp = () => {
       <SectionLayout
         className={"font-intertight mt-6 border-b-2 border-tintblue1"}
       >
-        <h3 className="font-grotesque text-2xl">Starting the design process</h3>
+        <h3 className="font-grotesque text-2xl lg:text-3xl">
+          Starting the design process
+        </h3>
         <p className="text-lg my-2">
           User interview was employed to understand the church community's needs
           and preferences regarding accessibility to hymnal songs.
@@ -216,7 +216,7 @@ const HymnsApp = () => {
             rhythm, and solfa notes of hymn songs whenever it is time to sing
             one.
           </p>
-          <p className="bg-seccoralpink w-20 mt-2 mb-8">OLA KHAN</p>
+          <p className="bg-seccoralpink w-20 lg:w-24 mt-2 mb-8">OLA KHAN</p>
           <span className="text-[4rem] text-tintblue1 font-bold italic">“</span>
           <p className="text-xl font-medium -mt-10">
             I have tried different hymns app, and most of them don’t have the
@@ -229,12 +229,16 @@ const HymnsApp = () => {
             Pastors (a song minister) to help me with the tone and rhythm of the
             hymn of the day so that I can sing it while reading the Daily Rhema.
           </p>
-          <p className="bg-secpalepurple w-40 mt-2">REVEREND JESUDAISI</p>
+          <p className="bg-secpalepurple w-40 lg:w-48 mt-2">
+            REVEREND JESUDAISI
+          </p>
         </div>
         <div className="mt-8">
-          <h3 className="font-grotesque text-2xl ">Users and their goals</h3>
+          <h3 className="font-grotesque text-2xl lg:text-3xl">
+            Users and their goals
+          </h3>
           <p className="text-lg mt-2">
-            I identified <b>2</b> user groups.
+            <b>2</b> user groups were identified.
           </p>
           <ol className="list-decimal list-inside text-lg pl-2">
             <li>Users without the hymnbook.</li>
@@ -247,28 +251,44 @@ const HymnsApp = () => {
           </h3>
           <div className="bg-tintblue4 p-4 mt-2 rounded-[10px]">
             <p className="font-medium mb-2">Users who don’t own a hymnbook</p>
-            <h4 className="font-semibold my-2">PSYCHOGRAPHICS</h4>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>Loves social media.</li>
-              <li>Is very practical.</li>
-              <li>80% internet and social media savvy.</li>
-              <li>An overthinker.</li>
-            </ol>
-            <h3 className="font-medium mb-2 mt-8">BIO</h3>
-            <p>
-              Abraham is a graduate of marketing and an instrumentalist. He is
-              passionate about music, military, and swimming. He plans his day
-              ahead of time and loves WhatsApp and TikTok.
-            </p>
-            <h3 className="font-medium mb-2 mt-8">WANT(S)</h3>
-            <p>To easily learn and retain hymnal songs.</p>
-            <h3 className="font-medium mb-2 mt-8">FRUSTRATIONS</h3>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>Learning hymnal songs minutes before it is sung.</li>
-              <li>
-                Absence of time signature and key signature on the hymnbook.
-              </li>
-            </ol>
+            <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">
+                  PSYCHOGRAPHICS
+                </h3>
+                <ol className="list-decimal list-inside pl-2">
+                  <li>Loves social media.</li>
+                  <li>Is very practical.</li>
+                  <li>80% internet and social media savvy.</li>
+                  <li>An overthinker.</li>
+                </ol>
+              </div>
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">BIO</h3>
+                <p>
+                  Abraham is a graduate of marketing and an instrumentalist. He
+                  is passionate about music, military, and swimming. He plans
+                  his day ahead of time and loves WhatsApp and TikTok.
+                </p>
+              </div>
+            </div>
+            <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">WANT(S)</h3>
+                <p>To easily learn and retain hymnal songs.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">
+                  FRUSTRATIONS
+                </h3>
+                <ol className="list-decimal list-inside pl-2">
+                  <li>Learning hymnal songs minutes before it is sung.</li>
+                  <li>
+                    Absence of time signature and key signature on the hymnbook.
+                  </li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
         <div className="mt-8">
@@ -277,70 +297,92 @@ const HymnsApp = () => {
           </h3>
           <div className="bg-tintblue4 p-4 mt-2 rounded-[10px]">
             <p className="font-medium mb-2">Users who own a hymnbook</p>
-            <h4 className="font-semibold my-2">PSYCHOGRAPHICS</h4>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>Values friendships and relationships.</li>
-              <li>Analytical thinker.</li>
-              <li>Lover of politics and football.</li>
-              <li>90% social media and 95% internet savvy.</li>
-            </ol>
-            <h3 className="font-medium mb-2 mt-8">BIO</h3>
-            <p>
-              Prosper is a law graduate with an interest in football and real
-              estate. She spends most of her time at work, watching football,
-              playing virtual games and surfing the internet.
-            </p>
-            <h3 className="font-medium mb-2 mt-8">WANT(S)</h3>
-            <p>Access to data 24/7 and access to the hymnbook.</p>
-            <h3 className="font-medium mb-2 mt-8">FRUSTRATIONS</h3>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>Expensive and unstable internet.</li>
-              <li>Unavailability of the hymn book.</li>
-            </ol>
+            <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">
+                  PSYCHOGRAPHICS
+                </h3>
+                <ol className="list-decimal list-inside pl-2">
+                  <li>Values friendships and relationships.</li>
+                  <li>Analytical thinker.</li>
+                  <li>Lover of politics and football.</li>
+                  <li>90% social media and 95% internet savvy.</li>
+                </ol>
+              </div>
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">BIO</h3>
+                <p>
+                  Prosper is a law graduate with an interest in football and
+                  real estate. She spends most of her time at work, watching
+                  football, playing virtual games and surfing the internet.
+                </p>
+              </div>
+            </div>
+            <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">WANT(S)</h3>
+                <p>Access to data 24/7 and access to the hymnbook.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold lg:font-medium mb-2">
+                  FRUSTRATIONS
+                </h3>
+                <ol className="list-decimal list-inside pl-2">
+                  <li>Expensive and unstable internet.</li>
+                  <li>Unavailability of the hymn book.</li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
         <div className="mt-10">
-          <h3 className="font-grotesque text-2xl mb-4">Empathy map</h3>
-          <div className="bg-tintblue4 p-4 mt-2 rounded-[10px]">
-            <p className="font-grotesque mb-2 text-xl">😎 Prosper says</p>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>I want 24/7 access to data and power.</li>
-              <li>I usually have a hectic day.</li>
-              <li>
-                I find it difficult to retain the musical notes of hymn songs
-                for future use.
-              </li>
-            </ol>
-          </div>
-          <div className="bg-tintblue4 p-4 mt-5 rounded-[10px]">
-            <p className="font-grotesque mb-2 text-xl">🤔 Prosper thinks</p>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>There are still a few physical copies left for sale.</li>
-              <li>The church members are not willing to buy the hymnbook.</li>
-            </ol>
-          </div>
-          <div className="flex items-center justify-center">
-            <img src={HymnsImages.prosper} alt="Prosper Shuperu" />
-          </div>
-          <div className="bg-tintblue4 p-4 rounded-[10px]">
-            <p className="font-grotesque mb-2 text-xl"> 🧐 Prosper does</p>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>Answers questions calmly.</li>
-              <li>Keeps eye contact.</li>
-              <li>Support answers with salient points.</li>
-            </ol>
-          </div>
-          <div className="bg-tintblue4 p-4 mt-5 rounded-[10px]">
-            <p className="font-grotesque mb-2 text-xl">🤐 Prosper feels</p>
-            <ol className="list-decimal list-inside text-lg pl-2">
-              <li>Calm.</li>
-              <li>Intrigued.</li>
-              <li>Exicted</li>
-            </ol>
+          <h3 className="font-grotesque text-2xl lg:text-3xl mb-4">
+            Empathy map
+          </h3>
+          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="bg-tintblue4 p-4 mt-2 rounded-[10px]">
+              <p className="font-grotesque mb-2 text-xl">😎 Prosper says</p>
+              <ol className="list-decimal list-inside text-lg pl-2">
+                <li>I want 24/7 access to data and power.</li>
+                <li>I usually have a hectic day.</li>
+                <li>
+                  I find it difficult to retain the musical notes of hymn songs
+                  for future use.
+                </li>
+              </ol>
+            </div>
+            <div className="bg-tintblue4 p-4 mt-5 rounded-[10px]">
+              <p className="font-grotesque mb-2 text-xl">🤔 Prosper thinks</p>
+              <ol className="list-decimal list-inside text-lg pl-2">
+                <li>There are still a few physical copies left for sale.</li>
+                <li>The church members are not willing to buy the hymnbook.</li>
+              </ol>
+            </div>
+            <div className="flex justify-center items-center -my-6 lg:absolute lg:top-[45%] lg:left-[45%]">
+              <Image src={HymnsImages.prosper} alt="Prosper Shuperu" />
+            </div>
+            <div className="bg-tintblue4 p-4 rounded-[10px]">
+              <p className="font-grotesque mb-2 text-xl"> 🧐 Prosper does</p>
+              <ol className="list-decimal list-inside text-lg pl-2">
+                <li>Answers questions calmly.</li>
+                <li>Keeps eye contact.</li>
+                <li>Support answers with salient points.</li>
+              </ol>
+            </div>
+            <div className="bg-tintblue4 p-4 mt-5 rounded-[10px]">
+              <p className="font-grotesque mb-2 text-xl">🤐 Prosper feels</p>
+              <ol className="list-decimal list-inside text-lg pl-2">
+                <li>Calm.</li>
+                <li>Intrigued.</li>
+                <li>Exicted</li>
+              </ol>
+            </div>
           </div>
         </div>
         <div className="my-8">
-          <h3 className="font-grotesque text-2xl">Generated insights</h3>
+          <h3 className="font-grotesque text-2xl lg:text-3xl">
+            Generated insights
+          </h3>
           <div className="text-lg">
             <div className="flex items-start gap-4 mt-2">
               <b>#1</b>
@@ -367,7 +409,7 @@ const HymnsApp = () => {
         className={"border-b-2 border-tintblue1 font-intertight mt-6"}
       >
         <div className="mb-8">
-          <h3 className="font-grotesque text-2xl mb-3">
+          <h3 className="font-grotesque text-2xl lg:text-3xl mb-3">
             Features and sub-features
           </h3>
           <div className="text-lg">
@@ -407,37 +449,70 @@ const HymnsApp = () => {
         </div>
         <div>
           <h3 className="font-grotesque text-2xl mb-2">User-flow</h3>
-          <p className="text-lg">
+          <p className="text-lg lg:hidden">
             The user-flow diagram doesn’t fit on mobile devices. Kindly activate
             the desktop site/view on your mobile device web browser or view this
             website on a desktop.
           </p>
+          <div className="hidden lg:block bg-tintblue4 p-4 rounded-[24px]">
+            <Image src={HymnsImages.userflowLg} alt="User flow" />
+          </div>
         </div>
         <div className="mt-8">
           <h3 className="font-grotesque text-2xl mb-2">Sketches</h3>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 bg-tintblue4 px-4 py-8 rounded-[24px]">
-            <img src={HymnsImages.wireframe1} alt="Sketches" />
-            <img src={HymnsImages.wireframe2} alt="Sketches" />
-            <img src={HymnsImages.wireframe3} alt="Sketches" />
-            <img src={HymnsImages.wireframe4} alt="Sketches" />
-            <img src={HymnsImages.wireframe5} alt="Sketches" />
-            <img src={HymnsImages.wireframe6} alt="Sketches" />
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 bg-tintblue4 px-4 py-8 rounded-[24px]">
+            <Image
+              src={HymnsImages.wireframe1}
+              alt="Sketches"
+              className="w-full"
+            />
+            <Image
+              src={HymnsImages.wireframe2}
+              alt="Sketches"
+              className="w-full"
+            />
+            <Image
+              src={HymnsImages.wireframe3}
+              alt="Sketches"
+              className="w-full"
+            />
+            <Image
+              src={HymnsImages.wireframe4}
+              alt="Sketches"
+              className="w-full"
+            />
+            <Image
+              src={HymnsImages.wireframe5}
+              alt="Sketches"
+              className="w-full"
+            />
+            <Image
+              src={HymnsImages.wireframe6}
+              alt="Sketches"
+              className="w-full"
+            />
           </div>
         </div>
         <div className="my-8">
-          <h3 className="font-grotesque text-2xl mb-2">Digital wireframes</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 bg-tintblue4 px-4 py-8 rounded-[24px]">
+          <h3 className="font-grotesque text-2xl lg:text-3xl mb-2">
+            Digital wireframes
+          </h3>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-tintblue4 px-4 py-8 rounded-[24px]">
             <div>
               <p className="font-medium mb-2">SPLASH SCREEN</p>
-              <img src={HymnsImages.splash} alt="Splash" />
+              <Image src={HymnsImages.splash} alt="Splash" className="w-full" />
             </div>
             <div>
               <p className="font-medium mb-2">WELCOME SCREEN</p>
-              <img src={HymnsImages.welcome} alt="welcome" />
+              <Image
+                src={HymnsImages.welcome}
+                alt="welcome"
+                className="w-full"
+              />
             </div>
             <div>
               <p className="font-medium mb-2">HOME SCREEN</p>
-              <img src={HymnsImages.home} alt="home" />
+              <Image src={HymnsImages.home} alt="home" className="w-full" />
               <div className="mt-2 lg:hidden">
                 <p>==&gt; Cards for daily rhema and hymn of the day.</p>
                 <p>==&gt; Recently viewed hymns.</p>
@@ -446,15 +521,23 @@ const HymnsApp = () => {
             </div>
             <div>
               <p className="font-medium mb-2">HYMNS CATEGORIES</p>
-              <img src={HymnsImages.hymns} alt="welcome" />
+              <Image src={HymnsImages.hymns} alt="welcome" className="w-full" />
             </div>
             <div>
               <p className="font-medium mb-2">SETTINGS</p>
-              <img src={HymnsImages.settings} alt="settings" />
+              <Image
+                src={HymnsImages.settings}
+                alt="settings"
+                className="w-full"
+              />
             </div>
             <div>
               <p className="font-medium mb-2">A HYMN SONG</p>
-              <img src={HymnsImages.hymnssong} alt="hymns-song" />
+              <Image
+                src={HymnsImages.hymnssong}
+                alt="hymns-song"
+                className="w-full"
+              />
               <div className="mt-2 lg:hidden">
                 <p>==&gt; Language switch.</p>
                 <p>==&gt; Actions for hymn songs.</p>
@@ -467,7 +550,9 @@ const HymnsApp = () => {
         className={"border-b-2 border-tintblue1 font-intertight mt-6"}
       >
         <div className="">
-          <h3 className="font-grotesque text-2xl">Usability testing</h3>
+          <h3 className="font-grotesque text-2xl lg:text-3xl">
+            Usability testing
+          </h3>
           <p className="text-lg mt-2">
             To evaluate the ease of use and navigation of the solution, I relied
             on metrics in conjunction with 4 moderated usability studies. These
@@ -496,7 +581,9 @@ const HymnsApp = () => {
         </div>
         <div className="mt-8">
           <h4 className="text-sm">USABILITY STUDY RESULT 1</h4>
-          <h3 className="font-grotesque text-2xl">Moderated usability</h3>
+          <h3 className="font-grotesque text-2xl text-3xl">
+            Moderated usability
+          </h3>
           <div className="text-lg mt-2 mb-4">
             <div className="flex items-start gap-4">
               <b>✔</b>
@@ -625,25 +712,25 @@ const HymnsApp = () => {
                 <h3 className="font-grotesque text-2xl mb-4">Before #1</h3>
               </div>
               <div>
-                <img
+                <Image
                   src={HymnsImages.designIteration1}
                   alt="design iteration"
                 />
               </div>
-              <p className="font-medium mt-4">
+              <p className="font-medium mt-4 lg:hidden">
                 ==&gt; The language switch is not clear enough for users to
                 action.
               </p>
             </div>
-            <div className="font-medium mt-8">
+            <div className="font-medium mt-12">
               <h3 className="font-grotesque text-2xl mb-4">After #1</h3>
               <div>
-                <img
+                <Image
                   src={HymnsImages.designIteration2}
                   alt="design iteration"
                 />
               </div>
-              <p className="font-medium mt-4">
+              <p className="font-medium mt-4 lg:hidden">
                 ==&gt; The language switch was removed, and indicators were
                 added.
               </p>
@@ -651,50 +738,54 @@ const HymnsApp = () => {
             <div className="mt-8">
               <h3 className="font-grotesque text-2xl mb-4">Before #2</h3>
               <div>
-                <img
+                <Image
                   src={HymnsImages.designIteration3}
                   alt="design iteration"
                 />
               </div>
-              <p className="font-medium mt-4">==&gt; All hymn songs.</p>
+              <p className="font-medium mt-4 lg:hidden">
+                ==&gt; All hymn songs.
+              </p>
             </div>
             <div className="mt-8">
               <h3 className="font-grotesque text-2xl mb-4">After #2</h3>
               <div>
-                <img
+                <Image
                   src={HymnsImages.designIteration4}
                   alt="design iteration"
                 />
               </div>
-              <p className="font-medium mt-4">
-                ==&gt; Use of accordions for each category. The hymn songs are
-                more than 1,000.
-              </p>
-              <p className="font-medium mt-2">
-                ==&gt; Use of a collapse all action.
-              </p>
+              <div className="lg:hidden">
+                <p className="font-medium mt-4">
+                  ==&gt; Use of accordions for each category. The hymn songs are
+                  more than 1,000.
+                </p>
+                <p className="font-medium mt-2">
+                  ==&gt; Use of a collapse all action.
+                </p>
+              </div>
             </div>
             <div className="mt-8">
               <h3 className="font-grotesque text-2xl mb-4">Before #3</h3>
               <div>
-                <img
+                <Image
                   src={HymnsImages.designIteration5}
                   alt="design iteration"
                 />
               </div>
-              <p className="font-medium mt-4">
+              <p className="font-medium mt-4 lg:hidden">
                 ==&gt; Use of segmented buttons.
               </p>
             </div>
             <div className="mt-8">
               <h3 className="font-grotesque text-2xl mb-4">After #3</h3>
               <div>
-                <img
+                <Image
                   src={HymnsImages.designIteration6}
                   alt="design iteration"
                 />
               </div>
-              <p className="font-medium mt-4 mb-6">
+              <p className="font-medium mt-4 mb-6 lg:hidden">
                 ==&gt; Use of standard controls for each settings option.
               </p>
             </div>
@@ -707,18 +798,23 @@ const HymnsApp = () => {
         <div className="flex flex-col gap-8 text-lg">
           <div className="flex flex-col gap-2">
             <div>
-              <h3 className="font-grotesque text-2xl mb-2">Visual language</h3>
+              <h3
+                className="font-grotesque text-2xl lg:text-3xl
+               mb-2"
+              >
+                Visual language
+              </h3>
               <p className="text-lg">
                 The visual elements used in the mockups were based on the
                 church's visual and brand identity i.e. Logo.
               </p>
             </div>
-            <img src={HymnsImages.visual} alt="Visual language" />
+            <Image src={HymnsImages.visual} alt="Visual language" />
           </div>
 
           <div className="flex flex-col gap-2">
             <div>
-              <h3 className="font-grotesque text-2xl mb-2">
+              <h3 className="font-grotesque text-2xl lg:text-3xl mb-2">
                 Typography - Inter Display
               </h3>
               <p className="text-lg">
@@ -727,12 +823,14 @@ const HymnsApp = () => {
                 readability of mixed-case and lower-case text.
               </p>
             </div>
-            <img src={HymnsImages.typo} alt="typography" />
+            <Image src={HymnsImages.typo} alt="typography" />
           </div>
 
           <div>
             <div>
-              <h3 className="font-grotesque text-2xl mb-2">Design assets</h3>
+              <h3 className="font-grotesque text-2xl lg:text-3xl mb-2">
+                Design assets
+              </h3>
               <p className="text-lg">
                 I adopted Google’s open-source design system (
                 <AnchorTag
@@ -744,67 +842,67 @@ const HymnsApp = () => {
               </p>
             </div>
             <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center gap-4 mt-6 bg-tintblue4 py-6 px-4 rounded-[24px]">
-              <img src={HymnsImages.button} alt="typography" />
-              <img src={HymnsImages.appbar} alt="typography" />
-              <img src={HymnsImages.navbar} alt="typography" />
-              <img src={HymnsImages.pushnotification} alt="typography" />
+              <Image src={HymnsImages.button} alt="typography" />
+              <Image src={HymnsImages.appbar} alt="typography" />
+              <Image src={HymnsImages.navbar} alt="typography" />
+              <Image src={HymnsImages.pushnotification} alt="typography" />
             </div>
           </div>
 
           <div>
-            <h3 className="font-grotesque text-2xl">Key mockups</h3>
+            <h3 className="font-grotesque text-2xl text-3xl">Key mockups</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   home screen
                 </h4>
-                <img src={HymnsImages.mockup1} alt="mockup" />
+                <Image src={HymnsImages.mockup1} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   hymns categories
                 </h4>
-                <img src={HymnsImages.mockup2} alt="mockup" />
+                <Image src={HymnsImages.mockup2} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   all hymns
                 </h4>
-                <img src={HymnsImages.mockup3} alt="mockup" />
+                <Image src={HymnsImages.mockup3} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   a hymn screen
                 </h4>
-                <img src={HymnsImages.mockup4} alt="mockup" />
+                <Image src={HymnsImages.mockup4} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   more options
                 </h4>
-                <img src={HymnsImages.mockup4} alt="mockup" />
+                <Image src={HymnsImages.mockup4} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   playing a hymns song
                 </h4>
-                <img src={HymnsImages.mockup5} alt="mockup" />
+                <Image src={HymnsImages.mockup5} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   search feature
                 </h4>
-                <img src={HymnsImages.mockup6} alt="mockup" />
+                <Image src={HymnsImages.mockup6} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">
                   daily rhema
                 </h4>
-                <img src={HymnsImages.mockup7} alt="mockup" />
+                <Image src={HymnsImages.mockup7} alt="mockup" />
               </div>
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">settings</h4>
-                <img src={HymnsImages.mockup8} alt="mockup" />
+                <Image src={HymnsImages.mockup8} alt="mockup" />
               </div>
             </div>
           </div>
@@ -830,7 +928,7 @@ const HymnsApp = () => {
               Accessibility and inclusiveness
             </h3>
             <div className="flex flex-col gap-6 mt-4">
-              <div className="flex flex-col lg:flex-row gap-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                 <div className="flex items-start gap-4">
                   <b>✔</b>
                   <p>
@@ -838,14 +936,14 @@ const HymnsApp = () => {
                     <br className="hidden lg:block" /> navigation easier
                   </p>
                 </div>
-                <img
+                <Image
                   src={HymnsImages.accessibility}
                   alt="accessibility"
-                  className="flex-grow"
+                  className="w-full"
                 />
               </div>
 
-              <div className="flex flex-col lg:flex-row gap-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                 <div className="flex items-start gap-4 mb-4">
                   <b>✔</b>
                   <p>
@@ -860,10 +958,10 @@ const HymnsApp = () => {
                     />
                   </p>
                 </div>
-                <img
+                <Image
                   src={HymnsImages.colorcontrast}
                   alt="color-contrast"
-                  className="flex-grow"
+                  className="w-full"
                 />
               </div>
             </div>

@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply bg-tintblue5 md:bg-greywhite100 font-inter font-normal text-base text-greyblack100 leading-tight antialiased scroll-smooth;
+  @apply bg-tintblue5 font-inter font-normal text-base text-greyblack100 leading-tight antialiased scroll-smooth;
 }
 
 .list-alpha {

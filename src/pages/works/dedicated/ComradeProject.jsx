@@ -16,10 +16,9 @@ import {
 const ComradeProject = () => {
   return (
     <>
-      <SectionLayout className={"border-b border-b-tintblue1"}>
-        <GoBack />
-      </SectionLayout>
-      <SectionLayout className={"font-intertight border-b border-b-tintblue1"}>
+      <SectionLayout
+        className={"font-intertight border-b border-b-tintblue1 mt-16"}
+      >
         <div className="flex flex-col gap-6">
           <div>
             <p className="text-sm mt-6">REAL PROJECT - Website design</p>

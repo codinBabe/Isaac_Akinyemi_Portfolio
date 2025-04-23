@@ -4,16 +4,12 @@ import {
 } from "../../../components/RelatedProject";
 import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
-import GoBack from "../../../utils/GoBack";
 import { desoImages, Image } from "../../../utils/ImagesImport";
 
 const DesoRealtor = () => {
   return (
     <>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <GoBack />
-      </SectionLayout>
-      <SectionLayout>
+      <SectionLayout className={"mt-16"}>
         <p className="text-sm mt-6">REAL PROJECT - Website design</p>
         <h2 className="font-grotesque text-3xl lg:text-5xl">
           <span className="text-secrealtor">Deso Realtor</span> Website

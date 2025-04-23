@@ -4,16 +4,12 @@ import {
 } from "../../../components/RelatedProject";
 import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
-import GoBack from "../../../utils/GoBack";
 import { Image, ToyinImages } from "../../../utils/ImagesImport";
 
 const ToyinPortfolio = () => {
   return (
     <>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <GoBack />
-      </SectionLayout>
-      <SectionLayout className={"font-intertight text-lg"}>
+      <SectionLayout className={"font-intertight text-lg mt-20"}>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <p className="text-sm">REAL PROJECT - Website design</p>

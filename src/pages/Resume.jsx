@@ -9,7 +9,7 @@ const Resume = () => {
       <section
         className="border-b border-b-tintblue1 lg:hidden 
                     fixed top-0 left-0 w-full z-20 
-                     p-3 bg-tintblue5"
+                     py-3 px-5 bg-tintblue5"
       >
         <GoBack />
       </section>

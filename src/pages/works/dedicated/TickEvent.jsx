@@ -5,17 +5,13 @@ import {
 } from "../../../components/RelatedProject";
 import TheEnd from "../../../components/TheEnd";
 import SectionLayout from "../../../layouts/SectionLayout";
-import GoBack from "../../../utils/GoBack";
 import { StarIcon } from "../../../utils/icons/NavIcons";
 import { Image, TickVentImages } from "../../../utils/ImagesImport";
 
 const TickEvent = () => {
   return (
     <>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
-        <GoBack />
-      </SectionLayout>
-      <SectionLayout className={"border-b-2 border-b-tintblue1"}>
+      <SectionLayout className={"border-b-2 border-b-tintblue1 mt-20"}>
         <div className="flex flex-col gap-8 font-intertight text-lg">
           <div className="flex flex-col gap-4 lg:gap-6">
             <div className="space-y-3">
@@ -473,7 +469,7 @@ const TickEvent = () => {
           <div className="mb-8">
             <h2 className="font-grotesque text-2xl mb-4">Digital wireframes</h2>
 
-            <div className="bg-tintblue4 px-6 py-8 grid grid-cols-2 lg:grid-cols-3 gap-7 rounded-[32px]">
+            <div className="bg-tintblue4 px-6 py-8 grid grid-cols-1 lg:grid-cols-3 gap-7 rounded-[32px]">
               <div>
                 <p className="text-sm font-medium mb-4">ONBOARDING</p>
 
@@ -629,70 +625,82 @@ const TickEvent = () => {
           <div className="mb-8">
             <p className="text-sm">DESIGN ITERATION</p>
             <div className="flex flex-col gap-6">
-              <div>
-                <h2 className="font-grotesque text-2xl mb-4">Before #1</h2>
-                <div className="my-2">
-                  <img
-                    src={TickVentImages.desginIteration1}
-                    alt="design iteration 1"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h2 className="font-grotesque text-2xl mb-4">Before #1</h2>
+                  <div className="my-2">
+                    <Image
+                      src={TickVentImages.desginIteration1}
+                      alt="design iteration 1"
+                    />
+                  </div>
+                  <p className="lg:hidden">
+                    ==&gt; Capitalised text field label.
+                  </p>
                 </div>
-                <p>==&gt; Capitalised text field label.</p>
+                <div>
+                  <h2 className="font-grotesque text-2xl mb-4">After #1</h2>
+                  <div className="my-2">
+                    <Image
+                      src={TickVentImages.desginIteration2}
+                      alt="design iteration 2"
+                    />
+                  </div>
+                  <p className="lg:hidden">
+                    ==&gt; Lower caps text field label for improved legibility.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h2 className="font-grotesque text-2xl mb-4">After #1</h2>
-                <div className="my-2">
-                  <img
-                    src={TickVentImages.desginIteration2}
-                    alt="design iteration 2"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h2 className="font-grotesque text-2xl mb-4">Before #2 </h2>
+                  <div className="my-2">
+                    <Image
+                      src={TickVentImages.desginIteration3}
+                      alt="design iteration 3"
+                    />
+                  </div>
+                  <p className="lg:hidden">
+                    ==&gt; No categorisation of events.
+                  </p>
                 </div>
-                <p>
-                  ==&gt; Lower caps text field label for improved legibility.
-                </p>
+                <div>
+                  <h2 className="font-grotesque text-2xl mb-4">After #2 </h2>
+                  <div className="my-2">
+                    <Image
+                      src={TickVentImages.desginIteration4}
+                      alt="design iteration 4"
+                    />
+                  </div>
+                  <p className="lg:hidden">
+                    ==&gt; Categorisation of events for easy access.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h2 className="font-grotesque text-2xl mb-4">Before #2 </h2>
-                <div className="my-2">
-                  <img
-                    src={TickVentImages.desginIteration3}
-                    alt="design iteration 3"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h2 className="font-grotesque text-2xl mb-4">Before #3 </h2>
+                  <div className="my-2">
+                    <Image
+                      src={TickVentImages.desginIteration5}
+                      alt="design iteration 5"
+                    />
+                  </div>
+                  <p className="lg:hidden">==&gt; In-app payment method.</p>
                 </div>
-                <p>==&gt; No categorisation of events.</p>
-              </div>
-              <div>
-                <h2 className="font-grotesque text-2xl mb-4">After #2 </h2>
-                <div className="my-2">
-                  <img
-                    src={TickVentImages.desginIteration4}
-                    alt="design iteration 4"
-                  />
+                <div>
+                  <h2 className="font-grotesque text-2xl mb-4">After #3 </h2>
+                  <div className="my-2">
+                    <Image
+                      src={TickVentImages.desginIteration6}
+                      alt="design iteration 6"
+                    />
+                  </div>
+                  <p className="lg:hidden">
+                    ==&gt; Integration with a known payment gateway to build
+                    trust.
+                  </p>
                 </div>
-                <p>==&gt; Categorisation of events for easy access.</p>
-              </div>
-              <div>
-                <h2 className="font-grotesque text-2xl mb-4">Before #3 </h2>
-                <div className="my-2">
-                  <img
-                    src={TickVentImages.desginIteration5}
-                    alt="design iteration 5"
-                  />
-                </div>
-                <p>==&gt; In-app payment method.</p>
-              </div>
-              <div>
-                <h2 className="font-grotesque text-2xl mb-4">After #3 </h2>
-                <div className="my-2">
-                  <img
-                    src={TickVentImages.desginIteration6}
-                    alt="design iteration 6"
-                  />
-                </div>
-                <p>
-                  ==&gt; Integration with a known payment gateway to build
-                  trust.
-                </p>
               </div>
             </div>
           </div>
@@ -702,59 +710,59 @@ const TickEvent = () => {
         <div className="flex flex-col gap-8 mt-8 font-intertight text-lg">
           <div>
             <h2 className="font-grotesque text-2xl mb-4">Key mockups</h2>
-            <div className="flex flex-col gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3">
               <div>
                 <h3 className="text-base font-medium">ONBOARDING 1</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup1} alt="key mockup 1" />
+                  <Image src={TickVentImages.keymockup1} alt="key mockup 1" />
                 </div>
               </div>
               <div>
                 <h3 className="text-base font-medium">ONBOARDING 2</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup2} alt="key mockup 2" />
+                  <Image src={TickVentImages.keymockup2} alt="key mockup 2" />
                 </div>
               </div>
               <div>
                 <h3 className="text-base font-medium">ONBOARDING 3</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup3} alt="key mockup 3" />
+                  <Image src={TickVentImages.keymockup3} alt="key mockup 3" />
                 </div>
               </div>
               <div>
                 <h3 className="text-base font-medium">HOME SCREEN</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup4} alt="key mockup 4" />
+                  <Image src={TickVentImages.keymockup4} alt="key mockup 4" />
                 </div>
               </div>
               <div>
-                <h3 className="text-base font-medium">AM EVENT CATEGORY</h3>
+                <h3 className="text-base font-medium">AN EVENT CATEGORY</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup5} alt="key mockup 5" />
+                  <Image src={TickVentImages.keymockup5} alt="key mockup 5" />
                 </div>
               </div>
               <div>
                 <h3 className="text-base font-medium">EXPLORE EVENT</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup6} alt="key mockup 6" />
+                  <Image src={TickVentImages.keymockup6} alt="key mockup 6" />
                 </div>
               </div>
               <div>
                 <h3 className="text-base font-medium">NO SEARCH RESULT</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup7} alt="key mockup 7" />
+                  <Image src={TickVentImages.keymockup7} alt="key mockup 7" />
                 </div>
               </div>
               <div>
                 <h3 className="text-base font-medium">YOUR TICKET</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup8} alt="key mockup 8" />
+                  <Image src={TickVentImages.keymockup8} alt="key mockup 8" />
                 </div>
               </div>
               <div>
                 <h3 className="text-base font-medium">EVENT BOOKING</h3>
                 <div className="my-2">
-                  <img src={TickVentImages.keymockup9} alt="key mockup 9" />
+                  <Image src={TickVentImages.keymockup9} alt="key mockup 9" />
                 </div>
               </div>
             </div>
@@ -764,27 +772,28 @@ const TickEvent = () => {
             <h2 className="font-grotesque text-2xl mb-4">
               Accessibility and inclusiveness
             </h2>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-start gap-2">
-                <p>✔</p>
-                <p>
-                  Use of iOS standards for text sizes, button height, and
-                  layout.
-                </p>
+            <div className="flex flex-col lg:flex-row gap-4">
+              <div className="flex flex-col gap-4 lg:w-2/5">
+                <div className="flex items-start gap-2">
+                  <p>✔</p>
+                  <p>
+                    Use of iOS standards for text sizes, button height, and
+                    layout.
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <p>✔</p>
+                  <p>
+                    Labelling of the navigation bar to help recognition rather
+                    than recall.
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start gap-2">
-                <p>✔</p>
-                <p>
-                  Labelling of the navigation bar to help recognition rather
-                  than recall.
-                </p>
-              </div>
-              <div>
-                <img
-                  src={TickVentImages.accessibilityimg}
-                  alt="accessibility"
-                />
-              </div>
+              <Image
+                src={TickVentImages.accessibilityimg}
+                alt="accessibility"
+                className="w-3/5"
+              />
             </div>
           </div>
         </div>

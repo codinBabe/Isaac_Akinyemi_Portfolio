@@ -111,6 +111,7 @@ import designIteration3 from "../assets/hymns/design-iteration-3.svg";
 import designIteration4 from "../assets/hymns/design-iteration-4.svg";
 import designIteration5 from "../assets/hymns/design-iteration-5.svg";
 import designIteration6 from "../assets/hymns/design-iteration-6.svg";
+import userflowLg from "../assets/hymns/userflow-lg.svg";
 import visual from "../assets/hymns/visual-1.svg";
 import typo from "../assets/hymns/typo-1.svg";
 import appbar from "../assets/hymns/appbar.svg";
@@ -342,6 +343,7 @@ export const HymnsImages = {
   mockup8,
   accessibility,
   colorcontrast,
+  userflowLg,
 };
 
 export const TickVentImages = {
