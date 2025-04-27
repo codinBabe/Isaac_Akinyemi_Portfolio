@@ -581,7 +581,7 @@ const HymnsApp = () => {
         </div>
         <div className="mt-8">
           <h4 className="text-sm">USABILITY STUDY RESULT 1</h4>
-          <h3 className="font-grotesque text-2xl text-3xl">
+          <h3 className="font-grotesque text-2xl lg:text-3xl">
             Moderated usability
           </h3>
           <div className="text-lg mt-2 mb-4">
@@ -850,7 +850,7 @@ const HymnsApp = () => {
           </div>
 
           <div>
-            <h3 className="font-grotesque text-2xl text-3xl">Key mockups</h3>
+            <h3 className="font-grotesque text-2xl lg:text-3xl">Key mockups</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
               <div>
                 <h4 className="text-sm uppercase font-medium mb-4">

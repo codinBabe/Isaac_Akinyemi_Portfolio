@@ -1,10 +1,11 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation, useOutletContext } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const WorkLayout = () => {
+  const context = useOutletContext();
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="sync">
       <motion.main
         className="container mx-auto"
         key={location.pathname}
@@ -14,7 +15,7 @@ const WorkLayout = () => {
         transition={{ ease: "easeInOut" }}
       >
         <p className="text-sm">Click on any card to read the case study</p>
-        <Outlet />
+        <Outlet context={context} />
       </motion.main>
     </AnimatePresence>
   );

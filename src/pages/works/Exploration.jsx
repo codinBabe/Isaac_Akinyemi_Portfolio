@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 import { Image, WorkImages } from "../../utils/ImagesImport";
-import VideoModal from "../../components/VideoModal";
 
 function Exploration() {
+  const { setIsModalOpen, setCurrentVideo, setCurrentTitle, setLoading } =
+    useOutletContext();
   const explorationProjects = [
     {
       image: WorkImages.picmconsult,
@@ -21,21 +23,11 @@ function Exploration() {
     },
   ];
 
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [currentVideo, setCurrentVideo] = useState("");
-  const [currentTitle, setCurrentTitle] = useState("");
-  const [loading, setLoading] = useState(false);
-
   const handleOpenModal = (videoSrc, videoTitle) => {
     setCurrentVideo(videoSrc);
     setCurrentTitle(videoTitle);
-    setModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-    setCurrentVideo("");
-    setCurrentTitle("");
+    setIsModalOpen(true);
+    setLoading(true);
   };
 
   return (
@@ -50,13 +42,6 @@ function Exploration() {
           </div>
         ))}
       </div>
-      <VideoModal
-        loading={loading}
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        videoSrc={currentVideo}
-        title={currentTitle}
-      />
     </>
   );
 }

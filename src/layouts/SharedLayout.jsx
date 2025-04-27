@@ -6,10 +6,17 @@ import WorkFooter from "../components/WorkFooter";
 import HeaderLarge from "../components/HeaderLarge";
 import Footer from "../components/Footer";
 import WorkNav from "../components/WorkNav";
+import { useState } from "react";
+import VideoModal from "../components/VideoModal";
 
 const SharedLayout = () => {
   const location = useLocation();
   const isWorksPage = location.pathname.startsWith("/works");
+
+  const [loading, setLoading] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState("");
+  const [currentTitle, setCurrentTitle] = useState("");
 
   return (
     <>
@@ -31,8 +38,24 @@ const SharedLayout = () => {
             exit={{ opacity: 0 }}
             transition={{ ease: "easeInOut" }}
           >
-            <Outlet />
+            <Outlet
+              context={{
+                setIsModalOpen,
+                setCurrentTitle,
+                setCurrentVideo,
+                setLoading,
+              }}
+            />
           </motion.main>
+
+          <VideoModal
+            loading={loading}
+            setLoading={setLoading}
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            videoSrc={currentVideo}
+            title={currentTitle}
+          />
 
           {!isWorksPage && <Footer />}
         </div>
