@@ -32,7 +32,7 @@ function Exploration() {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-2 mb-6">
         {explorationProjects.map((project, index) => (
           <div
             key={index}
