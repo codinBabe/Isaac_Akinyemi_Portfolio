@@ -1,9 +1,9 @@
 import React from "react";
 import SectionLayout from "../../../layouts/SectionLayout";
-import GoBack from "../../../utils/GoBack";
 import {
   ComradeContentImages,
   ComradeMobileImages,
+  Image,
 } from "../../../utils/ImagesImport";
 import ImageSlider from "../../../components/ImageSlider";
 import AnchorTag from "../../../components/AnchorTag";
@@ -44,7 +44,7 @@ const ComradeProject = () => {
           </div>
           <div>
             <p className="text-sm">THE PROBLEM</p>
-            <h2 className="font-grotesque text-2xl my-1">
+            <h2 className="font-grotesque text-2xl lg:text-3xl my-1">
               Voter apathy among the Nigerian youths
             </h2>
             <p className="text-lg">
@@ -156,7 +156,9 @@ const ComradeProject = () => {
       <SectionLayout className={"font-intertight border-b border-b-tintblue1"}>
         <div className="flex flex-col gap-4">
           <div>
-            <h2 className="font-grotesque text-2xl my-4">Project goals</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl my-4">
+              Project goals
+            </h2>
             <div className="flex items-start gap-4">
               <b>#1</b>
               <p>
@@ -184,7 +186,9 @@ const ComradeProject = () => {
           </div>
 
           <div>
-            <h2 className="font-grotesque text-2xl my-5">What did we do?</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl my-5">
+              What did we do?
+            </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div className="bg-tintblue4 p-5 mb-4 relative">
                 <p>
@@ -243,7 +247,7 @@ const ComradeProject = () => {
           />
 
           <div className="flex flex-col justify-center mb-6 text-center font-intertight ">
-            <img
+            <Image
               src={ComradeContentImages.comrademobile6}
               alt="comrade-image-6"
             />
@@ -253,7 +257,7 @@ const ComradeProject = () => {
           </div>
 
           <div>
-            <h2 className="font-grotesque text-2xl my-5">
+            <h2 className="font-grotesque text-2xl lg:text-3xl my-5">
               Impacts and Outcomes
             </h2>
             <div className="flex flex-col lg:flex-row gap-4">
@@ -328,14 +332,16 @@ const ComradeProject = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center lg:flex-row gap-4">
-            <img
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <Image
               src={ComradeContentImages.comradecontent2}
               alt="group picture with comrade design team"
+              className="w-full"
             />
-            <img
+            <Image
               src={ComradeContentImages.comradecontent3}
               alt="group picture with comrade design team"
+              className="w-full"
             />
           </div>
 
@@ -379,29 +385,51 @@ const ComradeProject = () => {
                 research participants.
               </p>
             </div>
-            <div className="flex flex-col gap-4 mb-4">
-              <img
+            <div className="flex flex-col gap-4 mb-4 lg:hidden">
+              <Image
                 src={ComradeContentImages.comradeuserresearch1}
                 alt="user research content"
               />
-              <img
+              <Image
                 src={ComradeContentImages.comradeuserresearch2}
                 alt="user research content"
               />
-              <img
+              <Image
                 src={ComradeContentImages.comradeuserresearch3}
                 alt="user research content"
               />
-              <img
+              <Image
                 src={ComradeContentImages.comradeuserresearch4}
                 alt="user research content"
               />
-              <img
+              <Image
                 src={ComradeContentImages.comradeuserresearch5}
                 alt="user research content"
               />
-              <img
+              <Image
                 src={ComradeContentImages.comradeuserresearch6}
+                alt="user research content"
+              />
+            </div>
+            <div className="hidden lg:flex flex-col gap-6 my-4">
+              <Image
+                src={ComradeContentImages.participant1}
+                alt="user research content"
+              />
+              <Image
+                src={ComradeContentImages.participant2}
+                alt="user research content"
+              />
+              <Image
+                src={ComradeContentImages.participant3}
+                alt="user research content"
+              />
+              <Image
+                src={ComradeContentImages.category1}
+                alt="user research content"
+              />
+              <Image
+                src={ComradeContentImages.category2}
                 alt="user research content"
               />
             </div>
@@ -415,7 +443,9 @@ const ComradeProject = () => {
           </div>
 
           <div>
-            <h2 className="font-grotesque text-2xl mb-1">Further research</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-1">
+              Further research
+            </h2>
             <div>
               <p>
                 To validate and invalidate our assumptions and findings, we
@@ -430,14 +460,16 @@ const ComradeProject = () => {
                 voter’s card. Elections happen every 4 years.
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row justify-center gap-4 my-4">
-              <img
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
+              <Image
                 src={ComradeContentImages.comradesurveyreport1}
                 alt="survey report images"
+                className="w-full"
               />
-              <img
+              <Image
                 src={ComradeContentImages.comradesurveyreport2}
                 alt="survey report images"
+                className="w-full"
               />
             </div>
             <AnchorTag
@@ -450,7 +482,9 @@ const ComradeProject = () => {
           </div>
 
           <div>
-            <h2 className="font-grotesque text-2xl">Research takeaways</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl">
+              Research takeaways
+            </h2>
             <div className="mt-4 flex flex-col gap-4">
               <div className="flex items-start gap-4">
                 <b>#1</b>
@@ -496,7 +530,7 @@ const ComradeProject = () => {
       <SectionLayout
         className={"font-intertight mt-4 border-b-2 border-b-tintblue1"}
       >
-        <h2 className="font-grotesque text-2xl">Constraints</h2>
+        <h2 className="font-grotesque text-2xl lg:text-3xl">Constraints</h2>
         <div className="mt-4 flex flex-col gap-4">
           <div className="flex items-start gap-4">
             <b>#1</b>
@@ -535,57 +569,70 @@ const ComradeProject = () => {
         className={"font-intertight mt-4 border-b-2 border-b-tintblue1"}
       >
         <p className="text-sm">BRAND IDENTITY</p>
-        <h2 className="font-grotesque text-2xl mb-1">
+        <h2 className="font-grotesque text-2xl lg:text-3xl mb-1">
           Giving the project an identity
         </h2>
         <p>
           The branding of the project was done by the brand identity designer.
         </p>
-        <div className="flex flex-col lg:flex-row justify-center flex-wrap gap-4 mt-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
           <div>
-            <img
+            <Image
               src={ComradeContentImages.comradebrandindentity1}
               alt="brand identity images"
+              className="w-full"
             />
           </div>
           <div>
-            <img
+            <Image
               src={ComradeContentImages.comradebrandindentity2}
               alt="brand identity images"
+              className="w-full"
             />
           </div>
-          <div>
-            <img
+          <div className="lg:col-span-2">
+            <Image
               src={ComradeContentImages.comradebrandindentity3}
               alt="brand identity images"
+              className="w-full"
             />
           </div>
         </div>
         <div className="mt-8">
           <h2 className="font-grotesque text-2xl mb-1">Typography</h2>
-          <div className="flex flex-col lg:flex-row justify-center gap-4 mt-4">
-            <img
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+            <Image
               src={ComradeContentImages.comradetypography1}
               alt="typography images"
+              className="w-full"
             />
-            <img
+            <Image
               src={ComradeContentImages.comradetypography2}
               alt="typography images"
+              className="w-full"
             />
           </div>
         </div>
         <div className="mt-8 mb-5">
           <h2 className="font-grotesque text-2xl mb-1">Color</h2>
-          <div className="flex flex-col lg:flex-row justify-center gap-4 mt-4">
-            <img src={ComradeContentImages.comradecolor1} alt="color images" />
-            <img src={ComradeContentImages.comradecolor2} alt="color images" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+            <Image
+              src={ComradeContentImages.comradecolor1}
+              alt="color images"
+              className="w-full"
+            />
+            <Image
+              src={ComradeContentImages.comradecolor2}
+              alt="color images"
+              className="w-full"
+            />
           </div>
         </div>
       </SectionLayout>
       <SectionLayout
         className={"font-intertight mt-6 border-b-2 border-b-tintblue1"}
       >
-        <h2 className="font-grotesque text-2xl">Prioritisation</h2>
+        <h2 className="font-grotesque text-2xl lg:text-3xl">Prioritisation</h2>
         <div className="flex flex-col lg:flex-row gap-4 mb-8">
           <div className="bg-tintblue4 p-5 mt-4 relative">
             <h3 className="font-grotesque text-xl">Before</h3>
@@ -657,123 +704,273 @@ const ComradeProject = () => {
           <h3 className="font-grotesque text-[22px] leading-5 mb-6">
             Before #1
           </h3>
-          <img src={ComradeContentImages.prioritisation1} alt="Design flow" />
-          <div className="mt-2">
-            <p className="text-lg font-medium">Get your PVC section</p>
-            <p className="text-sm">
-              Registration for voter’s cards had ended before we launched the
-              website, so we had to remove the section from the website.{" "}
-              <b>PVC</b> - Permanent voters’ card
-            </p>
+          <div className="lg:hidden">
+            <Image
+              src={ComradeContentImages.prioritisation1}
+              alt="Design flow"
+            />
+            <div className="mt-2">
+              <p className="text-lg font-medium">Get your PVC section</p>
+              <p className="text-sm">
+                Registration for voter’s cards had ended before we launched the
+                website, so we had to remove the section from the website.{" "}
+                <b>PVC</b> - Permanent voters’ card
+              </p>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <Image
+              src={ComradeContentImages.pvcCta1}
+              alt={"Design Flow"}
+              className="w-full"
+            />
+            <div></div>
           </div>
         </div>
         <div>
           <h3 className="font-grotesque text-[22px] leading-5 mb-6">
             After #1
           </h3>
-          <img src={ComradeContentImages.prioritisation2} alt="Design flow" />
-          <div className="mt-2">
-            <p className="text-lg font-medium">Resources section</p>
-            <p className="text-sm">
-              Our website visitors can download posters and fliers in different
-              resolutions and share them in their community.
-            </p>
+          <div className="lg:hidden">
+            <Image
+              src={ComradeContentImages.prioritisation2}
+              alt="Design flow"
+            />
+            <div className="mt-2">
+              <p className="text-lg font-medium">Resources section</p>
+              <p className="text-sm">
+                Our website visitors can download posters and fliers in
+                different resolutions and share them in their community.
+              </p>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <Image
+              src={ComradeContentImages.pvcCta2}
+              alt={"Design Flow"}
+              className="w-full"
+            />
+            <div></div>
           </div>
         </div>
         <div>
           <h3 className="font-grotesque text-[22px] leading-5 mb-6">
             Before #2
           </h3>
-          <img src={ComradeContentImages.prioritisation3} alt="Design flow" />
-          <div className="mt-2">
-            <p className="text-lg font-medium">Know your voting ward</p>
-            <p className="text-sm">
-              The API (application programming interface) for this was not
-              readily available. We had to exclude this section from the
-              website.
-            </p>
+          <div className="lg:hidden">
+            <Image
+              src={ComradeContentImages.prioritisation3}
+              alt="Design flow"
+            />
+            <div className="mt-2">
+              <p className="text-lg font-medium">Know your voting ward</p>
+              <p className="text-sm">
+                The API (application programming interface) for this was not
+                readily available. We had to exclude this section from the
+                website.
+              </p>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <Image
+              src={ComradeContentImages.pvcCta3}
+              alt={"Design Flow"}
+              className="w-full"
+            />
+            <div></div>
           </div>
         </div>
         <div>
           <h3 className="font-grotesque text-[22px] leading-5 mb-6">
             After #2
           </h3>
-          <img src={ComradeContentImages.prioritisation4} alt="Design flow" />
-          <div className="mt-2">
-            <p className="text-lg font-medium">Voter education</p>
-            <p className="text-sm">
-              We provided a list of concise articles on educating eligible
-              voters about the upcoming elections.
-            </p>
+          <div className="lg:hidden">
+            <Image
+              src={ComradeContentImages.prioritisation4}
+              alt="Design flow"
+            />
+            <div className="mt-2">
+              <p className="text-lg font-medium">Voter education</p>
+              <p className="text-sm">
+                We provided a list of concise articles on educating eligible
+                voters about the upcoming elections.
+              </p>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <Image
+              src={ComradeContentImages.pvcCta4}
+              alt={"Design Flow"}
+              className="w-full"
+            />
+            <div></div>
           </div>
         </div>
         <div>
           <h3 className="font-grotesque text-[22px] leading-5 mb-6">
             Before #3
           </h3>
-          <img src={ComradeContentImages.prioritisation5} alt="Design flow" />
-          <div className="mt-2">
-            <p className="text-lg font-medium">Forum</p>
-            <p className="text-sm">
-              We had limited time and resources to fully implement this feature
-              as some developers got busy with work and personal lives.
-            </p>
+          <div className="lg:hidden">
+            <Image
+              src={ComradeContentImages.prioritisation5}
+              alt="Design flow"
+            />
+            <div className="mt-2">
+              <p className="text-lg font-medium">Forum</p>
+              <p className="text-sm">
+                We had limited time and resources to fully implement this
+                feature as some developers got busy with work and personal
+                lives.
+              </p>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <Image
+              src={ComradeContentImages.pvcCta5}
+              alt={"Design Flow"}
+              className="w-full"
+            />
+            <div></div>
           </div>
         </div>
         <div className="mb-8">
           <h3 className="font-grotesque text-[22px] leading-5 mb-6">
             After #3
           </h3>
-          <img src={ComradeContentImages.prioritisation6} alt="Design flow" />
-          <div className="mt-2">
-            <p className="text-lg font-medium mb-1">Articles</p>
-            <p className="text-sm">
-              We provided articles about happenings in the community and current
-              affairs like the JAPA{" "}
-              <em>(a word used to describe leaving Nigeria)</em> movement.
-            </p>
+          <div className="lg:hidden">
+            <Image
+              src={ComradeContentImages.prioritisation6}
+              alt="Design flow"
+            />
+            <div className="mt-2">
+              <p className="text-lg font-medium mb-1">Articles</p>
+              <p className="text-sm">
+                We provided articles about happenings in the community and
+                current affairs like the JAPA{" "}
+                <em>(a word used to describe leaving Nigeria)</em> movement.
+              </p>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <Image
+              src={ComradeContentImages.pvcCta6}
+              alt={"Design Flow"}
+              className="w-full"
+            />
+            <div></div>
           </div>
         </div>
       </SectionLayout>
       <SectionLayout
         className={"font-intertight mt-6 border-b-2 border-b-tintblue1"}
       >
-        <h2 className="font-grotesque text-2xl mb-4">
+        <h2 className="font-grotesque text-2xl lg:text-3xl mb-4">
           Design for easy information-finding
         </h2>
-        <img
+        <Image
           src={ComradeContentImages.easydesignsteps}
           alt="easy design steps"
+          className="w-full"
         />
         <div className="bg-tintblue4 p-5 mt-8 relative">
-          <h2 className="font-medium text-lg">Homepage</h2>
-          <div className="mt-4 flex flex-col gap-4">
-            <img src={ComradeContentImages.homepage1} alt="homepage UI" />
-            <img src={ComradeContentImages.homepage2} alt="homepage UI" />
-            <img src={ComradeContentImages.homepage3} alt="homepage UI" />
-            <img src={ComradeContentImages.homepage4} alt="homepage UI" />
+          <div className="lg:hidden">
+            <h2 className="font-medium text-lg">Homepage</h2>
+            <div className="mt-4 flex flex-col gap-4">
+              <Image src={ComradeContentImages.homepage1} alt="homepage UI" />
+              <Image src={ComradeContentImages.homepage2} alt="homepage UI" />
+              <Image src={ComradeContentImages.homepage3} alt="homepage UI" />
+              <Image src={ComradeContentImages.homepage4} alt="homepage UI" />
+            </div>
+          </div>
+
+          <div className="hidden lg:grid grid-cols-2 gap-4">
+            <div>
+              <h2 className="font-medium text-xl mb-2">Homepage</h2>
+              <Image
+                src={ComradeContentImages.homeComradeDesktop1}
+                alt="homepage UI"
+                className="w-full"
+              />
+            </div>
+            <div>
+              <h2 className="font-medium text-xl mb-2">
+                Homepage continuation
+              </h2>
+              <Image
+                src={ComradeContentImages.homeComradeDesktop2}
+                alt="homepage UI"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
         <div className="bg-tintblue4 p-5 mt-8 relative">
-          <h2 className="font-medium text-lg">Resources</h2>
-          <div className="mt-4 flex flex-col gap-4">
-            <img src={ComradeContentImages.homepage5} alt="homepage UI" />
+          <div className="lg:hidden">
+            <h2 className="font-medium text-lg">Resources</h2>
+            <div className="mt-4 flex flex-col gap-4">
+              <Image src={ComradeContentImages.homepage5} alt="homepage UI" />
+            </div>
+          </div>
+          <div className="hidden lg:grid grid-cols-2 gap-4">
+            <div>
+              <h2 className="font-medium text-xl mb-2">
+                Homepage continuation
+              </h2>
+              <Image
+                src={ComradeContentImages.homeComradeDesktop3}
+                alt="homepage UI"
+                className="w-full"
+              />
+            </div>
+            <div>
+              <h2 className="font-medium text-xl mb-2">Resources</h2>
+              <Image
+                src={ComradeContentImages.homeComradeDesktop4}
+                alt="homepage UI"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
-        <div className="bg-tintblue4 p-5 relative">
+        <div className="bg-tintblue4 p-5 relative lg:hidden">
           <h2 className="font-medium text-lg">Voter education</h2>
           <div className="mt-4 flex flex-col gap-4">
-            <img src={ComradeContentImages.homepage6} alt="homepage UI" />
+            <Image src={ComradeContentImages.homepage6} alt="homepage UI" />
           </div>
         </div>
-        <div className="bg-tintblue4 p-5 relative">
+        <div className="bg-tintblue4 p-5 relative lg:hidden">
           <h2 className="font-medium text-lg">Articles</h2>
           <div className="mt-4 flex flex-col gap-4">
-            <img src={ComradeContentImages.homepage7} alt="homepage UI" />
+            <Image src={ComradeContentImages.homepage7} alt="homepage UI" />
+          </div>
+        </div>
+
+        <div className="hidden lg:grid grid-cols-2 gap-4 bg-tintblue4 p-5 mt-8 relative">
+          <div>
+            <h2 className="font-medium text-xl mb-2">Voter education</h2>
+            <Image
+              src={ComradeContentImages.homeComradeDesktop5}
+              alt="homepage UI"
+              className="w-full"
+            />
+          </div>
+          <div>
+            <h2 className="font-medium text-xl mb-2">Articles</h2>
+            <Image
+              src={ComradeContentImages.homeComradeDesktop6}
+              alt="homepage UI"
+              className="w-full"
+            />
           </div>
         </div>
         <div className="mt-8 relative">
-          <h2 className="font-grotesque text-2xl mb-1">
+          <h2 className="font-grotesque text-2xl lg:text-3xl mb-1">
             Launching the website
           </h2>
           <p>
@@ -781,7 +978,7 @@ const ComradeProject = () => {
             spaces in anticipation of launching the website.
           </p>
           <div className="flex justify-center bg-tintblue4 p-5 my-5">
-            <img src={ComradeContentImages.launch} alt="homepage UI" />
+            <Image src={ComradeContentImages.launch} alt="homepage UI" />
           </div>
         </div>
       </SectionLayout>
@@ -790,7 +987,9 @@ const ComradeProject = () => {
       >
         <div className="flex flex-col gap-6">
           <div>
-            <h2 className="font-grotesque text-2xl mb-2">Post launch</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-2">
+              Post launch
+            </h2>
             <p>
               Upon launching the website, we had a retrospective meeting and
               decided to organise a voter seminar at one of the top universities
@@ -858,7 +1057,9 @@ const ComradeProject = () => {
           </div>
 
           <div className="mb-8">
-            <h2 className="font-grotesque text-2xl mb-2">More impacts</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-2">
+              More impacts
+            </h2>
             <p>
               Federal (public) universities in Nigeria increased the price of
               their tuition fees in 2023. Some did over <b>300%</b>, while
@@ -879,7 +1080,9 @@ const ComradeProject = () => {
       <SectionLayout className={"font-intertight mt-6"}>
         <div className="flex flex-col gap-6">
           <div>
-            <h2 className="font-grotesque text-2xl mb-4">Top learnings</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-4">
+              Top learnings
+            </h2>
             <div className="flex items-start gap-4">
               <b>#1</b>
               <p>
@@ -895,7 +1098,9 @@ const ComradeProject = () => {
             </div>
           </div>
           <div>
-            <h2 className="font-grotesque text-2xl mb-4">What’s next?</h2>
+            <h2 className="font-grotesque text-2xl lg:text-3xl mb-4">
+              What’s next?
+            </h2>
             <p>
               Drive community development via a leadership development and
               mentorship program for our top 5 community members.

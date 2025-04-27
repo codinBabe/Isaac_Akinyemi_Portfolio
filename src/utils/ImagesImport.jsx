@@ -64,6 +64,23 @@ import comradebrandindentity2 from "../assets/comrade/brand-identity-2.svg";
 import comradebrandindentity3 from "../assets/comrade/brand-identity-3.svg";
 import comradetypography1 from "../assets/comrade/typography-1.svg";
 import comradetypography2 from "../assets/comrade/typography-2.svg";
+import participant1 from "../assets/comrade/desktop/participant-1.svg";
+import participant2 from "../assets/comrade/desktop/participant-2.svg";
+import participant3 from "../assets/comrade/desktop/participant-3.svg";
+import category1 from "../assets/comrade/desktop/category-1.svg";
+import category2 from "../assets/comrade/desktop/category-2.svg";
+import pvcCta1 from "../assets/comrade/desktop/pvc-cta-1.svg";
+import pvcCta2 from "../assets/comrade/desktop/pvc-cta-2.svg";
+import pvcCta3 from "../assets/comrade/desktop/pvc-cta-3.svg";
+import pvcCta4 from "../assets/comrade/desktop/pvc-cta-4.svg";
+import pvcCta5 from "../assets/comrade/desktop/pvc-cta-5.svg";
+import pvcCta6 from "../assets/comrade/desktop/pvc-cta-6.svg";
+import homeComradeDesktop1 from "../assets/comrade/desktop/home-desktop-1.svg";
+import homeComradeDesktop2 from "../assets/comrade/desktop/home-desktop-2.svg";
+import homeComradeDesktop3 from "../assets/comrade/desktop/home-desktop-3.svg";
+import homeComradeDesktop4 from "../assets/comrade/desktop/home-desktop-4.svg";
+import homeComradeDesktop5 from "../assets/comrade/desktop/home-desktop-5.svg";
+import homeComradeDesktop6 from "../assets/comrade/desktop/home-desktop-6.svg";
 import comradecolor1 from "../assets/comrade/color-1.svg";
 import comradecolor2 from "../assets/comrade/color-2.svg";
 import prioritisation1 from "../assets/comrade/prioritisation-1.svg";
@@ -201,6 +218,7 @@ import buildingHomeDesktop1 from "../assets/building-band/home-desktop1.svg";
 import buildingHomeDesktop2 from "../assets/building-band/home-desktop-2.svg";
 import buildingHomeMobile1 from "../assets/building-band/home-mobile-1.svg";
 import buildingHomeMobile2 from "../assets/building-band/home-mobile-2.svg";
+import { p } from "framer-motion/client";
 
 export const AboutImages = [
   aboutimg1,
@@ -292,6 +310,23 @@ export const ComradeContentImages = {
   comrademobile11,
   comrademobile12,
   comrademobile13,
+  participant1,
+  participant2,
+  participant3,
+  category1,
+  category2,
+  pvcCta1,
+  pvcCta2,
+  pvcCta3,
+  pvcCta4,
+  pvcCta5,
+  pvcCta6,
+  homeComradeDesktop1,
+  homeComradeDesktop2,
+  homeComradeDesktop3,
+  homeComradeDesktop4,
+  homeComradeDesktop5,
+  homeComradeDesktop6,
 };
 
 export const WorkImages = {
