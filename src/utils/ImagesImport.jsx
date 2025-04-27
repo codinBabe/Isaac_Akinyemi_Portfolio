@@ -218,7 +218,6 @@ import buildingHomeDesktop1 from "../assets/building-band/home-desktop1.svg";
 import buildingHomeDesktop2 from "../assets/building-band/home-desktop-2.svg";
 import buildingHomeMobile1 from "../assets/building-band/home-mobile-1.svg";
 import buildingHomeMobile2 from "../assets/building-band/home-mobile-2.svg";
-import { p } from "framer-motion/client";
 
 export const AboutImages = [
   aboutimg1,

@@ -22,11 +22,6 @@ const About = () => {
     }));
   };
 
-  const imageData = AboutImages.slice(1, 9).map((img, index) => ({
-    src: img,
-    alt: `Early designs ${index + 1}`,
-  }));
-
   return (
     <>
       <section
@@ -116,13 +111,51 @@ const About = () => {
                   text={"EARLY DESIGNS"}
                   classname={"font-intertight font-medium text-lg"}
                 />
-                <div className="flex flex-col lg:flex-row items-center flex-wrap gap-2 -mt-4">
-                  {imageData.map((data, index) => (
-                    <AnimatedContainer key={index}>
-                      <Image key={index} src={data.src} alt={data.alt} />
-                    </AnimatedContainer>
-                  ))}
-                </div>
+                <AnimatedContainer>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <Image
+                      src={AboutImages.at(1)}
+                      alt="Early designs 1"
+                      className="w-full"
+                    />
+                    <Image
+                      src={AboutImages.at(2)}
+                      alt="Early designs 2"
+                      className="w-full"
+                    />
+                    <Image
+                      src={AboutImages.at(3)}
+                      alt="Early designs 3"
+                      className="w-full"
+                    />
+                    <Image
+                      src={AboutImages.at(4)}
+                      alt="Early designs 4"
+                      className="w-full"
+                    />
+                    <Image
+                      src={AboutImages.at(5)}
+                      alt="Early designs 5"
+                      className="w-full lg:col-span-2"
+                    />
+                    <Image
+                      src={AboutImages.at(6)}
+                      alt="Early designs 6"
+                      className="w-full"
+                    />
+
+                    <Image
+                      src={AboutImages.at(7)}
+                      alt="Early designs 7"
+                      className="w-full"
+                    />
+                    <Image
+                      src={AboutImages.at(8)}
+                      alt="Early designs 8"
+                      className="w-full lg:col-span-2"
+                    />
+                  </div>
+                </AnimatedContainer>
               </div>
 
               <AnimatedContainer>
@@ -206,16 +239,19 @@ const About = () => {
                 </AnimatedContainer>
               </div>
               <AnimatedContainer>
-                <Image
-                  src={AboutImages.slice(9, 10)}
-                  alt="Isaac Akinyemi pic1"
-                />
-              </AnimatedContainer>
-              <AnimatedContainer>
-                <Image
-                  src={AboutImages.slice(10, 11)}
-                  alt="Isaac Akinyemi pic2"
-                />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <Image
+                    src={AboutImages.slice(9, 10)}
+                    alt="Isaac Akinyemi pic1"
+                    className="w-full"
+                  />
+
+                  <Image
+                    src={AboutImages.slice(10, 11)}
+                    alt="Isaac Akinyemi pic2"
+                    className="w-full"
+                  />
+                </div>
               </AnimatedContainer>
               <div>
                 <AnimatedSubTitle
@@ -349,12 +385,14 @@ const About = () => {
                     alt="Isaac Akinyemi pic3"
                   />
                 </AnimatedContainer>
-                <AnimatedContainer>
-                  <Image
-                    src={AboutImages.slice(12, 13)}
-                    alt="Isaac Akinyemi pic4"
-                  />
-                </AnimatedContainer>
+                <div className="lg:hidden">
+                  <AnimatedContainer>
+                    <Image
+                      src={AboutImages.slice(12, 13)}
+                      alt="Isaac Akinyemi pic4"
+                    />
+                  </AnimatedContainer>
+                </div>
               </div>
             </>
           )}
@@ -370,63 +408,67 @@ const About = () => {
             />
             {openSections.services && (
               <>
-                <div>
-                  <AnimatedSubTitle
-                    text={"What I can do for you"}
-                    classname={"text-2xl font-semibold mb-2"}
-                  />
-                  <AnimatedContainer>
-                    <ol className="list-decimal pl-5">
-                      <li>User Experience (UX) Design,</li>
-                      <li>User Interface (UI) Design,</li>
-                      <li>Digital Product Design, </li>
-                      <li>Product Development, and </li>
-                      <li>Business Analysis.</li>
-                    </ol>
-                  </AnimatedContainer>
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div>
+                    <AnimatedSubTitle
+                      text={"What I can do for you"}
+                      classname={"text-2xl font-semibold mb-2"}
+                    />
+                    <AnimatedContainer>
+                      <ol className="list-decimal pl-5">
+                        <li>User Experience (UX) Design,</li>
+                        <li>User Interface (UI) Design,</li>
+                        <li>Digital Product Design, </li>
+                        <li>Product Development, and </li>
+                        <li>Business Analysis.</li>
+                      </ol>
+                    </AnimatedContainer>
+                  </div>
+                  <div>
+                    <AnimatedSubTitle
+                      text={"Industries I have serviced"}
+                      classname={"text-2xl font-semibold mb-2"}
+                    />
+                    <AnimatedContainer>
+                      <ol className="list-decimal pl-5">
+                        <li>FinTech,</li>
+                        <li>EduTech,</li>
+                        <li>E-commerce, </li>
+                        <li>Service business, and </li>
+                        <li>PropTech.</li>
+                      </ol>
+                    </AnimatedContainer>
+                  </div>
                 </div>
-                <div>
-                  <AnimatedSubTitle
-                    text={"Industries I have serviced"}
-                    classname={"text-2xl font-semibold mb-2"}
-                  />
-                  <AnimatedContainer>
-                    <ol className="list-decimal pl-5">
-                      <li>FinTech,</li>
-                      <li>EduTech,</li>
-                      <li>E-commerce, </li>
-                      <li>Service business, and </li>
-                      <li>PropTech.</li>
-                    </ol>
-                  </AnimatedContainer>
-                </div>
-                <div>
-                  <AnimatedSubTitle
-                    text={"Where I can render my expertise"}
-                    classname={"text-2xl font-semibold mb-2"}
-                  />
-                  <AnimatedContainer>
-                    <ol className="list-decimal pl-5">
-                      <li>Startups,</li>
-                      <li>Design Agencies,</li>
-                      <li>Product Teams, </li>
-                      <li>Small Organisations, and</li>
-                      <li>Large Organisations.</li>
-                    </ol>
-                  </AnimatedContainer>
-                </div>
-                <div>
-                  <AnimatedSubTitle
-                    text={"Companies I have worked for"}
-                    classname={"text-2xl font-semibold mb-2"}
-                  />
-                  <AnimatedContainer>
-                    <div className="flex items-center justify-between -mt-2">
-                      <img src={AboutImages.slice(32, 33)} alt="Companies" />
-                      <img src={AboutImages.slice(33, 34)} alt="Companies" />
-                      <img src={AboutImages.slice(34, 35)} alt="Companies" />
-                    </div>
-                  </AnimatedContainer>
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div>
+                    <AnimatedSubTitle
+                      text={"Where I can render my expertise"}
+                      classname={"text-2xl font-semibold mb-2"}
+                    />
+                    <AnimatedContainer>
+                      <ol className="list-decimal pl-5">
+                        <li>Startups,</li>
+                        <li>Design Agencies,</li>
+                        <li>Product Teams, </li>
+                        <li>Small Organisations, and</li>
+                        <li>Large Organisations.</li>
+                      </ol>
+                    </AnimatedContainer>
+                  </div>
+                  <div>
+                    <AnimatedSubTitle
+                      text={"Companies I have worked for"}
+                      classname={"text-2xl font-semibold mb-2"}
+                    />
+                    <AnimatedContainer>
+                      <div className="flex items-center justify-between -mt-2">
+                        <img src={AboutImages.slice(32, 33)} alt="Companies" />
+                        <img src={AboutImages.slice(33, 34)} alt="Companies" />
+                        <img src={AboutImages.slice(34, 35)} alt="Companies" />
+                      </div>
+                    </AnimatedContainer>
+                  </div>
                 </div>
                 <div>
                   <AnimatedSubTitle
@@ -434,7 +476,7 @@ const About = () => {
                     classname={"text-2xl font-semibold mb-2"}
                   />
                   <AnimatedContainer>
-                    <ul className="flex items-center flex-wrap gap-2 -mt-4">
+                    <ul className="flex items-center lg:justify-between flex-wrap gap-2 -mt-4">
                       <li>
                         <b className="mr-2">#1</b> Understand
                       </li>
@@ -486,7 +528,11 @@ const About = () => {
                   Current manager - Ecobank Transnational Incorporated
                 </p>
                 <AnimatedContainer>
-                  <img src={AboutImages.at(13)} alt="reviews1" />
+                  <Image
+                    src={AboutImages.at(13)}
+                    alt="reviews1"
+                    className="w-[80%]"
+                  />
                 </AnimatedContainer>
               </div>
               <div>
@@ -497,7 +543,11 @@ const About = () => {
                   Ex-manager - Ecobank Transnational Incorporated
                 </p>
                 <AnimatedContainer>
-                  <img src={AboutImages.slice(14, 15)} alt="reviews2" />
+                  <Image
+                    src={AboutImages.slice(14, 15)}
+                    alt="reviews2"
+                    className="w-[80%]"
+                  />
                 </AnimatedContainer>
               </div>
               <div>
@@ -508,7 +558,11 @@ const About = () => {
                   Ex-manager - NandS Tech
                 </p>
                 <AnimatedContainer>
-                  <img src={AboutImages.at(15)} alt="reviews2" />
+                  <Image
+                    src={AboutImages.at(15)}
+                    alt="reviews2"
+                    className="w-[80%]"
+                  />
                 </AnimatedContainer>
               </div>
               <div>
@@ -525,7 +579,11 @@ const About = () => {
                   </p>
                 </AnimatedContainer>
                 <AnimatedContainer>
-                  <img src={AboutImages.at(16)} alt="review3" />
+                  <Image
+                    src={AboutImages.at(16)}
+                    alt="review3"
+                    className="w-[80%]"
+                  />
                 </AnimatedContainer>
               </div>
               <div>
@@ -543,13 +601,17 @@ const About = () => {
                     </p>
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img src={AboutImages.at(17)} alt="review4" />
+                    <Image
+                      src={AboutImages.at(17)}
+                      alt="review4"
+                      className="w-[80%]"
+                    />
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img
+                    <Image
                       src={AboutImages.at(18)}
                       alt="review5"
-                      className="-mt-4"
+                      className="-mt-4 w-[80%]"
                     />
                   </AnimatedContainer>
                 </div>
@@ -563,13 +625,17 @@ const About = () => {
                     </p>
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img src={AboutImages.at(19)} alt="review6" />
+                    <Image
+                      src={AboutImages.at(19)}
+                      alt="review6"
+                      className="w-[80%]"
+                    />
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img
+                    <Image
                       src={AboutImages.at(20)}
                       alt="review7"
-                      className="-mt-4"
+                      className="-mt-4 w-[80%]"
                     />
                   </AnimatedContainer>
                 </div>
@@ -583,20 +649,24 @@ const About = () => {
                     </p>
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img src={AboutImages.at(21)} alt="review8" />
-                  </AnimatedContainer>
-                  <AnimatedContainer>
-                    <img
-                      src={AboutImages.at(22)}
-                      alt="review9"
-                      className="-mt-4"
+                    <Image
+                      src={AboutImages.at(21)}
+                      alt="review8"
+                      className="w-[80%]"
                     />
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img
+                    <Image
+                      src={AboutImages.at(22)}
+                      alt="review9"
+                      className="-mt-4 w-[80%]"
+                    />
+                  </AnimatedContainer>
+                  <AnimatedContainer>
+                    <Image
                       src={AboutImages.at(23)}
                       alt="review10"
-                      className="-mt-4"
+                      className="-mt-4 w-[80%]"
                     />
                   </AnimatedContainer>
                 </div>
@@ -610,34 +680,38 @@ const About = () => {
                     </p>
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img src={AboutImages.at(24)} alt="review11" />
+                    <Image
+                      src={AboutImages.at(24)}
+                      alt="review11"
+                      className="w-[80%]"
+                    />
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img
+                    <Image
                       src={AboutImages.at(25)}
                       alt="review12"
-                      className="-mt-4"
+                      className="-mt-4 w-[80%]"
                     />
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img
+                    <Image
                       src={AboutImages.at(26)}
                       alt="review14"
-                      className="-mt-4"
+                      className="-mt-4 w-[80%]"
                     />
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img
+                    <Image
                       src={AboutImages.at(27)}
                       alt="review15"
-                      className="-mt-4"
+                      className="-mt-4 w-[80%]"
                     />
                   </AnimatedContainer>
                   <AnimatedContainer>
-                    <img
+                    <Image
                       src={AboutImages.at(28)}
                       alt="review16"
-                      className="-mt-4"
+                      className="-mt-4 w-[80%]"
                     />
                   </AnimatedContainer>
                 </div>
@@ -681,17 +755,27 @@ const About = () => {
                   </ol>
                 </AnimatedContainer>
               </div>
-              <div>
-                {AboutImages.slice(29, 32).map((img, index) => (
-                  <AnimatedContainer key={index}>
-                    <img
-                      key={index}
-                      src={img}
-                      alt={`Isaac Akinyemi ${index}`}
-                    />
-                  </AnimatedContainer>
-                ))}
-              </div>
+              <AnimatedContainer>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  <Image
+                    src={AboutImages.at(29)}
+                    alt="Isaac Akinyemi pic5"
+                    className="w-full lg:col-span-2"
+                  />
+
+                  <Image
+                    src={AboutImages.at(30)}
+                    alt="Isaac Akinyemi pic6"
+                    className="w-full"
+                  />
+
+                  <Image
+                    src={AboutImages.at(31)}
+                    alt="Isaac Akinyemi pic7"
+                    className="w-full"
+                  />
+                </div>
+              </AnimatedContainer>
             </>
           )}
         </div>
